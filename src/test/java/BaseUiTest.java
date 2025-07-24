@@ -1,4 +1,4 @@
-import com.codeborne.selenide.SelenideElement;
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterMethod;
@@ -15,6 +15,7 @@ public class BaseUiTest {
 
     @BeforeMethod
     public void setUp() {
+        Configuration.headless = true;
         open(baseURL);
     }
 
