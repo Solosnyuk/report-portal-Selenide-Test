@@ -8,10 +8,12 @@ public class LoginPage {
     static SelenideElement loginButton = $x("//button[text()='Login' and @type='submit']");
 
     public static void setLogin(String login) {
+        usernameField.clear();
         usernameField.setValue(login);
     }
 
     public static void setPassword(String password) {
+        passwordField.clear();
         passwordField.setValue(password);
     }
 
