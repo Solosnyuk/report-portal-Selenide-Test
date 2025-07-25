@@ -1,3 +1,7 @@
+package tests.ui;
+
+import UIpage.LaunchesPage;
+import UIpage.LoginPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
