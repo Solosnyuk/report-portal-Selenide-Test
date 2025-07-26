@@ -6,12 +6,11 @@ import io.restassured.response.Response;
 import static io.restassured.RestAssured.given;
 
 public class DELETElaunch {
-    public Response deleteLaunch(String projectName, String launchId) {
+    public Response deleteLaunch(String projectName, Integer launchId) {
         String url = RpConfig.get("rp.endpoint") + "/api/v1/" + projectName + "/launch/" + launchId;
 
         return given()
                 .contentType(ContentType.JSON)
-                .accept(ContentType.JSON)
                 .header("Authorization", "Bearer " + RpConfig.get("rp.api.key"))
                 .when()
                 .delete(url)

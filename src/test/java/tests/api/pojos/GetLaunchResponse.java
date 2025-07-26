@@ -6,7 +6,6 @@ public class  GetLaunchResponse {
     private List<LaunchContent> content;
     private PageInfo page;
 
-    // Геттеры и сеттеры
     public List<LaunchContent> getContent() {
         return content;
     }
@@ -22,15 +21,14 @@ public class  GetLaunchResponse {
     }
 
     public static class LaunchContent {
-        private long id;            // ⭐
-        private String uuid;        // ⭐
-        private String name;        // ⭐
-        private long number;        // ⭐
-        private String startTime;   // ⭐
-        private String status;      // ⭐
+        private long id;
+        private String uuid;
+        private String name;
+        private long number;
+        private String startTime;
+        private String status;
         private List<Attribute> attributes;
 
-        // Геттеры и сеттеры
         public long getId() {
             return id;
         }
@@ -107,7 +105,6 @@ public class  GetLaunchResponse {
         private long totalPages;
         private boolean hasNext;
 
-        // Геттеры и сеттеры
         public long getNumber() {
             return number;
         }

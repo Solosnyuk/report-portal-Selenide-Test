@@ -7,7 +7,6 @@ public class PutLaunchRequest {
     private String description;
     private List<Attribute> attributes;
 
-    // Геттеры и сеттеры
     public String getMode() {
         return mode;
     }
@@ -32,12 +31,10 @@ public class PutLaunchRequest {
         this.attributes = attributes;
     }
 
-    // Вложенный класс для атрибутов
     public static class Attribute {
         private String key;
         private String value;
 
-        // Геттеры и сеттеры
         public String getKey() {
             return key;
         }

@@ -4,7 +4,6 @@ public class CreateLaunchResponse {
     private String id;
     private long number;
 
-    // Геттеры и сеттеры
     public String getId() {
         return id;
     }

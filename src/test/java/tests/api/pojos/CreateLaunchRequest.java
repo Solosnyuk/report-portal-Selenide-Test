@@ -27,7 +27,6 @@ public class CreateLaunchRequest {
             this.system = system;
         }
 
-        // Геттеры и сеттеры
         public String getKey() {
             return key;
         }
@@ -50,7 +49,6 @@ public class CreateLaunchRequest {
         }
     }
 
-    // Геттеры и сеттеры
     public String getStartTime() {
         return startTime;
     }
