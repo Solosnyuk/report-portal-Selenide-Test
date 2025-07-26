@@ -5,8 +5,9 @@ import io.restassured.response.Response;
 import static io.restassured.RestAssured.given;
 
 public class GETlaunch {
-    public Response getLaunches(String projectName) {
-        String url = RpConfig.get("rp.endpoint") + "/api/v1/" + projectName + "/launch";
+
+    public Response getLaunch(String projectName, String launchNumber) {
+        String url = RpConfig.get("rp.endpoint") + "/api/v1/" + projectName + "/launch/" + launchNumber;
 
         return given()
                 .contentType(ContentType.JSON)
