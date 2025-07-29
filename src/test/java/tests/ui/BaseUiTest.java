@@ -19,7 +19,7 @@ public class BaseUiTest {
     @BeforeMethod
     public void setUp() {
         Configuration.headless = true;
-        open(RpConfig.getConfig().getApiEndpoint());
+        open(RpConfig.getConfig().getEndpoint());
     }
 
     @AfterMethod

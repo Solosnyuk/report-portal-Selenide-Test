@@ -5,11 +5,9 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import api.pojos.CreateLaunchRequest;
 
-import static io.restassured.RestAssured.given;
-
 public class PostLaunch {
     public Response createLaunch(String projectName) {
-        String url = RpConfig.getConfig().getApiEndpoint() + "/api/v1/" + projectName + "/launch";
+        String url = RpConfig.getConfig().getEndpoint() + "/api/v1/" + projectName + "/launch";
 
         CreateLaunchRequest requestBody = CreateLaunchRequest.defaultLaunch("Mobile tests CI run");
 
