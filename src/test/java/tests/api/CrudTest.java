@@ -14,7 +14,7 @@ public class CrudTest extends BaseApiTest {
     @Description("Positive")
     @Test
     public void createLaunchTest() throws Exception {
-        System.out.println("[ТЕСТ] createLaunchTest запущен");
+        logger.info("[ТЕСТ] createLaunchTest запущен");
         String projectName = RpConfig.getConfig().getProjectName();
 
         PostLaunch post = new PostLaunch();
@@ -26,7 +26,7 @@ public class CrudTest extends BaseApiTest {
     @Description("Positive")
     @Test
     public void updateLaunchTest() throws Exception {
-        System.out.println("[ТЕСТ] updateLaunchTest запущен");
+        logger.info("[ТЕСТ] updateLaunchTest запущен");
         String projectName = RpConfig.getConfig().getProjectName();
 
         PostLaunch post = new PostLaunch();
@@ -48,8 +48,7 @@ public class CrudTest extends BaseApiTest {
     @Description("Positive")
     @Test
     public void getLaunchTest() throws Exception {
-        System.out.println("[ТЕСТ] getLaunchTest запущен");
-        String projectName = RpConfig.getConfig().getProjectName();
+        logger.info("[ТЕСТ] getLaunchTest запущен");
 
         PostLaunch post = new PostLaunch();
         Response postResponse = post.createLaunch(projectName);
@@ -67,8 +66,7 @@ public class CrudTest extends BaseApiTest {
     @Description("Positive")
     @Test
     public void deleteLaunchTest() throws Exception {
-        System.out.println("[ТЕСТ] deleteLaunchTest запущен");
-        String projectName = RpConfig.getConfig().getProjectName();
+        logger.info("[ТЕСТ] deleteLaunchTest запущен");
 
         PostLaunch post = new PostLaunch();
         Response postResponse = post.createLaunch(projectName);
@@ -77,6 +75,7 @@ public class CrudTest extends BaseApiTest {
         CreateLaunchResponse launch = mapper.readValue(postResponse.asString(), CreateLaunchResponse.class);
         Integer launchNumber = Math.toIntExact(launch.getNumber());
 
+        Thread.sleep(500);
         DeleteLaunch delete = new DeleteLaunch();
         Response deleteResponse = delete.deleteLaunch(projectName, launchNumber);
 
@@ -86,8 +85,7 @@ public class CrudTest extends BaseApiTest {
     @Description("Negative")
     @Test
     public void getNonExistingLaunchTest() {
-        System.out.println("[ТЕСТ] getNonExistingLaunchTest запущен");
-        String projectName = RpConfig.getConfig().getProjectName();
+        logger.info("[ТЕСТ] getNonExistingLaunchTest запущен");
         String nonexistentLaunchNumber = "number 99";
 
         GetLaunch get = new GetLaunch();
@@ -99,8 +97,7 @@ public class CrudTest extends BaseApiTest {
     @Description("Negative")
     @Test
     public void deleteNonExistingLaunchTest() {
-        System.out.println("[ТЕСТ] deleteNonExistingLaunchTest запущен");
-        String projectName = RpConfig.getConfig().getProjectName();
+        logger.info("[ТЕСТ] deleteNonExistingLaunchTest запущен");
         int nonexistentLaunchNumber = 99999999;
 
         DeleteLaunch delete = new DeleteLaunch();
