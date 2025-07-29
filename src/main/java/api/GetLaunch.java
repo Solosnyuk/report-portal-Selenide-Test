@@ -3,12 +3,12 @@ package api;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import static io.restassured.RestAssured.given;
 
 public class GetLaunch {
 
     public Response getLaunch(String projectName, String launchNumber) {
-        String url = RpConfig.getConfig().getApiEndpoint() + "/api/v1/" + projectName + "/launch/" + launchNumber;
+        String url = RpConfig.getConfig().getEndpoint() + "/api/v1/"
+                + projectName + "/launch/" + launchNumber;
 
         return RestAssured.given()
                 .contentType(ContentType.JSON)

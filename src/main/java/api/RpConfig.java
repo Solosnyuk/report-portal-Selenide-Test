@@ -26,7 +26,7 @@ public class RpConfig {
     }
 
     public static class RpConfigModel {
-        private final String apiEndpoint;
+        private final String endpoint;
         private final String apiKey;
         private final String projectName;
         private final String login;
@@ -34,7 +34,7 @@ public class RpConfig {
         private final String launch;
 
         public RpConfigModel(Properties props) {
-            this.apiEndpoint = props.getProperty("rp.endpoint");
+            this.endpoint = props.getProperty("rp.endpoint");
             this.apiKey = props.getProperty("rp.api.key");
             this.projectName = props.getProperty("rp.project");
             this.login = props.getProperty("rp.login");
@@ -45,14 +45,14 @@ public class RpConfig {
         }
 
         private void validateRequiredFields() {
-            if (apiEndpoint == null || apiKey == null || projectName == null ||
+            if (endpoint == null || apiKey == null || projectName == null ||
                     login == null || password == null || launch == null) {
                 throw new IllegalStateException("В конфигурации отсутствуют обязательные поля");
             }
         }
 
-        public String getApiEndpoint() {
-            return apiEndpoint;
+        public String getEndpoint() {
+            return endpoint;
         }
 
         public String getApiKey() {
