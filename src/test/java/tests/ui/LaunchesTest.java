@@ -1,17 +1,18 @@
 package tests.ui;
 
-import UIpage.LaunchesPage;
-import UIpage.LoginPage;
+import ui.page.LaunchesPage;
+import ui.page.LoginPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import api.RpConfig;
+
+import static utils.GenerateName.generateName;
+import static ui.page.LaunchesPageLocators.filterByNameAdd;
 
 public class LaunchesTest extends BaseUiTest {
     private static final Logger logger = LogManager.getLogger(LaunchesTest.class);
-
-    static String login = "default";
-    static String password = "1q2w3e";
 
     @Test
     public void testAddNewFilter() {
@@ -20,14 +21,14 @@ public class LaunchesTest extends BaseUiTest {
         String textFilter = generateName();
 
         logger.info("Добавление нового фильтра '{}'", filterName);
-        LoginPage.login(login, password);
+        LoginPage.login(RpConfig.getLogin("rp.login"),
+                RpConfig.getPassword("rp.password"));
         LaunchesPage.clickOpenLaunchesPage();
         LaunchesPage.addNewFilter(filterName, textFilter);
 
         Assert.assertTrue(verifyElementVisibleByXPath(
-                "//span[text()='%s']", filterName));
-        logger.info("Фильтр '{}' успешно добавлен", filterName);
-        logger.info("=== testAddNewFilter END ===");
+                String.valueOf(filterByNameAdd), filterName));
+
     }
 
     @Test
@@ -37,7 +38,7 @@ public class LaunchesTest extends BaseUiTest {
         String textFilter = generateName();
 
         logger.info("Клонирование фильтра '{}'", filterName);
-        LoginPage.login(login, password);
+        LoginPage.login(RpConfig.getLogin("rp.login"), RpConfig.getPassword("rp.password"));
         LaunchesPage.clickOpenLaunchesPage();
         LaunchesPage.addNewFilter(filterName, textFilter);
         LaunchesPage.clickCloneFilter();
@@ -46,9 +47,7 @@ public class LaunchesTest extends BaseUiTest {
 
         String cloneName = "Copy " + filterName;
         Assert.assertTrue(verifyElementVisibleByXPath(
-                "//span[text()='%s']", cloneName));
-        logger.info("Клон фильтра '{}' успешно отображается.", cloneName);
-        logger.info("=== testCloneFilter END ===");
+                String.valueOf(filterByNameAdd), cloneName));
     }
 
     @Test
@@ -58,35 +57,32 @@ public class LaunchesTest extends BaseUiTest {
         String textFilter = generateName();
 
         logger.info("Удаление фильтра '{}'", filterName);
-        LoginPage.login(login, password);
+        LoginPage.login(RpConfig.getLogin("rp.login"),
+                RpConfig.getPassword("rp.password"));
         LaunchesPage.clickOpenLaunchesPage();
         LaunchesPage.addNewFilter(filterName, textFilter);
         LaunchesPage.clickButtonDeleteFilter();
 
         Assert.assertFalse(verifyElementVisibleByXPath(
-                "//span[text()='%s']", filterName));
-        logger.info("Фильтр '{}' успешно удалён.", filterName);
-        logger.info("=== testDeleteFilter END ===");
+                String.valueOf(filterByNameAdd), filterName));
     }
 
     @Test
     public static void testEditFilter() {
-        Logger staticLogger = LogManager.getLogger("EditFilterLogger");
-        staticLogger.info("=== testEditFilter START ===");
+        logger.info("=== testEditFilter START ===");
 
         String filterName = generateName();
         String textFilter = generateName();
         String newName = generateName();
 
-        staticLogger.info("Редактирование фильтра '{}' → '{}'", filterName, newName);
-        LoginPage.login(login, password);
+        logger.info("Редактирование фильтра '{}' → '{}'", filterName, newName);
+        LoginPage.login(RpConfig.getLogin("rp.login"),
+                RpConfig.getPassword("rp.password"));
         LaunchesPage.clickOpenLaunchesPage();
         LaunchesPage.addNewFilter(filterName, textFilter);
         LaunchesPage.editNameFilter(newName);
 
         Assert.assertTrue(verifyElementVisibleByXPath(
-                "//span[text()='%s']", newName));
-        staticLogger.info("Фильтр переименован в '{}'", newName);
-        staticLogger.info("=== testEditFilter END ===");
+                String.valueOf(filterByNameAdd), newName));
     }
 }

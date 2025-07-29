@@ -1,4 +1,4 @@
-package tests.api.pojos;
+package api.pojos;
 
 public class CreateLaunchResponse {
     private String id;
