@@ -7,8 +7,8 @@ import api.pojos.PutLaunchRequest;
 
 public class PutLaunch {
     public Response updateLaunch(String projectName, String launchId, PutLaunchRequest requestBody) {
-        String url = RpConfig.getConfig().getEndpoint() + "/api/v1/" +
-                projectName + "/launch/" + launchId + "/update";
+        String url = RpConfig.getConfig().getEndpoint() + "/api/v1/"
+                + projectName + "/launch/" + launchId + "/update";
 
         return RestAssured.given()
                 .contentType(ContentType.JSON)

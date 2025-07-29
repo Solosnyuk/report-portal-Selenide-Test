@@ -7,7 +7,8 @@ import io.restassured.response.Response;
 public class GetLaunch {
 
     public Response getLaunch(String projectName, String launchNumber) {
-        String url = RpConfig.getConfig().getEndpoint() + "/api/v1/" + projectName + "/launch/" + launchNumber;
+        String url = RpConfig.getConfig().getEndpoint() + "/api/v1/"
+                + projectName + "/launch/" + launchNumber;
 
         return RestAssured.given()
                 .contentType(ContentType.JSON)

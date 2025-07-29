@@ -6,7 +6,8 @@ import io.restassured.response.Response;
 
 public class DeleteLaunch {
     public Response deleteLaunch(String projectName, Integer launchId) {
-        String url = RpConfig.getConfig().getEndpoint() + "/api/v1/" + projectName + "/launch/" + launchId;
+        String url = RpConfig.getConfig().getEndpoint() + "/api/v1/"
+                + projectName + "/launch/" + launchId;
 
         return RestAssured.given()
                 .contentType(ContentType.JSON)

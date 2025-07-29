@@ -7,7 +7,8 @@ import api.pojos.CreateLaunchRequest;
 
 public class PostLaunch {
     public Response createLaunch(String projectName) {
-        String url = RpConfig.getConfig().getEndpoint() + "/api/v1/" + projectName + "/launch";
+        String url = RpConfig.getConfig().getEndpoint() + "/api/v1/"
+                + projectName + "/launch";
 
         CreateLaunchRequest requestBody = CreateLaunchRequest.defaultLaunch("Mobile tests CI run");
 
