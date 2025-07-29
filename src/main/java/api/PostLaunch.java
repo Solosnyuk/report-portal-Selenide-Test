@@ -9,14 +9,14 @@ import static io.restassured.RestAssured.given;
 
 public class PostLaunch {
     public Response createLaunch(String projectName) {
-        String url = RpConfig.getKey("rp.endpoint") + "/api/v1/" + projectName + "/launch";
+        String url = RpConfig.getConfig().getApiEndpoint() + "/api/v1/" + projectName + "/launch";
 
         CreateLaunchRequest requestBody = CreateLaunchRequest.defaultLaunch("Mobile tests CI run");
 
         return RestAssured.given()
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
-                .header("Authorization", "Bearer " + RpConfig.getKey("rp.api.key"))
+                .header("Authorization", "Bearer " + RpConfig.getConfig().getApiKey())
                 .body(requestBody)
                 .when()
                 .post(url)

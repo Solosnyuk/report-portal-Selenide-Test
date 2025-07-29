@@ -1,6 +1,7 @@
 package tests.ui;
 
 import ui.page.LaunchesPage;
+import ui.page.LaunchesPageLocators;
 import ui.page.LoginPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -9,7 +10,6 @@ import org.testng.annotations.Test;
 import api.RpConfig;
 
 import static utils.GenerateName.generateName;
-import static ui.page.LaunchesPageLocators.filterByNameAdd;
 
 public class LaunchesTest extends BaseUiTest {
     private static final Logger logger = LogManager.getLogger(LaunchesTest.class);
@@ -21,13 +21,13 @@ public class LaunchesTest extends BaseUiTest {
         String textFilter = generateName();
 
         logger.info("Добавление нового фильтра '{}'", filterName);
-        LoginPage.login(RpConfig.getLogin("rp.login"),
-                RpConfig.getPassword("rp.password"));
+        LoginPage.login(RpConfig.getConfig().getLogin(),
+                RpConfig.getConfig().getPassword());
         LaunchesPage.clickOpenLaunchesPage();
         LaunchesPage.addNewFilter(filterName, textFilter);
 
         Assert.assertTrue(verifyElementVisibleByXPath(
-                String.valueOf(filterByNameAdd), filterName));
+                LaunchesPageLocators.filterByNameAddXPathTemplate, filterName));
 
     }
 
@@ -38,7 +38,8 @@ public class LaunchesTest extends BaseUiTest {
         String textFilter = generateName();
 
         logger.info("Клонирование фильтра '{}'", filterName);
-        LoginPage.login(RpConfig.getLogin("rp.login"), RpConfig.getPassword("rp.password"));
+        LoginPage.login(RpConfig.getConfig().getLogin(),
+                RpConfig.getConfig().getPassword());
         LaunchesPage.clickOpenLaunchesPage();
         LaunchesPage.addNewFilter(filterName, textFilter);
         LaunchesPage.clickCloneFilter();
@@ -47,7 +48,7 @@ public class LaunchesTest extends BaseUiTest {
 
         String cloneName = "Copy " + filterName;
         Assert.assertTrue(verifyElementVisibleByXPath(
-                String.valueOf(filterByNameAdd), cloneName));
+                LaunchesPageLocators.filterByNameAddXPathTemplate, cloneName));
     }
 
     @Test
@@ -57,14 +58,14 @@ public class LaunchesTest extends BaseUiTest {
         String textFilter = generateName();
 
         logger.info("Удаление фильтра '{}'", filterName);
-        LoginPage.login(RpConfig.getLogin("rp.login"),
-                RpConfig.getPassword("rp.password"));
+        LoginPage.login(RpConfig.getConfig().getLogin(),
+                RpConfig.getConfig().getPassword());
         LaunchesPage.clickOpenLaunchesPage();
         LaunchesPage.addNewFilter(filterName, textFilter);
         LaunchesPage.clickButtonDeleteFilter();
 
         Assert.assertFalse(verifyElementVisibleByXPath(
-                String.valueOf(filterByNameAdd), filterName));
+                LaunchesPageLocators.filterByNameAddXPathTemplate, filterName));
     }
 
     @Test
@@ -76,13 +77,13 @@ public class LaunchesTest extends BaseUiTest {
         String newName = generateName();
 
         logger.info("Редактирование фильтра '{}' → '{}'", filterName, newName);
-        LoginPage.login(RpConfig.getLogin("rp.login"),
-                RpConfig.getPassword("rp.password"));
+        LoginPage.login(RpConfig.getConfig().getLogin(),
+                RpConfig.getConfig().getPassword());
         LaunchesPage.clickOpenLaunchesPage();
         LaunchesPage.addNewFilter(filterName, textFilter);
         LaunchesPage.editNameFilter(newName);
 
         Assert.assertTrue(verifyElementVisibleByXPath(
-                String.valueOf(filterByNameAdd), newName));
+                LaunchesPageLocators.filterByNameAddXPathTemplate, newName));
     }
 }
