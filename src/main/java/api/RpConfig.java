@@ -6,28 +6,73 @@ import java.util.Properties;
 
 public class RpConfig {
     private static final Properties props = new Properties();
+    private static final RpConfigModel CONFIG;
 
     static {
         try (InputStream input = RpConfig.class.getClassLoader().getResourceAsStream("rp.properties")) {
             props.load(input);
+            CONFIG = new RpConfigModel(props);
         } catch (IOException e) {
             throw new RuntimeException("Не удалось загрузить rp.properties", e);
         }
     }
 
-    public static String getKey(String key) {
+    public static String get(String key) {
         return props.getProperty(key);
     }
 
-    public static String getURL(String baseURL) {
-        return props.getProperty(baseURL);
+    public static RpConfigModel getConfig() {
+        return CONFIG;
     }
 
-    public static String getLogin(String login) {
-        return props.getProperty(login);
-    }
+    public static class RpConfigModel {
+        private final String apiEndpoint;
+        private final String apiKey;
+        private final String projectName;
+        private final String login;
+        private final String password;
+        private final String launch;
 
-    public static String getPassword(String password) {
-        return props.getProperty(password);
+        public RpConfigModel(Properties props) {
+            this.apiEndpoint = props.getProperty("rp.endpoint");
+            this.apiKey = props.getProperty("rp.api.key");
+            this.projectName = props.getProperty("rp.project");
+            this.login = props.getProperty("rp.login");
+            this.password = props.getProperty("rp.password");
+            this.launch = props.getProperty("rp.launch");
+            
+            validateRequiredFields();
+        }
+
+        private void validateRequiredFields() {
+            if (apiEndpoint == null || apiKey == null || projectName == null ||
+                    login == null || password == null || launch == null) {
+                throw new IllegalStateException("В конфигурации отсутствуют обязательные поля");
+            }
+        }
+
+        public String getApiEndpoint() {
+            return apiEndpoint;
+        }
+
+        public String getApiKey() {
+            return apiKey;
+        }
+
+        public String getProjectName() {
+            return projectName;
+        }
+
+        public String getLogin() {
+            return login;
+        }
+
+        public String getPassword() {
+            return password;
+        }
+
+        public String getLaunch() {
+            return launch;
+        }
     }
 }

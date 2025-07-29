@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeClass;
 public class BaseApiTest {
     @BeforeClass
     public void setup() {
-        RestAssured.baseURI = RpConfig.getKey("rp.endpoint");
-        RestAssured.authentication = RestAssured.oauth2(RpConfig.getKey("rp.api.key"));
+        RestAssured.baseURI = RpConfig.getConfig().getApiKey();
+        RestAssured.authentication = RestAssured.oauth2(RpConfig.getConfig().getApiKey());
     }
 }

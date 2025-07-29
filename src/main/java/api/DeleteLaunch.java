@@ -8,11 +8,11 @@ import static io.restassured.RestAssured.given;
 
 public class DeleteLaunch {
     public Response deleteLaunch(String projectName, Integer launchId) {
-        String url = RpConfig.getKey("rp.endpoint") + "/api/v1/" + projectName + "/launch/" + launchId;
+        String url = RpConfig.getConfig().getApiEndpoint() + "/api/v1/" + projectName + "/launch/" + launchId;
 
         return RestAssured.given()
                 .contentType(ContentType.JSON)
-                .header("Authorization", "Bearer " + RpConfig.getKey("rp.api.key"))
+                .header("Authorization", "Bearer " + RpConfig.getConfig().getApiKey())
                 .when()
                 .delete(url)
                 .then()

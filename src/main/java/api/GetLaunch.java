@@ -8,12 +8,12 @@ import static io.restassured.RestAssured.given;
 public class GetLaunch {
 
     public Response getLaunch(String projectName, String launchNumber) {
-        String url = RpConfig.getKey("rp.endpoint") + "/api/v1/" + projectName + "/launch/" + launchNumber;
+        String url = RpConfig.getConfig().getApiEndpoint() + "/api/v1/" + projectName + "/launch/" + launchNumber;
 
         return RestAssured.given()
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
-                .header("Authorization", "Bearer " + RpConfig.getKey("rp.api.key"))
+                .header("Authorization", "Bearer " + RpConfig.getConfig().getApiKey())
                 .when()
                 .get(url)
                 .then()

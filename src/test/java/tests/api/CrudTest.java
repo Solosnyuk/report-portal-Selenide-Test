@@ -15,7 +15,7 @@ public class CrudTest extends BaseApiTest {
     @Test
     public void createLaunchTest() throws Exception {
         System.out.println("[ТЕСТ] createLaunchTest запущен");
-        String projectName = RpConfig.getKey("rp.project");
+        String projectName = RpConfig.getConfig().getApiKey();
 
         PostLaunch post = new PostLaunch();
         Response response = post.createLaunch(projectName);
@@ -27,7 +27,7 @@ public class CrudTest extends BaseApiTest {
     @Test
     public void updateLaunchTest() throws Exception {
         System.out.println("[ТЕСТ] updateLaunchTest запущен");
-        String projectName = RpConfig.getKey("rp.project");
+        String projectName = RpConfig.getConfig().getApiKey();
 
         PostLaunch post = new PostLaunch();
         Response postResponse = post.createLaunch(projectName);
@@ -49,7 +49,7 @@ public class CrudTest extends BaseApiTest {
     @Test
     public void getLaunchTest() throws Exception {
         System.out.println("[ТЕСТ] getLaunchTest запущен");
-        String projectName = RpConfig.getKey("rp.project");
+        String projectName = RpConfig.getConfig().getApiKey();
 
         PostLaunch post = new PostLaunch();
         Response postResponse = post.createLaunch(projectName);
@@ -68,7 +68,7 @@ public class CrudTest extends BaseApiTest {
     @Test
     public void deleteLaunchTest() throws Exception {
         System.out.println("[ТЕСТ] deleteLaunchTest запущен");
-        String projectName = RpConfig.getKey("rp.project");
+        String projectName = RpConfig.getConfig().getApiKey();
 
         PostLaunch post = new PostLaunch();
         Response postResponse = post.createLaunch(projectName);
@@ -87,7 +87,7 @@ public class CrudTest extends BaseApiTest {
     @Test
     public void getNonExistingLaunchTest() {
         System.out.println("[ТЕСТ] getNonExistingLaunchTest запущен");
-        String projectName = RpConfig.getKey("rp.project");
+        String projectName = RpConfig.getConfig().getApiKey();
         String nonexistentLaunchNumber = "number 99";
 
         GetLaunch get = new GetLaunch();
@@ -100,7 +100,7 @@ public class CrudTest extends BaseApiTest {
     @Test
     public void deleteNonExistingLaunchTest() {
         System.out.println("[ТЕСТ] deleteNonExistingLaunchTest запущен");
-        String projectName = RpConfig.getKey("rp.project");
+        String projectName = RpConfig.getConfig().getApiKey();
         int nonexistentLaunchNumber = 99999999;
 
         DeleteLaunch delete = new DeleteLaunch();
