@@ -1,4 +1,4 @@
-package tests.api;
+package api;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -15,7 +15,19 @@ public class RpConfig {
         }
     }
 
-    public static String get(String key) {
+    public static String getKey(String key) {
         return props.getProperty(key);
+    }
+
+    public static String getURL(String baseURL) {
+        return props.getProperty(baseURL);
+    }
+
+    public static String getLogin(String login) {
+        return props.getProperty(login);
+    }
+
+    public static String getPassword(String password) {
+        return props.getProperty(password);
     }
 }

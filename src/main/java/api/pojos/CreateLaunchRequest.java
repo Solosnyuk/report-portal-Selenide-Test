@@ -1,4 +1,4 @@
-package tests.api.pojos;
+package api.pojos;
 
 import java.time.OffsetDateTime;
 import java.util.List;

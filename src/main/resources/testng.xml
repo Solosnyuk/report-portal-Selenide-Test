@@ -3,7 +3,7 @@
     <test name="Launches UI Functional Tests">
         <classes>
             <class name="tests.ui.LaunchesTest"/>
-            <class name="tests.api.CRUDtest"/>
+            <class name="tests.api.CrudTest"/>
         </classes>
     </test>
 </suite>

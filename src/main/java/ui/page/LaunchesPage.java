@@ -1,4 +1,4 @@
-package UIpage;
+package ui.page;
 
 import com.codeborne.selenide.SelenideElement;
 
@@ -22,8 +22,8 @@ public class LaunchesPage {
                 $x("//button[text()='Update']");
         static SelenideElement buttonCloneFilter =
                 $x("//button[.//span[text()='Clone']]");
-        static SelenideElement buttonDeleteFIlter =  $(
-                "path[d='M7 5.727L1.273 0 0 1.273 5.727 7 0 12.727 1.273 14 7 8.273 12.727 14 14 12.727 8.273 7 14 1.273 12.727 0z']");
+        static SelenideElement buttonDeleteFIlter =  $x(
+                "//div[contains(@class, 'filterItem__icon--zcepO')]");
         static SelenideElement buttonEditFilter = $x("//button[@title='Edit']");
 
     public static void clickOpenLaunchesPage() {
