@@ -6,9 +6,9 @@ import io.restassured.response.Response;
 import api.pojos.PutLaunchRequest;
 
 public class PutLaunch {
-    public Response updateLaunch(String projectName, String launchId, PutLaunchRequest requestBody) {
+    public Response updateLaunch(String launchId, PutLaunchRequest requestBody) {
         String url = RpConfig.getConfig().getEndpoint() + "/api/v1/"
-                + projectName + "/launch/" + launchId + "/update";
+                + RpConfig.getConfig().getProjectName() + "/launch/" + launchId + "/update";
 
         return RestAssured.given()
                 .contentType(ContentType.JSON)
