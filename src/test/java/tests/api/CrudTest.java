@@ -15,10 +15,9 @@ public class CrudTest extends BaseApiTest {
     @Test
     public void createLaunchTest() throws Exception {
         logger.info("[ТЕСТ] createLaunchTest запущен");
-        String projectName = RpConfig.getConfig().getProjectName();
 
         PostLaunch post = new PostLaunch();
-        Response response = post.createLaunch(projectName);
+        Response response = post.createLaunch();
 
         assertThat(response.getStatusCode()).isEqualTo(201);
     }
@@ -27,10 +26,9 @@ public class CrudTest extends BaseApiTest {
     @Test
     public void updateLaunchTest() throws Exception {
         logger.info("[ТЕСТ] updateLaunchTest запущен");
-        String projectName = RpConfig.getConfig().getProjectName();
 
         PostLaunch post = new PostLaunch();
-        Response postResponse = post.createLaunch(projectName);
+        Response postResponse = post.createLaunch();
 
         ObjectMapper mapper = new ObjectMapper();
         CreateLaunchResponse launch = mapper.readValue(postResponse.asString(), CreateLaunchResponse.class);
@@ -40,7 +38,7 @@ public class CrudTest extends BaseApiTest {
         updateBody.setDescription("Обновлено через API");
 
         PutLaunch put = new PutLaunch();
-        Response putResponse = put.updateLaunch(projectName, launchNumber, updateBody);
+        Response putResponse = put.updateLaunch(launchNumber, updateBody);
 
         assertThat(putResponse.getStatusCode()).isEqualTo(200);
     }
@@ -51,14 +49,14 @@ public class CrudTest extends BaseApiTest {
         logger.info("[ТЕСТ] getLaunchTest запущен");
 
         PostLaunch post = new PostLaunch();
-        Response postResponse = post.createLaunch(projectName);
+        Response postResponse = post.createLaunch();
 
         ObjectMapper mapper = new ObjectMapper();
         CreateLaunchResponse launch = mapper.readValue(postResponse.asString(), CreateLaunchResponse.class);
         String launchNumber = String.valueOf(launch.getNumber());
 
         GetLaunch get = new GetLaunch();
-        Response getResponse = get.getLaunch(projectName, launchNumber);
+        Response getResponse = get.getLaunch(launchNumber);
 
         assertThat(getResponse.getStatusCode()).isEqualTo(200);
     }
@@ -69,7 +67,7 @@ public class CrudTest extends BaseApiTest {
         logger.info("[ТЕСТ] deleteLaunchTest запущен");
 
         PostLaunch post = new PostLaunch();
-        Response postResponse = post.createLaunch(projectName);
+        Response postResponse = post.createLaunch();
 
         ObjectMapper mapper = new ObjectMapper();
         CreateLaunchResponse launch = mapper.readValue(postResponse.asString(), CreateLaunchResponse.class);
@@ -77,7 +75,7 @@ public class CrudTest extends BaseApiTest {
 
         Thread.sleep(500);
         DeleteLaunch delete = new DeleteLaunch();
-        Response deleteResponse = delete.deleteLaunch(projectName, launchNumber);
+        Response deleteResponse = delete.deleteLaunch(launchNumber);
 
         assertThat(deleteResponse.getStatusCode()).isEqualTo(200);
     }
@@ -89,7 +87,7 @@ public class CrudTest extends BaseApiTest {
         String nonexistentLaunchNumber = "number 99";
 
         GetLaunch get = new GetLaunch();
-        Response response = get.getLaunch(projectName, nonexistentLaunchNumber);
+        Response response = get.getLaunch(nonexistentLaunchNumber);
 
         assertThat(response.getStatusCode()).isEqualTo(404);
     }
@@ -101,7 +99,7 @@ public class CrudTest extends BaseApiTest {
         int nonexistentLaunchNumber = 99999999;
 
         DeleteLaunch delete = new DeleteLaunch();
-        Response response = delete.deleteLaunch(projectName, nonexistentLaunchNumber);
+        Response response = delete.deleteLaunch(nonexistentLaunchNumber);
 
         assertThat(response.getStatusCode()).isEqualTo(404);
     }
