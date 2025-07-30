@@ -7,7 +7,6 @@ import org.apache.logging.log4j.Logger;
 import org.testng.annotations.BeforeClass;
 
 public class BaseApiTest {
-    String projectName = RpConfig.getConfig().getProjectName();
     protected final Logger logger = LogManager.getLogger(getClass());
 
     @BeforeClass
