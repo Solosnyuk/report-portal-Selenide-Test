@@ -1,46 +1,64 @@
 #### В проекте реализованы 4 UI автотеста и 6 API автотеста (4 позитивных и 2 негативных) для раздела Launches на сайте ReportPortal Demo.
+#### Позже был добавлен один BDD автотест на Cucumber
 ***
 ### Технологии:
-Maven, RestAssured, Selenide, TestNG, Jackson (ObjectMapper), AssertJ
+Maven, RestAssured, Selenide, TestNG, Jackson (ObjectMapper), AssertJ, Cucumber
 ***
-### Описание методов классов:
+## Описание методов классов:
+#### Пакет api.pojos:
+Классы моделей для сериализации/десериализации JSON-данных при работе с API
+* DeleteLaunch - Модель запроса на удаление запуска
 
-#### Пакет tests.api.pojos:
+* GetLaunch - Модель ответа при получении информации о запуске
 
-###### Классы моделей для сериализации/десериализации JSON-данных при работе с API
+* PostLaunch - Модель тела запроса на создание запуска
 
-* CreateLaunchRequest - Модель тела запроса на создание запуска
+* PutLaunch - Модель тела запроса для обновления запуска
 
-* CreateLaunchResponse -	Модель ответа от API при создании запуска
+* RpConfig - Конфигурация: endpoint, project name и API token
 
-* DeleteLaunchResponse -	Ответ при удалении запуска
+#### Пакет api:
+Классы, реализующие API логику, конфигурации и тесты
+* BaseApiTest - Подготавливает базовую конфигурацию перед выполнением API тестов
 
-* GetLaunchResponse -	Ответ при получении информации о запуске
+* CRUDtest - Класс с тестами на создание, чтение, обновление и удаление
 
-* PutLaunchRequest -	Тело запроса для обновления запуска
+#### Пакет ui.page:
+Классы, описывающие страницы и элементы UI
+* LaunchesPage - Страница запусков
 
-#### Пакет tests.api:
+* LaunchesPageLocators - Локаторы элементов страницы запусков
 
-###### Классы, реализующие API-логику, конфигурации и тесты.
+* LoginPage - Страница авторизации
 
-* BaseApiTest - Подготавливает базовую конфигурацию перед выполнением тестов
+#### Пакет utils:
+* GenerateName - Генератор уникальных имён для тестов
 
-* CRUDtest - Тестовый класс
+#### Пакет test.stepdefs:
+Классы шагов для Cucumber сценариев
+* Hooks - Выполняет действия до и после сценариев
 
-* DELETElaunch - deleteLaunch(String projectName, int launchId) Отправляет DELETE-запрос для удаления
+* LaunchesSteps - Реализация шагов для сценариев запусков
 
-* GETlaunch - getLaunch(String projectName, String launchId) Выполняет GET-запрос на получение информации
+#### Пакет test.tests.api:
+* BaseApiTest - Базовая настройка для API тестов
 
-* POSTlaunch - createLaunch(String projectName) Выполняет POST-запрос для создания
+* CrudTest - Тесты CRUD операций
 
-* PUTlaunch - updateLaunch(String projectName, String launchId, PutLaunchRequest body) Отправляет PUT-запрос для изменения состояния или описания
+#### Пакет test.tests.runner:
+* CucumberTestRunner - Класс запуска Cucumber-сценариев с использованием TestNG
 
-* RpConfig - Используется для получения endpoint, project name и API token
+#### Пакет test.tests.ui:
+* BaseUiTest - Базовый класс для UI тестов
 
-#### Пакет tests.ui:
+* LaunchesTest - UI тесты для проверки запусков
 
-* BaseUiTest - Базовый класс для UI-тестов
+#### Пакет resources.features.launches:
+* launches.feature - Gherkin сценарии для тестирования запусков
 
-* LaunchesTest - UI тесты
+#### Пакет resources:
+* log4j2.xml - Конфигурация логирования
+
+* testng.xml - Конфигурация запуска тестов через TestNG
 ***
 #### ! Укажите API-key в resources/rp.properties !
