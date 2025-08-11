@@ -42,6 +42,7 @@ public class LaunchesTest extends BaseUiTest {
                 RpConfig.getConfig().getPassword());
         LaunchesPage.clickOpenLaunchesPage();
         LaunchesPage.addNewFilter(filterName, textFilter);
+
         LaunchesPage.clickCloneFilter();
         LaunchesPage.clickButtonSaveFilter();
         LaunchesPage.clickButtonAddFilterSave();
