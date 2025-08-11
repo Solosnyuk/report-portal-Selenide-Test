@@ -1,5 +1,5 @@
 #### В проекте реализованы 4 UI автотеста и 6 API автотеста (4 позитивных и 2 негативных) для раздела Launches на сайте ReportPortal Demo.
-#### Позже был добавлен один BDD автотест на Cucumber
+#### И один BDD автотест на Cucumber
 ***
 ### Технологии:
 Maven, RestAssured, Selenide, TestNG, Jackson (ObjectMapper), AssertJ, Cucumber
