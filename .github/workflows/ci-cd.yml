@@ -30,8 +30,7 @@ jobs:
         env:
           LOGIN: ${{ secrets.LOGIN }}
           PASSWORD: ${{ secrets.PASSWORD }}
-        run: |
-          envsubst < src/main/resources/rp.properties.template > src/test/resources/rp.properties
+        run: envsubst < src/main/resources/rp.properties.template > src/test/resources/rp.properties
 
       - name: Build with Maven
         env:
