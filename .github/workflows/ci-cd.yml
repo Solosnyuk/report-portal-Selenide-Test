@@ -33,3 +33,12 @@ jobs:
 
       - name: Run tests
         run: mvn test
+
+      - name: Upload Selenide screenshots
+        if: failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: selenide-screenshots
+          path: target/screenshots
+
+
