@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
         features = "src/test/resources/features",
-        glue = "stepdefs", //пакет нахождения java шагов
+        glue = "stepdefs",
         plugin = {"pretty"}
 )
 
