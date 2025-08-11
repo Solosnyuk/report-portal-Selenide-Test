@@ -26,8 +26,21 @@ jobs:
           PASSWORD: ${{ secrets.PASSWORD }}
         run: echo "Secrets configured"
 
+      - name: Generate rp.properties from template
+        env:
+          LOGIN: ${{ secrets.LOGIN }}
+          PASSWORD: ${{ secrets.PASSWORD }}
+        run: |
+          envsubst < rp.properties.template > src/test/resources/rp.properties
+
       - name: Build with Maven
+        env:
+          LOGIN: ${{ secrets.LOGIN }}
+          PASSWORD: ${{ secrets.PASSWORD }}
         run: mvn clean install
 
       - name: Run tests
+        env:
+          LOGIN: ${{ secrets.LOGIN }}
+          PASSWORD: ${{ secrets.PASSWORD }}
         run: mvn test
