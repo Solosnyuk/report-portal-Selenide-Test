@@ -20,26 +20,19 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Configure secrets
-        env:
-          LOGIN: ${{ secrets.LOGIN }}
-          PASSWORD: ${{ secrets.PASSWORD }}
-        run: echo "Secrets configured"
+      - name: List files for debugging (временно)
+        run: ls -R
 
       - name: Generate rp.properties from template
         env:
           LOGIN: ${{ secrets.LOGIN }}
           PASSWORD: ${{ secrets.PASSWORD }}
-        run: envsubst < src/main/resources/rp.properties.template > src/test/resources/rp.properties
+        run: |
+          echo "Generating rp.properties..."
+          envsubst < src/main/resources/rp.properties.template > src/test/resources/rp.properties
 
       - name: Build with Maven
-        env:
-          LOGIN: ${{ secrets.LOGIN }}
-          PASSWORD: ${{ secrets.PASSWORD }}
         run: mvn clean install
 
       - name: Run tests
-        env:
-          LOGIN: ${{ secrets.LOGIN }}
-          PASSWORD: ${{ secrets.PASSWORD }}
         run: mvn test
