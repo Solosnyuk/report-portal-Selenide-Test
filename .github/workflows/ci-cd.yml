@@ -31,6 +31,7 @@ jobs:
           echo "Generating rp.properties..."
           envsubst < src/main/resources/rp.properties.template > src/test/resources/rp.properties
 
+
       - name: Build with Maven
         run: mvn clean install
 
