@@ -1,8 +1,8 @@
 #### В проекте реализованы 4 UI автотеста и 6 API автотеста (4 позитивных и 2 негативных) для раздела Launches на сайте ReportPortal Demo.
-#### И один BDD автотест на Cucumber
+
 ***
 ### Технологии:
-Maven, RestAssured, Selenide, TestNG, Jackson (ObjectMapper), AssertJ, Cucumber
+Maven, RestAssured, Selenide, TestNG, Jackson (ObjectMapper), AssertJ
 ***
 ## Описание методов классов:
 #### Пакет api.pojos:
@@ -34,12 +34,6 @@ Maven, RestAssured, Selenide, TestNG, Jackson (ObjectMapper), AssertJ, Cucumber
 #### Пакет utils:
 * GenerateName - Генератор уникальных имён для тестов
 
-#### Пакет test.stepdefs:
-Классы шагов для Cucumber сценариев
-* Hooks - Выполняет действия до и после сценариев
-
-* LaunchesSteps - Реализация шагов для сценариев запусков
-
 #### Пакет test.tests.api:
 * BaseApiTest - Базовая настройка для API тестов
 
@@ -51,10 +45,8 @@ Maven, RestAssured, Selenide, TestNG, Jackson (ObjectMapper), AssertJ, Cucumber
 #### Пакет test.tests.ui:
 * BaseUiTest - Базовый класс для UI тестов
 
-* LaunchesTest - UI тесты для проверки запусков
+* LaunchesTest - UI тесты 
 
-#### Пакет resources.features.launches:
-* launches.feature - Gherkin сценарии для тестирования запусков
 
 #### Пакет resources:
 * log4j2.xml - Конфигурация логирования
