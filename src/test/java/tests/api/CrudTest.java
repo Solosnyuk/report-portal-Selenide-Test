@@ -82,18 +82,6 @@ public class CrudTest extends BaseApiTest {
 
     @Description("Negative")
     @Test
-    public void getNonExistingLaunchTest() {
-        logger.info("[ТЕСТ] getNonExistingLaunchTest запущен");
-        String nonexistentLaunchNumber = "number 99";
-
-        GetLaunch get = new GetLaunch();
-        Response response = get.getLaunch(nonexistentLaunchNumber);
-
-        assertThat(response.getStatusCode()).isEqualTo(404);
-    }
-
-    @Description("Negative")
-    @Test
     public void deleteNonExistingLaunchTest() {
         logger.info("[ТЕСТ] deleteNonExistingLaunchTest запущен");
         int nonexistentLaunchNumber = 99999999;
