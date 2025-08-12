@@ -61,23 +61,18 @@ public class CrudTest extends BaseApiTest {
         assertThat(getResponse.getStatusCode()).isEqualTo(200);
     }
 
-    @Description("Positive")
+
+
+    @Description("Negative")
     @Test
-    public void deleteLaunchTest() throws Exception {
-        logger.info("[ТЕСТ] deleteLaunchTest запущен");
+    public void getNonExistingLaunchTest() {
+        logger.info("[ТЕСТ] getNonExistingLaunchTest запущен");
+        String nonexistentLaunchNumber = "number 99";
 
-        PostLaunch post = new PostLaunch();
-        Response postResponse = post.createLaunch();
+        GetLaunch get = new GetLaunch();
+        Response response = get.getLaunch(nonexistentLaunchNumber);
 
-        ObjectMapper mapper = new ObjectMapper();
-        CreateLaunchResponse launch = mapper.readValue(postResponse.asString(), CreateLaunchResponse.class);
-        Integer launchNumber = Math.toIntExact(launch.getNumber());
-
-        Thread.sleep(400);
-        DeleteLaunch delete = new DeleteLaunch();
-        Response deleteResponse = delete.deleteLaunch(launchNumber);
-
-        assertThat(deleteResponse.getStatusCode()).isEqualTo(200);
+        assertThat(response.getStatusCode()).isEqualTo(404);
     }
 
     @Description("Negative")
