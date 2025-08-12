@@ -73,7 +73,7 @@ public class CrudTest extends BaseApiTest {
         CreateLaunchResponse launch = mapper.readValue(postResponse.asString(), CreateLaunchResponse.class);
         Integer launchNumber = Math.toIntExact(launch.getNumber());
 
-        Thread.sleep(500);
+        Thread.sleep(400);
         DeleteLaunch delete = new DeleteLaunch();
         Response deleteResponse = delete.deleteLaunch(launchNumber);
 
