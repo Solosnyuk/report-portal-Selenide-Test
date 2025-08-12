@@ -1,4 +1,4 @@
-name: ReportPortal CI/CD
+name: Java CI/CD with Allure
 
 on:
   push:
@@ -6,12 +6,14 @@ on:
   pull_request:
     branches: [ "main" ]
 
+env:
+  MAVEN_OPTS: -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn
+
 jobs:
-  test:
+  build-and-test:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        test-group: [ui, api]
+    timeout-minutes: 30  # Увеличиваем таймаут
+    
     steps:
       - uses: actions/checkout@v4
       
@@ -20,56 +22,39 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
+          cache: 'maven'  # Используем встроенный кеш вместо actions/cache
       
-      - name: Cache Maven dependencies
-        uses: actions/cache@v3
-        with:
-          path: ~/.m2
-          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
-          restore-keys: ${{ runner.os }}-m2-
-
-      - name: Run Tests
+      - name: Build and test
         run: |
-          if [ "${{ matrix.test-group }}" == "ui" ]; then
-            mvn test -Dgroups=UI -Dallure.results.directory=target/allure-results
-          else
-            mvn test -Dgroups=API -Dallure.results.directory=target/allure-results
-          fi
-
-      - name: Upload Allure Results
-        if: always()
+          mvn -B clean test
+          mvn allure:report
+          
+      - name: Upload Allure Report
         uses: actions/upload-artifact@v4
+        if: always()
         with:
-          name: allure-results-${{ matrix.test-group }}
-          path: target/allure-results/
-
-  report:
-    needs: test
+          name: allure-report
+          path: |
+            target/allure-results
+            target/site/allure-maven-plugin
+          
+  deploy:
+    needs: build-and-test
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master'
+    
     steps:
       - uses: actions/checkout@v4
       
-      - name: Download Allure Results
+      - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: allure-results-ui
-          path: target/allure-results/ui
-      - name: Download API Results
-        uses: actions/download-artifact@v4
-        with:
-          name: allure-results-api
-          path: target/allure-results/api
+          name: allure-report
+          path: target/
           
-      - name: Generate Allure Report
-        run: |
-          mvn allure:report
-          mkdir -p target/allure-report
-          cp -R target/site/allure-maven-plugin/* target/allure-report/
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: target/allure-report
+          publish_dir: target/site/allure-maven-plugin
           keep_files: true
