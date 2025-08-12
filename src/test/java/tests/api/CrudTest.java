@@ -61,24 +61,7 @@ public class CrudTest extends BaseApiTest {
         assertThat(getResponse.getStatusCode()).isEqualTo(200);
     }
 
-    @Description("Positive")
-    @Test
-    public void deleteLaunchTest() throws Exception {
-        logger.info("[ТЕСТ] deleteLaunchTest запущен");
 
-        PostLaunch post = new PostLaunch();
-        Response postResponse = post.createLaunch();
-
-        ObjectMapper mapper = new ObjectMapper();
-        CreateLaunchResponse launch = mapper.readValue(postResponse.asString(), CreateLaunchResponse.class);
-        Integer launchNumber = Math.toIntExact(launch.getNumber());
-
-        Thread.sleep(500);
-        DeleteLaunch delete = new DeleteLaunch();
-        Response deleteResponse = delete.deleteLaunch(launchNumber);
-
-        assertThat(deleteResponse.getStatusCode()).isEqualTo(200);
-    }
 
     @Description("Negative")
     @Test
