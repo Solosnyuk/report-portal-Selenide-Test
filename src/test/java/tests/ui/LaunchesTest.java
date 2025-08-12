@@ -14,7 +14,7 @@ import static utils.GenerateName.generateName;
 public class LaunchesTest extends BaseUiTest {
     private static final Logger logger = LogManager.getLogger(LaunchesTest.class);
 
-    @Test
+    @Test(groups = "UI", description = "UI Test")
     public void testAddNewFilter() {
         logger.info("=== testAddNewFilter START ===");
         String filterName = generateName();
@@ -31,7 +31,7 @@ public class LaunchesTest extends BaseUiTest {
 
     }
 
-    @Test
+    @Test(groups = "UI", description = "UI Test")
     public void testCloneFilter() {
         logger.info("=== testCloneFilter START ===");
         String filterName = generateName();
@@ -52,7 +52,7 @@ public class LaunchesTest extends BaseUiTest {
                 LaunchesPageLocators.filterByNameAddXPathTemplate, cloneName));
     }
 
-    @Test
+    @Test(groups = "UI", description = "UI Test")
     public void testDeleteFilter() {
         logger.info("=== testDeleteFilter START ===");
         String filterName = generateName();
@@ -69,7 +69,7 @@ public class LaunchesTest extends BaseUiTest {
                 LaunchesPageLocators.filterByNameAddXPathTemplate, filterName));
     }
 
-    @Test
+    @Test(groups = "UI", description = "UI Test")
     public static void testEditFilter() {
         logger.info("=== testEditFilter START ===");
 

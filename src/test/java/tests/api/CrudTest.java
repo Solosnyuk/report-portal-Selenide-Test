@@ -11,8 +11,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class CrudTest extends BaseApiTest {
 
-    @Description("Positive")
-    @Test
+    @Test(groups = "API", description = "API Test")
     public void createLaunchTest() throws Exception {
         logger.info("[ТЕСТ] createLaunchTest запущен");
 
@@ -22,8 +21,7 @@ public class CrudTest extends BaseApiTest {
         assertThat(response.getStatusCode()).isEqualTo(201);
     }
 
-    @Description("Positive")
-    @Test
+    @Test(groups = "API", description = "API Test")
     public void updateLaunchTest() throws Exception {
         logger.info("[ТЕСТ] updateLaunchTest запущен");
 
@@ -43,8 +41,7 @@ public class CrudTest extends BaseApiTest {
         assertThat(putResponse.getStatusCode()).isEqualTo(200);
     }
 
-    @Description("Positive")
-    @Test
+    @Test(groups = "API", description = "API Test")
     public void getLaunchTest() throws Exception {
         logger.info("[ТЕСТ] getLaunchTest запущен");
 
@@ -61,10 +58,7 @@ public class CrudTest extends BaseApiTest {
         assertThat(getResponse.getStatusCode()).isEqualTo(200);
     }
 
-
-
-    @Description("Negative")
-    @Test
+    @Test(groups = "API", description = "API Test")
     public void getNonExistingLaunchTest() {
         logger.info("[ТЕСТ] getNonExistingLaunchTest запущен");
         String nonexistentLaunchNumber = "number 99";
@@ -75,8 +69,7 @@ public class CrudTest extends BaseApiTest {
         assertThat(response.getStatusCode()).isEqualTo(404);
     }
 
-    @Description("Negative")
-    @Test
+    @Test(groups = "API", description = "API Test")
     public void deleteNonExistingLaunchTest() {
         logger.info("[ТЕСТ] deleteNonExistingLaunchTest запущен");
         int nonexistentLaunchNumber = 99999999;
