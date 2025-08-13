@@ -58,31 +58,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Download API report
+      - name: Download reports
         uses: actions/download-artifact@v4
         with:
-          name: allure-api
-          path: target/api
-
-      - name: Download UI report
-        uses: actions/download-artifact@v4
-        with:
-          name: allure-ui
-          path: target/ui
-
-      - name: Merge Allure results
-        run: |
-          mkdir -p target/allure-results
-          cp -r target/api/* target/allure-results/ || true
-          cp -r target/ui/* target/allure-results/ || true
+          path: target/allure-results
+          pattern: allure-*-results
+          merge-multiple: true
 
       - name: Generate Allure report
-        run: mvn allure:report || true 
-
-      - name: Configure Git
         run: |
-         git config user.name "github-actions[bot]"
-         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mvn allure:report
+          echo "Allure Report: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/" >> $GITHUB_STEP_SUMMARY
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
@@ -90,5 +76,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: target/site/allure-maven-plugin
           keep_files: true
-      - name: Add link to Allure report
-        run: echo "[Allure Report](https://solosnyuk.github.io/report-portal-Selenide-Test)" >> $GITHUB_STEP_SUMMARY
+          force_orphan: true
