@@ -90,3 +90,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: target/site/allure-maven-plugin
           keep_files: true
+      - name: Add link to Allure report
+        run: echo "[Allure Report](https://solosnyuk.github.io/report-portal-Selenide-Test)" >> $GITHUB_STEP_SUMMARY
