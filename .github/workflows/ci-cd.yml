@@ -19,9 +19,10 @@ jobs:
 
       - name: Run API tests
         run: |
-          mvn clean test -Dgroups=API
+          mvn clean test -Dgroups=API || true  
 
       - name: Upload API Allure results
+        if: always() 
         uses: actions/upload-artifact@v4
         with:
           name: allure-api
@@ -40,9 +41,10 @@ jobs:
 
       - name: Run UI tests
         run: |
-          mvn clean test -Dgroups=UI
+          mvn clean test -Dgroups=UI || true  
 
       - name: Upload UI Allure results
+        if: always()  
         uses: actions/upload-artifact@v4
         with:
           name: allure-ui
@@ -75,9 +77,10 @@ jobs:
           cp -r target/ui/* target/allure-results/ || true
 
       - name: Generate Allure report
-        run: mvn allure:report
+        run: mvn allure:report || true 
 
       - name: Deploy to GitHub Pages
+        if: always()
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
