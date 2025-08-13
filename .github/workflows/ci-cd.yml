@@ -79,6 +79,11 @@ jobs:
       - name: Generate Allure report
         run: mvn allure:report || true 
 
+      - name: Configure Git
+        run: |
+         git config user.name "github-actions[bot]"
+         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
       - name: Deploy to GitHub Pages
         if: always()
         uses: peaceiris/actions-gh-pages@v3
