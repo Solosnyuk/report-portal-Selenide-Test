@@ -70,7 +70,7 @@ public class LaunchesTest extends BaseUiTest {
     }
 
     @Test(groups = "UI", description = "UI Test")
-    public static void testEditFilter() {
+    public void testEditFilter() {
         logger.info("=== testEditFilter START ===");
 
         String filterName = generateName();
