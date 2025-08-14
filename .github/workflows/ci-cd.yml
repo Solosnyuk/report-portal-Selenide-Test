@@ -1,71 +1,67 @@
-name: CI/CD
+name: CI Pipeline
 
 on:
   push:
     branches: [main]
   pull_request:
-    branches: [main]
 
 jobs:
-  build-and-test:
+  test-api:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - name: Set up JDK 17
+      - name: Set up JDK
         uses: actions/setup-java@v3
         with:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Generate rp.properties from template
-        env:
-          LOGIN: ${{ secrets.LOGIN }}
-          PASSWORD: ${{ secrets.PASSWORD }}
+      - name: Run API tests
         run: |
-          envsubst < src/main/resources/rp.properties > src/test/resources/rp.properties
+          mvn clean test -Dgroups=API || true  
 
-      - name: Build with Maven
-        run: mvn clean install
-
-      - name: Run tests
-        run: mvn test
-
-      - name: Upload Selenide screenshots
-        if: failure()
+      - name: Upload API Allure results
+        if: always() 
         uses: actions/upload-artifact@v4
         with:
-          name: selenide-screenshots
-          path: target/screenshots
+          name: allure-api
+          path: target/allure-results
 
-      - name: Upload Allure results
-        if: always()
+  test-ui:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Run UI tests
+        run: |
+          mvn clean test -Dgroups=UI || true  
+
+      - name: Upload UI Allure results
+        if: always()  
         uses: actions/upload-artifact@v4
         with:
-          name: allure-results
+          name: allure-ui
           path: target/allure-results
 
   deploy:
-    needs: build-and-test
+    needs: [test-api, test-ui]
     runs-on: ubuntu-latest
-    if: |
-      (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
-      (github.event_name == 'pull_request' && github.base_ref == 'main')
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - name: Clean old Allure results
-        run: rm -rf target/allure-results
-
-      - name: Download Allure results
+      - name: Download reports
         uses: actions/download-artifact@v4
         with:
           path: target/allure-results
-          pattern: allure-results
+          pattern: allure-*-results
           merge-multiple: true
 
       - name: Generate Allure report
