@@ -51,9 +51,9 @@ jobs:
   deploy:
     needs: [test-api, test-ui]
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v4
+
 
     - name: Download API results
       uses: actions/download-artifact@v4
@@ -71,8 +71,8 @@ jobs:
     - name: Flatten Allure results
       run: |
         mkdir -p target/allure-results
-        cp -r target/allure-results/api/* target/allure-results/
-        cp -r target/allure-results/ui/* target/allure-results/
+        cp -r target/allure-results/api/. target/allure-results/
+        cp -r target/allure-results/ui/. target/allure-results/
         
     - name: Generate Allure report
       working-directory: ${{ github.workspace }}
