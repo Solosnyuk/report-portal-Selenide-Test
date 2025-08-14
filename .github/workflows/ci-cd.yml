@@ -62,12 +62,7 @@ jobs:
        pattern: allure-*-results
        merge-multiple: true
 
-    - name: Flatten Allure results
-      run: |
-        cp -r target/allure-results/api/* target/allure-results/
-        cp -r target/allure-results/api/** target/allure-results/
-        cp -r target/allure-results/ui/* target/allure-results/
-        cp -r target/allure-results/ui/** target/allure-results/
+    
 
 
     - name: Generate Allure report
