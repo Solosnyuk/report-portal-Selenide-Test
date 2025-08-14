@@ -27,7 +27,6 @@ jobs:
         run: |
           envsubst < src/main/resources/rp.properties > src/test/resources/rp.properties
 
-
       - name: Build with Maven
         run: mvn clean install
 
@@ -41,4 +40,43 @@ jobs:
           name: selenide-screenshots
           path: target/screenshots
 
+      - name: Upload Allure results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results
+          path: target/allure-results
 
+  deploy:
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    if: |
+      (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
+      (github.event_name == 'pull_request' && github.base_ref == 'main')
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Clean old Allure results
+        run: rm -rf target/allure-results
+
+      - name: Download Allure results
+        uses: actions/download-artifact@v4
+        with:
+          path: target/allure-results
+          pattern: allure-results
+          merge-multiple: true
+
+      - name: Generate Allure report
+        run: |
+          mvn allure:report
+          echo "Allure Report: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/" >> $GITHUB_STEP_SUMMARY
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: target/site/allure-maven-plugin
+          keep_files: true
+          force_orphan: true
