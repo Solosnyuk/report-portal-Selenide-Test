@@ -64,12 +64,6 @@ jobs:
        pattern: allure-*-results
        merge-multiple: true
 
-    - name: Flatten Allure results
-      run: |
-        mkdir -p target/allure-results-flat
-        find target/allure-results -name "*.json" -exec cp {} target/allure-results-flat \;
-        mv target/allure-results-flat target/allure-results
-
     - name: Generate Allure report
       run: mvn allure:report
 
