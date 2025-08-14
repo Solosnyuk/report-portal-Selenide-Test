@@ -72,9 +72,10 @@ jobs:
 
     - name: Flatten Allure results
       run: |
-        mkdir -p target/allure-results
         cp -r target/allure-results/api/* target/allure-results/
+        cp -r target/allure-results/api/** target/allure-results/
         cp -r target/allure-results/ui/* target/allure-results/
+        cp -r target/allure-results/ui/** target/allure-results/
 
         
     - name: Generate Allure report
