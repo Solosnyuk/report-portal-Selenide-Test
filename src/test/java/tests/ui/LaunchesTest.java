@@ -1,5 +1,8 @@
 package tests.ui;
 
+import io.qameta.allure.Epic;
+import io.qameta.allure.Step;
+import io.qameta.allure.Story;
 import ui.page.LaunchesPage;
 import ui.page.LaunchesPageLocators;
 import ui.page.LoginPage;
@@ -11,9 +14,11 @@ import api.RpConfig;
 
 import static utils.GenerateName.generateName;
 
+@Epic("UI Tests")
 public class LaunchesTest extends BaseUiTest {
     private static final Logger logger = LogManager.getLogger(LaunchesTest.class);
 
+    @Story("Add new filter")
     @Test(groups = "UI", description = "UI Test")
     public void testAddNewFilter() {
         logger.info("=== testAddNewFilter START ===");
@@ -31,6 +36,7 @@ public class LaunchesTest extends BaseUiTest {
 
     }
 
+    @Story("Clone filter")
     @Test(groups = "UI", description = "UI Test")
     public void testCloneFilter() {
         logger.info("=== testCloneFilter START ===");
@@ -52,6 +58,7 @@ public class LaunchesTest extends BaseUiTest {
                 LaunchesPageLocators.filterByNameAddXPathTemplate, cloneName));
     }
 
+    @Story("Delete filter")
     @Test(groups = "UI", description = "UI Test")
     public void testDeleteFilter() {
         logger.info("=== testDeleteFilter START ===");
@@ -69,6 +76,7 @@ public class LaunchesTest extends BaseUiTest {
                 LaunchesPageLocators.filterByNameAddXPathTemplate, filterName));
     }
 
+    @Story("Edit filter")
     @Test(groups = "UI", description = "UI Test")
     public void testEditFilter() {
         logger.info("=== testEditFilter START ===");
@@ -86,5 +94,10 @@ public class LaunchesTest extends BaseUiTest {
 
         Assert.assertTrue(verifyElementVisibleByXPath(
                 LaunchesPageLocators.filterByNameAddXPathTemplate, newName));
+    }
+
+    @Step("{step}")
+    private void logStep(String step) {
+        logger.info("[STEP] {}", step);
     }
 }
