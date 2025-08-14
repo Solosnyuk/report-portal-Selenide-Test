@@ -75,10 +75,13 @@ jobs:
         mkdir -p target/allure-results-flat
         find target/allure-results -name "*.json" -exec cp {} target/allure-results-flat \;
         mv target/allure-results-flat target/allure-results
+        
     - name: Generate Allure report
+      working-directory: ${{ github.workspace }}
       run: mvn allure:report
 
     - name: Deploy to GitHub Pages
+      working-directory: ${{ github.workspace }}
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
