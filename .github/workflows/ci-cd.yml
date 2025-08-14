@@ -64,16 +64,24 @@ jobs:
        pattern: allure-*-results
        merge-multiple: true
 
-    - name: Generate Allure report 
-      run: | 
-       mvn allure:report 
-       echo "Allure Report: 
-       https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/" >> $GITHUB_STEP_SUMMARY
-    
+    - name: List downloaded results
+      run: ls -R allure-results || echo "❌ No allure results found"
+
+    - name: Generate Allure report
+      run: |
+       mvn allure:report
+       if [ -f target/allure-report/index.html ]; then
+         echo "✅ Allure Report: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/" >> $GITHUB_STEP_SUMMARY
+       else
+         echo "❌ Allure report not generated" >> $GITHUB_STEP_SUMMARY
+         exit 1
+       fi
+
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-       github_token: ${{ secrets.GITHUB_TOKEN }}
-       publish_dir: target/allure-report
-       keep_files: true
-       force_orphan: true
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: target/allure-report
+        keep_files: true
+        force_orphan: true
+        enable_jekyll: false
