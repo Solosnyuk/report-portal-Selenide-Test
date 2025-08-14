@@ -55,29 +55,19 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Download API results
+    - name: Download reports
       uses: actions/download-artifact@v4
       with:
-        name: allure-api
-        path: target/allure-results/api
-
-    - name: Download UI results
-      uses: actions/download-artifact@v4
-      with:
-        name: allure-ui
-        path: target/allure-results/ui
-
+       path: target/allure-results
+       pattern: allure-*-results
+       merge-multiple: true
 
     - name: Flatten Allure results
       run: |
-        cp -r target/allure-results/api/* target/allure-results/
-        cp -r target/allure-results/api/** target/allure-results/
-        cp -r target/allure-results/ui/* target/allure-results/
-        cp -r target/allure-results/ui/** target/allure-results/
-
-        
+        mkdir -p target/allure-results-flat
+        find target/allure-results -name "*.json" -exec cp {} target/allure-results-flat \;
+        mv target/allure-results-flat target/allure-results
     - name: Generate Allure report
-      working-directory: ${{ github.workspace }}
       run: mvn allure:report
 
     - name: Deploy to GitHub Pages
