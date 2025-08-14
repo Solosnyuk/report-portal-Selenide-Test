@@ -60,9 +60,9 @@ jobs:
     - name: Download reports
       uses: actions/download-artifact@v4
       with:
-        path: target/allure-results
-        pattern: allure-*-results
-        merge-multiple: true
+       path: allure-results
+       pattern: allure-*-results
+       merge-multiple: true
 
     - name: Generate Allure report
       run: |
