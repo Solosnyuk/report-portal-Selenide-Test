@@ -64,10 +64,17 @@ jobs:
        pattern: allure-*-results
        merge-multiple: true
 
-    - name: Generate Allure report
+    - name: Install Allure CLI
       run: |
-       mvn allure:report
-       echo "Allure Report: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/" >> $GITHUB_STEP_SUMMARY
+       wget https://github.com/allure-framework/allure2/releases/download/2.27.0/allure-2.27.0.tgz
+       tar -xzf allure-2.27.0.tgz
+       sudo mv allure-2.27.0 /opt/allure
+       sudo ln -s /opt/allure/bin/allure /usr/bin/allure
+
+    - name: Generate Allure report via CLI
+      run: |
+       allure generate target/allure-results --clean -o target/allure-report
+
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
