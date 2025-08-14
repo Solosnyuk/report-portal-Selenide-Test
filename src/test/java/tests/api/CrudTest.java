@@ -2,15 +2,18 @@ package tests.api;
 
 import api.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Story;
 import io.restassured.response.Response;
-import jdk.jfr.Description;
 import org.testng.annotations.Test;
 import api.pojos.CreateLaunchResponse;
 import api.pojos.PutLaunchRequest;
 import static org.assertj.core.api.Assertions.assertThat;
 
+@Epic("API Tests")
 public class CrudTest extends BaseApiTest {
 
+    @Story("Create Launch")
     @Test(groups = "API", description = "API Test")
     public void createLaunchTest() throws Exception {
         logger.info("[ТЕСТ] createLaunchTest запущен");
@@ -21,6 +24,7 @@ public class CrudTest extends BaseApiTest {
         assertThat(response.getStatusCode()).isEqualTo(201);
     }
 
+    @Story("Update Launch")
     @Test(groups = "API", description = "API Test")
     public void updateLaunchTest() throws Exception {
         logger.info("[ТЕСТ] updateLaunchTest запущен");
@@ -41,6 +45,7 @@ public class CrudTest extends BaseApiTest {
         assertThat(putResponse.getStatusCode()).isEqualTo(200);
     }
 
+    @Story("Get Launch")
     @Test(groups = "API", description = "API Test")
     public void getLaunchTest() throws Exception {
         logger.info("[ТЕСТ] getLaunchTest запущен");
@@ -58,6 +63,7 @@ public class CrudTest extends BaseApiTest {
         assertThat(getResponse.getStatusCode()).isEqualTo(200);
     }
 
+    @Story("Get Non-Existing Launch")
     @Test(groups = "API", description = "API Test")
     public void getNonExistingLaunchTest() {
         logger.info("[ТЕСТ] getNonExistingLaunchTest запущен");
@@ -69,6 +75,7 @@ public class CrudTest extends BaseApiTest {
         assertThat(response.getStatusCode()).isEqualTo(404);
     }
 
+    @Story("Delete Non-Existing Launch")
     @Test(groups = "API", description = "API Test")
     public void deleteNonExistingLaunchTest() {
         logger.info("[ТЕСТ] deleteNonExistingLaunchTest запущен");
