@@ -81,10 +81,13 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>io.qameta.allure</groupId>
-                <artifactId>allure-maven</artifactId>
-                <version>2.11.2</version>
-            </plugin>
+                   <groupId>io.qameta.allure</groupId>
+                    <artifactId>allure-maven</artifactId>
+                    <version>2.11.2</version>
+                    <configuration>
+                      <reportDirectory>target/allure-report</reportDirectory>
+                  </configuration>
+          </plugin>
         </plugins>
     </build>
 
