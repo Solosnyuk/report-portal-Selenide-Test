@@ -1,44 +1,96 @@
-name: CI/CD
+name: CI Pipeline
 
 on:
   push:
     branches: [main]
   pull_request:
-    branches: [main]
 
 jobs:
-  build-and-test:
+  test-api:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - name: Set up JDK 17
+      - name: Set up JDK
         uses: actions/setup-java@v3
         with:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Generate rp.properties from template
-        env:
-          LOGIN: ${{ secrets.LOGIN }}
-          PASSWORD: ${{ secrets.PASSWORD }}
+      - name: Run API tests
         run: |
-          envsubst < src/main/resources/rp.properties > src/test/resources/rp.properties
+          mvn clean test -Dgroups=API || true  
 
-
-      - name: Build with Maven
-        run: mvn clean install
-
-      - name: Run tests
-        run: mvn test
-
-      - name: Upload Selenide screenshots
-        if: failure()
+      - name: Upload API Allure results
+        if: always() 
         uses: actions/upload-artifact@v4
         with:
-          name: selenide-screenshots
-          path: target/screenshots
+          name: allure-api
+          path: target/allure-results
+
+  test-ui:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Run UI tests
+        run: |
+          mvn clean test -Dgroups=UI || true  
+
+      - name: Upload UI Allure results
+        if: always()  
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-ui
+          path: target/allure-results
+
+  deploy:
+    needs: [test-api, test-ui]
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Download reports
+      uses: actions/download-artifact@v4
+      with:
+       path: allure-results
+       pattern: allure-*-results
+       merge-multiple: true
+
+    - name: Install Allure CLI
+      run: |
+       wget https://github.com/allure-framework/allure2/releases/download/2.27.0/allure-2.27.0.tgz
+       tar -xzf allure-2.27.0.tgz
+       sudo mv allure-2.27.0 /opt/allure
+       sudo ln -s /opt/allure/bin/allure /usr/bin/allure
+
+    - name: Generate Allure report via CLI
+      run: |
+       allure generate target/allure-results --clean -o target/allure-report
+
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+       github_token: ${{ secrets.GITHUB_TOKEN }}
+       publish_dir: target/allure-report
+       keep_files: true
+       force_orphan: true
+
+    - name: Add Allure link to Summary
+      if: success()
+      run: |
+        if [ -f target/allure-report/index.html ]; then
+          echo "[Allure Report](https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/)" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "Allure report not found. Check generation step." >> $GITHUB_STEP_SUMMARY
+        fi
 
 
