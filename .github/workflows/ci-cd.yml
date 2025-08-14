@@ -66,8 +66,8 @@ jobs:
     - name: Download UI results
       uses: actions/download-artifact@v4
       with:
-       name: allure-ui
-       path: target/allure-results/ui
+        name: allure-ui
+        path: target/allure-results/ui
 
 
     - name: Flatten Allure results
