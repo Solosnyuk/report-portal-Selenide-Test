@@ -23,6 +23,8 @@ public class BaseUiTest {
         Configuration.browser = "chrome";
         Configuration.headless = true;
         Selenide.open(RpConfig.getConfig().getEndpoint());
+        WebDriverRunner.getWebDriver();
+        Selenide.sleep(500);
     }
 
     @AfterMethod
