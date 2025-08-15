@@ -26,7 +26,7 @@ public class LaunchesPage {
                 "//div[contains(@class, 'filterItem__icon--zcepO')]");
         static SelenideElement buttonEditFilter = $x("//button[@title='Edit']");
 
-    public static void clickOpenLaunchesPage() {
+    public void clickOpenLaunchesPage() {
         buttonLaunches.click();
     }
 
@@ -34,19 +34,19 @@ public class LaunchesPage {
         buttonAddFIlter.click();
     }
 
-    public static void clickButtonSaveFilter() {
+    public void clickButtonSaveFilter() {
         buttonSaveFilter.click();
     }
 
-    public static void clickButtonAddFilterSave() {
+    public void clickButtonAddFilterSave() {
         buttonAddFilterSave.click();
     }
 
-    public static void clickCloneFilter() {
+    public void clickCloneFilter() {
         buttonCloneFilter.click();
     }
 
-    public static void clickButtonDeleteFilter() {
+    public void clickButtonDeleteFilter() {
         buttonDeleteFIlter.click();
     }
 
@@ -68,7 +68,7 @@ public class LaunchesPage {
         buttonUpdateFilterEdit.click();
     }
 
-    public static void addNewFilter(String nameFilter,String containsText) {
+    public void addNewFilter(String nameFilter,String containsText) {
         clickAddFilter();
         sendContainsEnterName(containsText);
         clickButtonSaveFilter();
@@ -76,7 +76,7 @@ public class LaunchesPage {
         clickButtonAddFilterSave();
     }
 
-    public static void editNameFilter(String newFilterName){
+    public void editNameFilter(String newFilterName){
         LaunchesPage.clickButtonEditFilter();
         LaunchesPage.sendNameNewFilter(newFilterName);
         LaunchesPage.clickButtonUpdateFilterEdit();
