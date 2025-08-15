@@ -71,6 +71,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ${{ github.workspace }}/target/allure-report
-
-      - name: Show Allure report URL
-        run: echo "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"    
