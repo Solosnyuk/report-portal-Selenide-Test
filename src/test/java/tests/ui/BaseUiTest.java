@@ -1,9 +1,11 @@
 package tests.ui;
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.WebDriverRunner;
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import api.RpConfig;
 import ui.page.LaunchesPageLocators;
@@ -20,7 +22,7 @@ public class BaseUiTest {
     public void setUp() {
         Configuration.browser = "chrome";
         Configuration.headless = true;
-        open(RpConfig.getConfig().getEndpoint());
+        Selenide.open(RpConfig.getConfig().getEndpoint());
     }
 
     @AfterMethod

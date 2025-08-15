@@ -23,7 +23,7 @@ public class LoginPage {
         loginButton.click();
     }
 
-    public static void login(String login, String password) {
+    public void login(String login, String password) {
         setLogin(login);
         setPassword(password);
         clickSetSignInButton();
