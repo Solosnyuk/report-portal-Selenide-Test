@@ -1,0 +1,91 @@
+[ {
+  "uid" : "bc6387ae7e2033ec",
+  "name" : "API Test",
+  "time" : {
+    "start" : 1755249963673,
+    "stop" : 1755249964350,
+    "duration" : 677
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "b25fb6d83cc5422a",
+  "name" : "API Test",
+  "time" : {
+    "start" : 1755249963342,
+    "stop" : 1755249963669,
+    "duration" : 327
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9209bab7930f5c37",
+  "name" : "UI Test",
+  "time" : {
+    "start" : 1755249958978,
+    "stop" : 1755249958980,
+    "duration" : 2
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "e8f844049ec6e9c6",
+  "name" : "API Test",
+  "time" : {
+    "start" : 1755249962613,
+    "stop" : 1755249963337,
+    "duration" : 724
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "501f07c7d965e349",
+  "name" : "API Test",
+  "time" : {
+    "start" : 1755249960303,
+    "stop" : 1755249962205,
+    "duration" : 1902
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e54dfc16a8ee6204",
+  "name" : "UI Test",
+  "time" : {
+    "start" : 1755249958771,
+    "stop" : 1755249958934,
+    "duration" : 163
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "6f66d022ec959b9e",
+  "name" : "UI Test",
+  "time" : {
+    "start" : 1755249958986,
+    "stop" : 1755249958988,
+    "duration" : 2
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "de6638cbe5bfb560",
+  "name" : "API Test",
+  "time" : {
+    "start" : 1755249962257,
+    "stop" : 1755249962609,
+    "duration" : 352
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d147527c63405095",
+  "name" : "UI Test",
+  "time" : {
+    "start" : 1755249958993,
+    "stop" : 1755249958994,
+    "duration" : 1
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

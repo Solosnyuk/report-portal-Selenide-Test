@@ -1,0 +1,5 @@
+[ {
+  "name" : "Maven",
+  "type" : "maven",
+  "buildName" : "report-portal-Selenide-Test"
+} ]

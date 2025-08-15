@@ -1,0 +1,68 @@
+{
+  "uid" : "de6638cbe5bfb560",
+  "name" : "API Test",
+  "fullName" : "tests.api.CrudTest.deleteNonExistingLaunchTest",
+  "historyId" : "d3aa75855210a348a4152cce6082545a",
+  "time" : {
+    "start" : 1755249962257,
+    "stop" : 1755249962609,
+    "duration" : 352
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.api.CrudTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.api.CrudTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "deleteNonExistingLaunchTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.api.CrudTest"
+  }, {
+    "name" : "host",
+    "value" : "pkrvmsl9tci6h6u"
+  }, {
+    "name" : "thread",
+    "value" : "2166@pkrvmsl9tci6h6u.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Delete Non-Existing Launch"
+  }, {
+    "name" : "epic",
+    "value" : "API Tests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "de6638cbe5bfb560.json",
+  "parameterValues" : [ ]
+}
