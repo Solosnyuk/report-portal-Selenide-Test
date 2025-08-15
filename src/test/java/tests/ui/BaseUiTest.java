@@ -22,6 +22,8 @@ public class BaseUiTest {
     public void setUp() {
         Configuration.headless = true;
         Selenide.open(RpConfig.getConfig().getEndpoint());
+        WebDriverRunner.getWebDriver();
+        Selenide.sleep(500);
     }
 
     @AfterMethod
