@@ -4,10 +4,10 @@
     "uid" : "ba457c5104c0b56216141dfec87dedf8",
     "name" : "API Tests",
     "statistic" : {
-      "failed" : 2,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 3,
+      "passed" : 4,
       "unknown" : 0,
       "total" : 5
     }

@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "bc6387ae7e2033ec",
+      "uid" : "da51ed9584adf956",
       "status" : "failed",
       "statusDetails" : "\nexpected: 200\n but was: 403",
       "time" : {
-        "start" : 1755249963673,
-        "stop" : 1755249964350,
-        "duration" : 677
+        "start" : 1755251389645,
+        "stop" : 1755251390682,
+        "duration" : 1037
       }
     } ]
   },
@@ -29,12 +29,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "de6638cbe5bfb560",
+      "uid" : "ecad8f0a4e8b2d8",
       "status" : "passed",
       "time" : {
-        "start" : 1755249962257,
-        "stop" : 1755249962609,
-        "duration" : 352
+        "start" : 1755251387542,
+        "stop" : 1755251388070,
+        "duration" : 528
       }
     } ]
   },
@@ -48,12 +48,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "501f07c7d965e349",
+      "uid" : "bf4f37caeb290b2a",
       "status" : "passed",
       "time" : {
-        "start" : 1755249960303,
-        "stop" : 1755249962205,
-        "duration" : 1902
+        "start" : 1755251385365,
+        "stop" : 1755251387494,
+        "duration" : 2129
       }
     } ]
   },
@@ -67,13 +67,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e54dfc16a8ee6204",
+      "uid" : "b547f3b6f2ee3733",
       "status" : "broken",
       "statusDetails" : "No webdriver is bound to current thread: 1. You need to call open(url) first.",
       "time" : {
-        "start" : 1755249958771,
-        "stop" : 1755249958934,
-        "duration" : 163
+        "start" : 1755251396589,
+        "stop" : 1755251396799,
+        "duration" : 210
       }
     } ]
   },
@@ -87,32 +87,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b25fb6d83cc5422a",
+      "uid" : "68a43ac791ba3419",
       "status" : "passed",
       "time" : {
-        "start" : 1755249963342,
-        "stop" : 1755249963669,
-        "duration" : 327
+        "start" : 1755251389136,
+        "stop" : 1755251389642,
+        "duration" : 506
       }
     } ]
   },
   "bbdccc03daec763e0b1096918e98f53c" : {
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e8f844049ec6e9c6",
-      "status" : "failed",
-      "statusDetails" : "\nexpected: 200\n but was: 403",
+      "uid" : "9cbe3a9239ef46ad",
+      "status" : "passed",
       "time" : {
-        "start" : 1755249962613,
-        "stop" : 1755249963337,
-        "duration" : 724
+        "start" : 1755251388075,
+        "stop" : 1755251389133,
+        "duration" : 1058
       }
     } ]
   },
@@ -126,13 +125,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d147527c63405095",
+      "uid" : "ff5048cf5d714e37",
       "status" : "broken",
       "statusDetails" : "No webdriver is bound to current thread: 1. You need to call open(url) first.",
       "time" : {
-        "start" : 1755249958993,
-        "stop" : 1755249958994,
-        "duration" : 1
+        "start" : 1755251396859,
+        "stop" : 1755251396861,
+        "duration" : 2
       }
     } ]
   },
@@ -146,12 +145,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6f66d022ec959b9e",
+      "uid" : "9f75bd9b0c62415f",
       "status" : "broken",
       "statusDetails" : "No webdriver is bound to current thread: 1. You need to call open(url) first.",
       "time" : {
-        "start" : 1755249958986,
-        "stop" : 1755249958988,
+        "start" : 1755251396853,
+        "stop" : 1755251396855,
         "duration" : 2
       }
     } ]
@@ -166,12 +165,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "9209bab7930f5c37",
+      "uid" : "35a31005275ff2ec",
       "status" : "broken",
       "statusDetails" : "No webdriver is bound to current thread: 1. You need to call open(url) first.",
       "time" : {
-        "start" : 1755249958978,
-        "stop" : 1755249958980,
+        "start" : 1755251396845,
+        "stop" : 1755251396847,
         "duration" : 2
       }
     } ]
