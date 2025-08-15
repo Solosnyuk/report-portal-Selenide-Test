@@ -18,7 +18,8 @@ public class BaseUiTest {
 
     @BeforeMethod
     public void setUp() {
-       // Configuration.headless = true;
+        Configuration.browser = "chrome";
+        Configuration.headless = true;
         open(RpConfig.getConfig().getEndpoint());
     }
 
