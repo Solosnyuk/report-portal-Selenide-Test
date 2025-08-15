@@ -2,30 +2,111 @@
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
   "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "\nexpected: 201\n but was: 401",
+      "children" : [ {
+        "name" : "API Test",
+        "uid" : "dc7cfeca738aeae2",
+        "parentUid" : "f787d4a7a2bc631a1b990fb7520ad314",
+        "status" : "failed",
+        "time" : {
+          "start" : 1755286273014,
+          "stop" : 1755286274995,
+          "duration" : 1981
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f787d4a7a2bc631a1b990fb7520ad314"
+    }, {
+      "name" : "\nexpected: 404\n but was: 401",
+      "children" : [ {
+        "name" : "API Test",
+        "uid" : "1135398be2726b0f",
+        "parentUid" : "9a2866eaa2173959a0f5316c76babd41",
+        "status" : "failed",
+        "time" : {
+          "start" : 1755286275049,
+          "stop" : 1755286275512,
+          "duration" : 463
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "API Test",
+        "uid" : "fcbd37ab3dc5ac4e",
+        "parentUid" : "9a2866eaa2173959a0f5316c76babd41",
+        "status" : "failed",
+        "time" : {
+          "start" : 1755286276008,
+          "stop" : 1755286276451,
+          "duration" : 443
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9a2866eaa2173959a0f5316c76babd41"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
     "name" : "Test defects",
     "children" : [ {
+      "name" : "Unrecognized field \"error_description\" (class api.pojos.CreateLaunchResponse), not marked as ignorable (2 known properties: \"number\", \"id\"])\n at [Source: (String)\"{\n  \"error_description\" : \"Invalid access token\",\n  \"error\" : \"invalid_token\"\n}\"; line: 2, column: 26] (through reference chain: api.pojos.CreateLaunchResponse[\"error_description\"])",
+      "children" : [ {
+        "name" : "API Test",
+        "uid" : "2476f3e106ad367",
+        "parentUid" : "947fc643ce963daac4fcc2c4d2433fb0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1755286275518,
+          "stop" : 1755286276003,
+          "duration" : 485
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "API Test",
+        "uid" : "6d4b3e2e93c452b5",
+        "parentUid" : "947fc643ce963daac4fcc2c4d2433fb0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1755286276455,
+          "stop" : 1755286276907,
+          "duration" : 452
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "947fc643ce963daac4fcc2c4d2433fb0"
+    }, {
       "name" : "No webdriver is bound to current thread: 1. You need to call open(url) first.",
       "children" : [ {
         "name" : "UI Test",
-        "uid" : "78fa2abed1e23bad",
+        "uid" : "e0bbd3b229186b71",
         "parentUid" : "fb591d850b490b03d83413a9291646b3",
         "status" : "broken",
         "time" : {
-          "start" : 1755254036046,
-          "stop" : 1755254036175,
-          "duration" : 129
+          "start" : 1755286282853,
+          "stop" : 1755286283104,
+          "duration" : 251
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "UI Test",
-        "uid" : "f6dbd8426aa17c52",
+        "uid" : "120def3e625cf95c",
         "parentUid" : "fb591d850b490b03d83413a9291646b3",
         "status" : "broken",
         "time" : {
-          "start" : 1755254036227,
-          "stop" : 1755254036229,
+          "start" : 1755286283148,
+          "stop" : 1755286283150,
           "duration" : 2
         },
         "flaky" : false,
@@ -33,12 +114,12 @@
         "parameters" : [ ]
       }, {
         "name" : "UI Test",
-        "uid" : "d1109d3c6b943f41",
+        "uid" : "700c38f4638436a0",
         "parentUid" : "fb591d850b490b03d83413a9291646b3",
         "status" : "broken",
         "time" : {
-          "start" : 1755254036235,
-          "stop" : 1755254036237,
+          "start" : 1755286283157,
+          "stop" : 1755286283159,
           "duration" : 2
         },
         "flaky" : false,
@@ -46,13 +127,13 @@
         "parameters" : [ ]
       }, {
         "name" : "UI Test",
-        "uid" : "47ac32dd4f0540ad",
+        "uid" : "e77ab0b6ad35e8b2",
         "parentUid" : "fb591d850b490b03d83413a9291646b3",
         "status" : "broken",
         "time" : {
-          "start" : 1755254036242,
-          "stop" : 1755254036244,
-          "duration" : 2
+          "start" : 1755286283163,
+          "stop" : 1755286283164,
+          "duration" : 1
         },
         "flaky" : false,
         "newFailed" : false,
