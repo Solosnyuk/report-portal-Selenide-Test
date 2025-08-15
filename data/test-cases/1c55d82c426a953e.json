@@ -1,11 +1,11 @@
 {
-  "uid" : "2571fdaaae779506",
+  "uid" : "1c55d82c426a953e",
   "name" : "UI Test",
   "fullName" : "tests.ui.LaunchesTest.testCloneFilter",
   "historyId" : "af822e40fee29edec09b1d5a9e03dca8",
   "time" : {
-    "start" : 1755251626714,
-    "stop" : 1755251626716,
+    "start" : 1755251637103,
+    "stop" : 1755251637105,
     "duration" : 2
   },
   "status" : "broken",
@@ -35,10 +35,10 @@
     "value" : "tests.ui.LaunchesTest"
   }, {
     "name" : "host",
-    "value" : "pkrvmubgrv54qmi"
+    "value" : "pkrvmsl9tci6h6u"
   }, {
     "name" : "thread",
-    "value" : "2299@pkrvmubgrv54qmi.main(1)"
+    "value" : "2337@pkrvmsl9tci6h6u.main(1)"
   }, {
     "name" : "framework",
     "value" : "testng"
@@ -69,6 +69,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "2571fdaaae779506.json",
+  "source" : "1c55d82c426a953e.json",
   "parameterValues" : [ ]
 }

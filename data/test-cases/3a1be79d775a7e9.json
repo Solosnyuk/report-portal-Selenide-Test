@@ -1,12 +1,12 @@
 {
-  "uid" : "31ca22a2147d253a",
+  "uid" : "3a1be79d775a7e9",
   "name" : "API Test",
-  "fullName" : "tests.api.CrudTest.deleteNonExistingLaunchTest",
-  "historyId" : "d3aa75855210a348a4152cce6082545a",
+  "fullName" : "tests.api.CrudTest.createLaunchTest",
+  "historyId" : "20a46ef4dd8153dcdc4ee53cab6bbafa",
   "time" : {
-    "start" : 1755251619055,
-    "stop" : 1755251619416,
-    "duration" : 361
+    "start" : 1755251627213,
+    "stop" : 1755251629140,
+    "duration" : 1927
   },
   "status" : "passed",
   "flaky" : false,
@@ -21,7 +21,7 @@
     "value" : "tests.api.CrudTest"
   }, {
     "name" : "testMethod",
-    "value" : "deleteNonExistingLaunchTest"
+    "value" : "createLaunchTest"
   }, {
     "name" : "parentSuite",
     "value" : "Surefire suite"
@@ -33,10 +33,10 @@
     "value" : "tests.api.CrudTest"
   }, {
     "name" : "host",
-    "value" : "pkrvmubgrv54qmi"
+    "value" : "pkrvmsl9tci6h6u"
   }, {
     "name" : "thread",
-    "value" : "2173@pkrvmubgrv54qmi.main(1)"
+    "value" : "2202@pkrvmsl9tci6h6u.main(1)"
   }, {
     "name" : "framework",
     "value" : "testng"
@@ -45,7 +45,7 @@
     "value" : "java"
   }, {
     "name" : "story",
-    "value" : "Delete Non-Existing Launch"
+    "value" : "Create Launch"
   }, {
     "name" : "epic",
     "value" : "API Tests"
@@ -63,6 +63,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "31ca22a2147d253a.json",
+  "source" : "3a1be79d775a7e9.json",
   "parameterValues" : [ ]
 }
