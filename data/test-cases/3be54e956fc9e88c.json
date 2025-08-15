@@ -1,12 +1,12 @@
 {
-  "uid" : "d2a7942efdcac57c",
+  "uid" : "3be54e956fc9e88c",
   "name" : "API Test",
   "fullName" : "tests.api.CrudTest.getLaunchTest",
   "historyId" : "bbdccc03daec763e0b1096918e98f53c",
   "time" : {
-    "start" : 1755286278920,
-    "stop" : 1755286279388,
-    "duration" : 468
+    "start" : 1755286521666,
+    "stop" : 1755286522006,
+    "duration" : 340
   },
   "status" : "broken",
   "statusMessage" : "Unrecognized field \"error_description\" (class api.pojos.CreateLaunchResponse), not marked as ignorable (2 known properties: \"number\", \"id\"])\n at [Source: (String)\"{\n  \"error_description\" : \"Invalid access token\",\n  \"error\" : \"invalid_token\"\n}\"; line: 2, column: 26] (through reference chain: api.pojos.CreateLaunchResponse[\"error_description\"])",
@@ -38,7 +38,7 @@
     "value" : "pkrvmubgrv54qmi"
   }, {
     "name" : "thread",
-    "value" : "2181@pkrvmubgrv54qmi.main(1)"
+    "value" : "2244@pkrvmubgrv54qmi.main(1)"
   }, {
     "name" : "framework",
     "value" : "testng"
@@ -69,6 +69,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "d2a7942efdcac57c.json",
+  "source" : "3be54e956fc9e88c.json",
   "parameterValues" : [ ]
 }
