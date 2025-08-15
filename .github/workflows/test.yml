@@ -1,0 +1,66 @@
+name: test123
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+    
+jobs:
+  test-api:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Run API tests
+        run: |
+          mvn clean test -Dgroups=API || true  
+
+      - name: Upload API Allure results
+        if: always() 
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-api
+          path: target/allure-results
+
+      - name: Run UI tests
+        run: |
+          mvn clean test -Dgroups=UI || true  
+      - name: Upload UI Allure results
+        if: always()  
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-ui
+          path: target/allure-results
+
+      - name: Download API results
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-api
+          path: target/allure-results/api
+
+      - name: Download UI results
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-ui
+          path: target/allure-results/ui
+      - name: Flatten Allure results
+        run: |
+          mkdir -p target/allure-results
+          cp -r target/allure-results/api/. target/allure-results/
+          cp -r target/allure-results/ui/. target/allure-results/
+      - name: Generate Allure report
+        working-directory: ${{ github.workspace }}
+        run: mvn allure:report
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ${{ github.workspace }}/target/allure-report
