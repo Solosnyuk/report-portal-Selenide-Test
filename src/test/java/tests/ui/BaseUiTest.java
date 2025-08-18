@@ -4,8 +4,8 @@ import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.WebDriverRunner;
 import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import api.RpConfig;
 import ui.page.LaunchesPageLocators;
@@ -21,7 +21,11 @@ public class BaseUiTest {
 
     @BeforeMethod(alwaysRun = true)
     public void setUp() {
-        Configuration.headless = true;
+       Configuration.browserCapabilities = new ChromeOptions()
+                .addArguments(
+                        "--no-sandbox",
+                        "--disable-dev-shm-usage",
+                        "--window-size=1920,1080");
         Selenide.open(RpConfig.getConfig().getEndpoint());
     }
 
