@@ -21,7 +21,7 @@ public class BaseUiTest {
 
     @BeforeMethod(alwaysRun = true)
     public void setUp() {
-        Configuration.headless = true;
+        Configuration.browserSize = "1920x1080";
         Selenide.open(RpConfig.getConfig().getEndpoint());
     }
 
