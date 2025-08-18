@@ -1,12 +1,12 @@
 {
-  "uid" : "73013806c58ea1ce",
+  "uid" : "a27f20b62f427d32",
   "name" : "UI Test",
   "fullName" : "tests.ui.LaunchesTest.testAddNewFilter",
   "historyId" : "dd39288a0c31cc8f4f9e9092a06440e3",
   "time" : {
-    "start" : 1755504204065,
-    "stop" : 1755504204184,
-    "duration" : 119
+    "start" : 1755504469637,
+    "stop" : 1755504469766,
+    "duration" : 129
   },
   "status" : "broken",
   "statusMessage" : "No webdriver is bound to current thread: 1. You need to call open(url) first.",
@@ -38,7 +38,7 @@
     "value" : "pkrvmubgrv54qmi"
   }, {
     "name" : "thread",
-    "value" : "2326@pkrvmubgrv54qmi.main(1)"
+    "value" : "2408@pkrvmubgrv54qmi.main(1)"
   }, {
     "name" : "framework",
     "value" : "testng"
@@ -69,6 +69,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "73013806c58ea1ce.json",
+  "source" : "a27f20b62f427d32.json",
   "parameterValues" : [ ]
 }
