@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "7cf7352ca918e181",
+      "uid" : "c51f0a95b65e9d8f",
       "status" : "broken",
       "statusDetails" : "Unrecognized field \"error_description\" (class api.pojos.CreateLaunchResponse), not marked as ignorable (2 known properties: \"number\", \"id\"])\n at [Source: (String)\"{\n  \"error_description\" : \"Invalid access token\",\n  \"error\" : \"invalid_token\"\n}\"; line: 2, column: 26] (through reference chain: api.pojos.CreateLaunchResponse[\"error_description\"])",
       "time" : {
-        "start" : 1755505404669,
-        "stop" : 1755505405068,
-        "duration" : 399
+        "start" : 1755507346175,
+        "stop" : 1755507346489,
+        "duration" : 314
       }
     } ]
   },
@@ -29,13 +29,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "7b162fbe1428812f",
+      "uid" : "501f51a72dd42d62",
       "status" : "failed",
       "statusDetails" : "\nexpected: 404\n but was: 401",
       "time" : {
-        "start" : 1755505403439,
-        "stop" : 1755505403834,
-        "duration" : 395
+        "start" : 1755507345191,
+        "stop" : 1755507345515,
+        "duration" : 324
       }
     } ]
   },
@@ -49,33 +49,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c8d6424db76011d1",
+      "uid" : "8117fcfb4182123e",
       "status" : "failed",
       "statusDetails" : "\nexpected: 201\n but was: 401",
       "time" : {
-        "start" : 1755505401216,
-        "stop" : 1755505403378,
-        "duration" : 2162
+        "start" : 1755507343267,
+        "stop" : 1755507345134,
+        "duration" : 1867
       }
     } ]
   },
   "dd39288a0c31cc8f4f9e9092a06440e3" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c3a6d967c7d07ed7",
-      "status" : "broken",
-      "statusDetails" : "No webdriver is bound to current thread: 1. You need to call open(url) first.",
+      "uid" : "d6d75037e5f04258",
+      "status" : "passed",
       "time" : {
-        "start" : 1755505410732,
-        "stop" : 1755505410884,
-        "duration" : 152
+        "start" : 1755507363354,
+        "stop" : 1755507367406,
+        "duration" : 4052
       }
     } ]
   },
@@ -89,13 +88,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "68dad9d8834301f5",
+      "uid" : "92be6a8822bc76c1",
       "status" : "failed",
       "statusDetails" : "\nexpected: 404\n but was: 401",
       "time" : {
-        "start" : 1755505404268,
-        "stop" : 1755505404666,
-        "duration" : 398
+        "start" : 1755507345860,
+        "stop" : 1755507346171,
+        "duration" : 311
       }
     } ]
   },
@@ -109,73 +108,73 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b4a8e270468d2f8a",
+      "uid" : "dd88bcfa478bcdf8",
       "status" : "broken",
       "statusDetails" : "Unrecognized field \"error_description\" (class api.pojos.CreateLaunchResponse), not marked as ignorable (2 known properties: \"number\", \"id\"])\n at [Source: (String)\"{\n  \"error_description\" : \"Invalid access token\",\n  \"error\" : \"invalid_token\"\n}\"; line: 2, column: 26] (through reference chain: api.pojos.CreateLaunchResponse[\"error_description\"])",
       "time" : {
-        "start" : 1755505403839,
-        "stop" : 1755505404263,
-        "duration" : 424
-      }
-    } ]
-  },
-  "63ae0eff29784fa5e867ade3872bb144" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "12e36d263bfbaa6d",
-      "status" : "broken",
-      "statusDetails" : "No webdriver is bound to current thread: 1. You need to call open(url) first.",
-      "time" : {
-        "start" : 1755505410933,
-        "stop" : 1755505410935,
-        "duration" : 2
+        "start" : 1755507345521,
+        "stop" : 1755507345855,
+        "duration" : 334
       }
     } ]
   },
   "dff417ac8193f9392db7737e9ab4be88" : {
     "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
+      "failed" : 1,
+      "broken" : 0,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "21a2406ae58deaeb",
-      "status" : "broken",
-      "statusDetails" : "No webdriver is bound to current thread: 1. You need to call open(url) first.",
+      "uid" : "b370d7fc2ea42d8a",
+      "status" : "failed",
+      "statusDetails" : "Element not found {.inputOutside__input--Ad7Xu}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755507382606.2.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755507382606.2.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".inputOutside__input--Ad7Xu\"}",
       "time" : {
-        "start" : 1755505410939,
-        "stop" : 1755505410940,
-        "duration" : 1
+        "start" : 1755507378550,
+        "stop" : 1755507382657,
+        "duration" : 4107
+      }
+    } ]
+  },
+  "63ae0eff29784fa5e867ade3872bb144" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "86ab0305b7ba90da",
+      "status" : "failed",
+      "statusDetails" : "Element not found {.inputOutside__input--Ad7Xu}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755507377657.1.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755507377657.1.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".inputOutside__input--Ad7Xu\"}",
+      "time" : {
+        "start" : 1755507373597,
+        "stop" : 1755507377707,
+        "duration" : 4110
       }
     } ]
   },
   "af822e40fee29edec09b1d5a9e03dca8" : {
     "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
+      "failed" : 1,
+      "broken" : 0,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "429688afa2956908",
-      "status" : "broken",
-      "statusDetails" : "No webdriver is bound to current thread: 1. You need to call open(url) first.",
+      "uid" : "b106aa7f5788e69f",
+      "status" : "failed",
+      "statusDetails" : "Element not found {.inputOutside__input--Ad7Xu}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755507372681.0.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755507372681.0.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".inputOutside__input--Ad7Xu\"}",
       "time" : {
-        "start" : 1755505410925,
-        "stop" : 1755505410927,
-        "duration" : 2
+        "start" : 1755507368612,
+        "stop" : 1755507372757,
+        "duration" : 4145
       }
     } ]
   }
