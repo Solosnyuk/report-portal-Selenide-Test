@@ -4,87 +4,23 @@
   "children" : [ {
     "name" : "Product defects",
     "children" : [ {
-      "name" : "\nexpected: 201\n but was: 401",
+      "name" : "Element not found {By.xpath: //input[@class='inputOutside__input--Ad7Xu']}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755551141876.1.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755551141876.1.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@class='inputOutside__input--Ad7Xu']\"}",
       "children" : [ {
-        "name" : "API Test",
-        "uid" : "53e58e6b4e094964",
-        "parentUid" : "f787d4a7a2bc631a1b990fb7520ad314",
+        "name" : "UI Test",
+        "uid" : "89fc0e73773610b2",
+        "parentUid" : "80cb5789dc90eefe5384d0e28d22c6e7",
         "status" : "failed",
         "time" : {
-          "start" : 1755549921991,
-          "stop" : 1755549923774,
-          "duration" : 1783
+          "start" : 1755551137845,
+          "stop" : 1755551141949,
+          "duration" : 4104
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "f787d4a7a2bc631a1b990fb7520ad314"
-    }, {
-      "name" : "\nexpected: 404\n but was: 401",
-      "children" : [ {
-        "name" : "API Test",
-        "uid" : "c48855957ffdff03",
-        "parentUid" : "9a2866eaa2173959a0f5316c76babd41",
-        "status" : "failed",
-        "time" : {
-          "start" : 1755549923827,
-          "stop" : 1755549924152,
-          "duration" : 325
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "API Test",
-        "uid" : "1318024173a368fd",
-        "parentUid" : "9a2866eaa2173959a0f5316c76babd41",
-        "status" : "failed",
-        "time" : {
-          "start" : 1755549924796,
-          "stop" : 1755549925119,
-          "duration" : 323
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "9a2866eaa2173959a0f5316c76babd41"
+      "uid" : "80cb5789dc90eefe5384d0e28d22c6e7"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
-  }, {
-    "name" : "Test defects",
-    "children" : [ {
-      "name" : "Unrecognized field \"error_description\" (class api.pojos.CreateLaunchResponse), not marked as ignorable (2 known properties: \"number\", \"id\"])\n at [Source: (String)\"{\n  \"error_description\" : \"Invalid access token\",\n  \"error\" : \"invalid_token\"\n}\"; line: 2, column: 26] (through reference chain: api.pojos.CreateLaunchResponse[\"error_description\"])",
-      "children" : [ {
-        "name" : "API Test",
-        "uid" : "93bbfa588312fe89",
-        "parentUid" : "947fc643ce963daac4fcc2c4d2433fb0",
-        "status" : "broken",
-        "time" : {
-          "start" : 1755549924158,
-          "stop" : 1755549924792,
-          "duration" : 634
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "API Test",
-        "uid" : "38544d18c275fb02",
-        "parentUid" : "947fc643ce963daac4fcc2c4d2433fb0",
-        "status" : "broken",
-        "time" : {
-          "start" : 1755549925123,
-          "stop" : 1755549925727,
-          "duration" : 604
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "947fc643ce963daac4fcc2c4d2433fb0"
-    } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]
 }

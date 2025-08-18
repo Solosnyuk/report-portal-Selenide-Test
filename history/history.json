@@ -2,60 +2,57 @@
   "f9b92bd3753f0ba0ecf563ad2ece5b0a" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "38544d18c275fb02",
-      "status" : "broken",
-      "statusDetails" : "Unrecognized field \"error_description\" (class api.pojos.CreateLaunchResponse), not marked as ignorable (2 known properties: \"number\", \"id\"])\n at [Source: (String)\"{\n  \"error_description\" : \"Invalid access token\",\n  \"error\" : \"invalid_token\"\n}\"; line: 2, column: 26] (through reference chain: api.pojos.CreateLaunchResponse[\"error_description\"])",
+      "uid" : "fcc313f1e263c340",
+      "status" : "passed",
       "time" : {
-        "start" : 1755549925123,
-        "stop" : 1755549925727,
-        "duration" : 604
+        "start" : 1755551075173,
+        "stop" : 1755551076231,
+        "duration" : 1058
       }
     } ]
   },
   "d3aa75855210a348a4152cce6082545a" : {
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c48855957ffdff03",
-      "status" : "failed",
-      "statusDetails" : "\nexpected: 404\n but was: 401",
+      "uid" : "df9cd0d268502368",
+      "status" : "passed",
       "time" : {
-        "start" : 1755549923827,
-        "stop" : 1755549924152,
-        "duration" : 325
+        "start" : 1755551073336,
+        "stop" : 1755551073726,
+        "duration" : 390
       }
     } ]
   },
   "20a46ef4dd8153dcdc4ee53cab6bbafa" : {
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "53e58e6b4e094964",
-      "status" : "failed",
-      "statusDetails" : "\nexpected: 201\n but was: 401",
+      "uid" : "9ba35f977ca80ec3",
+      "status" : "passed",
       "time" : {
-        "start" : 1755549921991,
-        "stop" : 1755549923774,
-        "duration" : 1783
+        "start" : 1755551071272,
+        "stop" : 1755551073287,
+        "duration" : 2015
       }
     } ]
   },
@@ -69,56 +66,16 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "91ec3f906a9c642",
+      "uid" : "99777e7a2daa64d8",
       "status" : "passed",
       "time" : {
-        "start" : 1755549943269,
-        "stop" : 1755549948656,
-        "duration" : 5387
+        "start" : 1755551095122,
+        "stop" : 1755551101155,
+        "duration" : 6033
       }
     } ]
   },
   "31a203901a64d617bd12ef178ad5d4df" : {
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "1318024173a368fd",
-      "status" : "failed",
-      "statusDetails" : "\nexpected: 404\n but was: 401",
-      "time" : {
-        "start" : 1755549924796,
-        "stop" : 1755549925119,
-        "duration" : 323
-      }
-    } ]
-  },
-  "bbdccc03daec763e0b1096918e98f53c" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "93bbfa588312fe89",
-      "status" : "broken",
-      "statusDetails" : "Unrecognized field \"error_description\" (class api.pojos.CreateLaunchResponse), not marked as ignorable (2 known properties: \"number\", \"id\"])\n at [Source: (String)\"{\n  \"error_description\" : \"Invalid access token\",\n  \"error\" : \"invalid_token\"\n}\"; line: 2, column: 26] (through reference chain: api.pojos.CreateLaunchResponse[\"error_description\"])",
-      "time" : {
-        "start" : 1755549924158,
-        "stop" : 1755549924792,
-        "duration" : 634
-      }
-    } ]
-  },
-  "dff417ac8193f9392db7737e9ab4be88" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -128,12 +85,51 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "8103df4eec922efc",
+      "uid" : "db8fe7b90ba985f6",
       "status" : "passed",
       "time" : {
-        "start" : 1755549976219,
-        "stop" : 1755549982343,
-        "duration" : 6124
+        "start" : 1755551074812,
+        "stop" : 1755551075171,
+        "duration" : 359
+      }
+    } ]
+  },
+  "bbdccc03daec763e0b1096918e98f53c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a34788d5a3900df2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1755551073732,
+        "stop" : 1755551074809,
+        "duration" : 1077
+      }
+    } ]
+  },
+  "dff417ac8193f9392db7737e9ab4be88" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "89fc0e73773610b2",
+      "status" : "failed",
+      "statusDetails" : "Element not found {By.xpath: //input[@class='inputOutside__input--Ad7Xu']}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755551141876.1.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755551141876.1.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@class='inputOutside__input--Ad7Xu']\"}",
+      "time" : {
+        "start" : 1755551137845,
+        "stop" : 1755551141949,
+        "duration" : 4104
       }
     } ]
   },
@@ -147,12 +143,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "f4cb600faa82abcb",
+      "uid" : "30e929c64856a890",
       "status" : "passed",
       "time" : {
-        "start" : 1755549961932,
-        "stop" : 1755549971975,
-        "duration" : 10043
+        "start" : 1755551116744,
+        "stop" : 1755551126219,
+        "duration" : 9475
       }
     } ]
   },
@@ -166,12 +162,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d666152c696f60ce",
+      "uid" : "8eed1990d0266a89",
       "status" : "passed",
       "time" : {
-        "start" : 1755549952918,
-        "stop" : 1755549957798,
-        "duration" : 4880
+        "start" : 1755551105576,
+        "stop" : 1755551110587,
+        "duration" : 5011
       }
     } ]
   }
