@@ -35,11 +35,8 @@ public class BaseUiTest {
         Selenide.open(RpConfig.getConfig().getEndpoint());
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void tearDown() {
-        WebDriverRunner.getWebDriver().manage().deleteAllCookies();
-        executeJavaScript("window.localStorage.clear();");
-        executeJavaScript("window.sessionStorage.clear();");
         WebDriverRunner.closeWebDriver();
     }
 
