@@ -18,7 +18,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class BaseUiTest {
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void setUp() {
         Configuration.browser = "chrome";
         Configuration.headless = true;
