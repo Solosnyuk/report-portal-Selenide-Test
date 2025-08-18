@@ -1,0 +1,68 @@
+{
+  "uid" : "4994b3e05c661f5",
+  "name" : "API Test",
+  "fullName" : "tests.api.CrudTest.createLaunchTest",
+  "historyId" : "20a46ef4dd8153dcdc4ee53cab6bbafa",
+  "time" : {
+    "start" : 1755527085761,
+    "stop" : 1755527087751,
+    "duration" : 1990
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.api.CrudTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.api.CrudTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "createLaunchTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.api.CrudTest"
+  }, {
+    "name" : "host",
+    "value" : "pkrvmubgrv54qmi"
+  }, {
+    "name" : "thread",
+    "value" : "2180@pkrvmubgrv54qmi.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Create Launch"
+  }, {
+    "name" : "epic",
+    "value" : "API Tests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4994b3e05c661f5.json",
+  "parameterValues" : [ ]
+}

@@ -1,61 +1,59 @@
 {
   "f9b92bd3753f0ba0ecf563ad2ece5b0a" : {
     "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
+      "failed" : 1,
+      "broken" : 0,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c51f0a95b65e9d8f",
-      "status" : "broken",
-      "statusDetails" : "Unrecognized field \"error_description\" (class api.pojos.CreateLaunchResponse), not marked as ignorable (2 known properties: \"number\", \"id\"])\n at [Source: (String)\"{\n  \"error_description\" : \"Invalid access token\",\n  \"error\" : \"invalid_token\"\n}\"; line: 2, column: 26] (through reference chain: api.pojos.CreateLaunchResponse[\"error_description\"])",
+      "uid" : "5a7a1dc8f8799424",
+      "status" : "failed",
+      "statusDetails" : "\nexpected: 200\n but was: 403",
       "time" : {
-        "start" : 1755507346175,
-        "stop" : 1755507346489,
-        "duration" : 314
+        "start" : 1755527089520,
+        "stop" : 1755527090339,
+        "duration" : 819
       }
     } ]
   },
   "d3aa75855210a348a4152cce6082545a" : {
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "501f51a72dd42d62",
-      "status" : "failed",
-      "statusDetails" : "\nexpected: 404\n but was: 401",
+      "uid" : "243a7d98560c500f",
+      "status" : "passed",
       "time" : {
-        "start" : 1755507345191,
-        "stop" : 1755507345515,
-        "duration" : 324
+        "start" : 1755527087808,
+        "stop" : 1755527088226,
+        "duration" : 418
       }
     } ]
   },
   "20a46ef4dd8153dcdc4ee53cab6bbafa" : {
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "8117fcfb4182123e",
-      "status" : "failed",
-      "statusDetails" : "\nexpected: 201\n but was: 401",
+      "uid" : "4994b3e05c661f5",
+      "status" : "passed",
       "time" : {
-        "start" : 1755507343267,
-        "stop" : 1755507345134,
-        "duration" : 1867
+        "start" : 1755527085761,
+        "stop" : 1755527087751,
+        "duration" : 1990
       }
     } ]
   },
@@ -69,16 +67,35 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d6d75037e5f04258",
+      "uid" : "30d4c1c9c855bd1d",
       "status" : "passed",
       "time" : {
-        "start" : 1755507363354,
-        "stop" : 1755507367406,
-        "duration" : 4052
+        "start" : 1755527108275,
+        "stop" : 1755527113628,
+        "duration" : 5353
       }
     } ]
   },
   "31a203901a64d617bd12ef178ad5d4df" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5646196fc2f02d44",
+      "status" : "passed",
+      "time" : {
+        "start" : 1755527089103,
+        "stop" : 1755527089516,
+        "duration" : 413
+      }
+    } ]
+  },
+  "bbdccc03daec763e0b1096918e98f53c" : {
     "statistic" : {
       "failed" : 1,
       "broken" : 0,
@@ -88,33 +105,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "92be6a8822bc76c1",
+      "uid" : "93b91a803cb16ab0",
       "status" : "failed",
-      "statusDetails" : "\nexpected: 404\n but was: 401",
+      "statusDetails" : "\nexpected: 200\n but was: 403",
       "time" : {
-        "start" : 1755507345860,
-        "stop" : 1755507346171,
-        "duration" : 311
-      }
-    } ]
-  },
-  "bbdccc03daec763e0b1096918e98f53c" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "dd88bcfa478bcdf8",
-      "status" : "broken",
-      "statusDetails" : "Unrecognized field \"error_description\" (class api.pojos.CreateLaunchResponse), not marked as ignorable (2 known properties: \"number\", \"id\"])\n at [Source: (String)\"{\n  \"error_description\" : \"Invalid access token\",\n  \"error\" : \"invalid_token\"\n}\"; line: 2, column: 26] (through reference chain: api.pojos.CreateLaunchResponse[\"error_description\"])",
-      "time" : {
-        "start" : 1755507345521,
-        "stop" : 1755507345855,
-        "duration" : 334
+        "start" : 1755527088231,
+        "stop" : 1755527089098,
+        "duration" : 867
       }
     } ]
   },
@@ -128,13 +125,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b370d7fc2ea42d8a",
+      "uid" : "449a85c53a6996a4",
       "status" : "failed",
-      "statusDetails" : "Element not found {.inputOutside__input--Ad7Xu}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755507382606.2.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755507382606.2.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".inputOutside__input--Ad7Xu\"}",
+      "statusDetails" : "Element not found {.inputOutside__input--Ad7Xu}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755527127588.2.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755527127588.2.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".inputOutside__input--Ad7Xu\"}",
       "time" : {
-        "start" : 1755507378550,
-        "stop" : 1755507382657,
-        "duration" : 4107
+        "start" : 1755527123516,
+        "stop" : 1755527127655,
+        "duration" : 4139
       }
     } ]
   },
@@ -148,13 +145,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "86ab0305b7ba90da",
+      "uid" : "45a33a703bb2e488",
       "status" : "failed",
-      "statusDetails" : "Element not found {.inputOutside__input--Ad7Xu}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755507377657.1.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755507377657.1.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".inputOutside__input--Ad7Xu\"}",
+      "statusDetails" : "Element not found {.inputOutside__input--Ad7Xu}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755527123059.1.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755527123059.1.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".inputOutside__input--Ad7Xu\"}",
       "time" : {
-        "start" : 1755507373597,
-        "stop" : 1755507377707,
-        "duration" : 4110
+        "start" : 1755527118971,
+        "stop" : 1755527123125,
+        "duration" : 4154
       }
     } ]
   },
@@ -168,13 +165,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b106aa7f5788e69f",
+      "uid" : "26721595bb18d867",
       "status" : "failed",
-      "statusDetails" : "Element not found {.inputOutside__input--Ad7Xu}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755507372681.0.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755507372681.0.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".inputOutside__input--Ad7Xu\"}",
+      "statusDetails" : "Element not found {.inputOutside__input--Ad7Xu}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755527118493.0.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755527118493.0.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".inputOutside__input--Ad7Xu\"}",
       "time" : {
-        "start" : 1755507368612,
-        "stop" : 1755507372757,
-        "duration" : 4145
+        "start" : 1755527114392,
+        "stop" : 1755527118591,
+        "duration" : 4199
       }
     } ]
   }
