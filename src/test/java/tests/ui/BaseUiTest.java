@@ -11,7 +11,6 @@ import api.RpConfig;
 import ui.page.LaunchesPageLocators;
 
 import java.time.Duration;
-import java.util.Random;
 
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
@@ -21,11 +20,18 @@ public class BaseUiTest {
 
     @BeforeMethod(alwaysRun = true)
     public void setUp() {
-       Configuration.browserCapabilities = new ChromeOptions()
+        Configuration.headless = true;
+        Configuration.browser = "chrome";
+        Configuration.browserCapabilities = new ChromeOptions()
                 .addArguments(
                         "--no-sandbox",
                         "--disable-dev-shm-usage",
-                        "--window-size=1920,1080");
+                        "--disable-gpu",
+                        "--window-size=1920,1080",
+                        "--remote-allow-origins=*",
+                        "--disable-extensions",
+                        "--disable-popup-blocking"
+                );
         Selenide.open(RpConfig.getConfig().getEndpoint());
     }
 
