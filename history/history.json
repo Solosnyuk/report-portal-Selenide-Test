@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b95c4f86acc40132",
+      "uid" : "856447ecc35a214d",
       "status" : "broken",
       "statusDetails" : "Unrecognized field \"error_description\" (class api.pojos.CreateLaunchResponse), not marked as ignorable (2 known properties: \"number\", \"id\"])\n at [Source: (String)\"{\n  \"error_description\" : \"Invalid access token\",\n  \"error\" : \"invalid_token\"\n}\"; line: 2, column: 26] (through reference chain: api.pojos.CreateLaunchResponse[\"error_description\"])",
       "time" : {
-        "start" : 1755503952585,
-        "stop" : 1755503952949,
-        "duration" : 364
+        "start" : 1755504198275,
+        "stop" : 1755504198582,
+        "duration" : 307
       }
     } ]
   },
@@ -29,13 +29,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "9f24bca18c7a8e3f",
+      "uid" : "f496b11073d85ec4",
       "status" : "failed",
       "statusDetails" : "\nexpected: 404\n but was: 401",
       "time" : {
-        "start" : 1755503951427,
-        "stop" : 1755503951818,
-        "duration" : 391
+        "start" : 1755504197288,
+        "stop" : 1755504197608,
+        "duration" : 320
       }
     } ]
   },
@@ -49,13 +49,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "de151fc04d44870",
+      "uid" : "75c8ee8af7336921",
       "status" : "failed",
       "statusDetails" : "\nexpected: 201\n but was: 401",
       "time" : {
-        "start" : 1755503949482,
-        "stop" : 1755503951367,
-        "duration" : 1885
+        "start" : 1755504195447,
+        "stop" : 1755504197229,
+        "duration" : 1782
       }
     } ]
   },
@@ -69,13 +69,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "aff392d9737899ee",
+      "uid" : "73013806c58ea1ce",
       "status" : "broken",
       "statusDetails" : "No webdriver is bound to current thread: 1. You need to call open(url) first.",
       "time" : {
-        "start" : 1755503958769,
-        "stop" : 1755503958922,
-        "duration" : 153
+        "start" : 1755504204065,
+        "stop" : 1755504204184,
+        "duration" : 119
       }
     } ]
   },
@@ -89,13 +89,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "2010ccc23905b13d",
+      "uid" : "acb31be8429866a7",
       "status" : "failed",
       "statusDetails" : "\nexpected: 404\n but was: 401",
       "time" : {
-        "start" : 1755503952212,
-        "stop" : 1755503952581,
-        "duration" : 369
+        "start" : 1755504197955,
+        "stop" : 1755504198271,
+        "duration" : 316
       }
     } ]
   },
@@ -109,33 +109,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "665984e4c50b14d6",
+      "uid" : "7aaccbd81cf7c11a",
       "status" : "broken",
       "statusDetails" : "Unrecognized field \"error_description\" (class api.pojos.CreateLaunchResponse), not marked as ignorable (2 known properties: \"number\", \"id\"])\n at [Source: (String)\"{\n  \"error_description\" : \"Invalid access token\",\n  \"error\" : \"invalid_token\"\n}\"; line: 2, column: 26] (through reference chain: api.pojos.CreateLaunchResponse[\"error_description\"])",
       "time" : {
-        "start" : 1755503951824,
-        "stop" : 1755503952207,
-        "duration" : 383
-      }
-    } ]
-  },
-  "63ae0eff29784fa5e867ade3872bb144" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "40a6f57b2ea0e93b",
-      "status" : "broken",
-      "statusDetails" : "No webdriver is bound to current thread: 1. You need to call open(url) first.",
-      "time" : {
-        "start" : 1755503958989,
-        "stop" : 1755503958991,
-        "duration" : 2
+        "start" : 1755504197614,
+        "stop" : 1755504197951,
+        "duration" : 337
       }
     } ]
   },
@@ -149,13 +129,33 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "2cb5b74b638da34d",
+      "uid" : "c52fa18014f85c6",
       "status" : "broken",
       "statusDetails" : "No webdriver is bound to current thread: 1. You need to call open(url) first.",
       "time" : {
-        "start" : 1755503959002,
-        "stop" : 1755503959005,
-        "duration" : 3
+        "start" : 1755504204251,
+        "stop" : 1755504204253,
+        "duration" : 2
+      }
+    } ]
+  },
+  "63ae0eff29784fa5e867ade3872bb144" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "26a3c82013b120b1",
+      "status" : "broken",
+      "statusDetails" : "No webdriver is bound to current thread: 1. You need to call open(url) first.",
+      "time" : {
+        "start" : 1755504204244,
+        "stop" : 1755504204246,
+        "duration" : 2
       }
     } ]
   },
@@ -169,12 +169,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "fde387ddd5ee8d60",
+      "uid" : "472bed78961799e6",
       "status" : "broken",
       "statusDetails" : "No webdriver is bound to current thread: 1. You need to call open(url) first.",
       "time" : {
-        "start" : 1755503958977,
-        "stop" : 1755503958979,
+        "start" : 1755504204236,
+        "stop" : 1755504204238,
         "duration" : 2
       }
     } ]

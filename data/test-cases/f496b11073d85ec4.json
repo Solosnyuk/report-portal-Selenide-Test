@@ -1,12 +1,12 @@
 {
-  "uid" : "9f24bca18c7a8e3f",
+  "uid" : "f496b11073d85ec4",
   "name" : "API Test",
   "fullName" : "tests.api.CrudTest.deleteNonExistingLaunchTest",
   "historyId" : "d3aa75855210a348a4152cce6082545a",
   "time" : {
-    "start" : 1755503951427,
-    "stop" : 1755503951818,
-    "duration" : 391
+    "start" : 1755504197288,
+    "stop" : 1755504197608,
+    "duration" : 320
   },
   "status" : "failed",
   "statusMessage" : "\nexpected: 404\n but was: 401",
@@ -38,7 +38,7 @@
     "value" : "pkrvmubgrv54qmi"
   }, {
     "name" : "thread",
-    "value" : "2226@pkrvmubgrv54qmi.main(1)"
+    "value" : "2197@pkrvmubgrv54qmi.main(1)"
   }, {
     "name" : "framework",
     "value" : "testng"
@@ -69,6 +69,6 @@
     } ],
     "tags" : [ ]
   },
-  "source" : "9f24bca18c7a8e3f.json",
+  "source" : "f496b11073d85ec4.json",
   "parameterValues" : [ ]
 }
