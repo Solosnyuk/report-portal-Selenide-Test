@@ -1,21 +1,20 @@
 {
   "f9b92bd3753f0ba0ecf563ad2ece5b0a" : {
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "567fbafe2203581e",
-      "status" : "failed",
-      "statusDetails" : "\nexpected: 200\n but was: 403",
+      "uid" : "29341431ed7ea4df",
+      "status" : "passed",
       "time" : {
-        "start" : 1755529390312,
-        "stop" : 1755529391360,
-        "duration" : 1048
+        "start" : 1755530897202,
+        "stop" : 1755530898161,
+        "duration" : 959
       }
     } ]
   },
@@ -29,32 +28,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ff8cb6a53369ece",
+      "uid" : "85b5b29ded6f3184",
       "status" : "passed",
       "time" : {
-        "start" : 1755529388179,
-        "stop" : 1755529388708,
-        "duration" : 529
-      }
-    } ]
-  },
-  "87718ed435710d9cdca3d7bd9f34c7a" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "ab8bef5c0701f581",
-      "status" : "broken",
-      "statusDetails" : "Could not start a new session. Response code 500. Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir \nHost info: host: 'pkrvmubgrv54qmi', ip: '10.1.0.88'\nBuild info: version: '4.34.0', revision: '707dcb4246*'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '17.0.16'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--proxy-bypass-list=<-loopb..., --disable-dev-shm-usage, --disable-search-engine-cho..., --unsafely-disable-devtools..., --window-size=1366,768, --no-sandbox, --window-size=1920,1080], binary: /usr/bin/google-chrome, excludeSwitches: [enable-automation, load-extension], extensions: [], prefs: {autofill.credit_card_enabled: false, autofill.profile_enabled: false, credentials_enable_service: false, download.default_directory: /home/runner/work/report-po..., plugins.always_open_pdf_externally: true, profile.default_content_setting_values.automatic_downloads: 1, profile.password_manager_enabled: false, profile.password_manager_leak_detection: false, safebrowsing.enabled: true}}, pageLoadStrategy: normal, unhandledPromptBehavior: accept}]}]\nselenide.url: https://demo.reportportal.io\nselenide.baseUrl: http://localhost:8080",
-      "time" : {
-        "start" : 1755529399508,
-        "stop" : 1755529399509,
-        "duration" : 1
+        "start" : 1755530895242,
+        "stop" : 1755530895736,
+        "duration" : 494
       }
     } ]
   },
@@ -68,12 +47,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "83bca241109d2968",
+      "uid" : "3ba74d7ea33547b5",
       "status" : "passed",
       "time" : {
-        "start" : 1755529386182,
-        "stop" : 1755529388135,
-        "duration" : 1953
+        "start" : 1755530893174,
+        "stop" : 1755530895187,
+        "duration" : 2013
+      }
+    } ]
+  },
+  "87718ed435710d9cdca3d7bd9f34c7a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f73b6d1833e366a5",
+      "status" : "broken",
+      "statusDetails" : "Could not start a new session. Response code 500. Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir \nHost info: host: 'pkrvmubgrv54qmi', ip: '10.1.0.83'\nBuild info: version: '4.34.0', revision: '707dcb4246*'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '17.0.16'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--proxy-bypass-list=<-loopb..., --disable-dev-shm-usage, --disable-search-engine-cho..., --unsafely-disable-devtools..., --window-size=1366,768, --no-sandbox, --window-size=1920,1080], binary: /usr/bin/google-chrome, excludeSwitches: [enable-automation, load-extension], extensions: [], prefs: {autofill.credit_card_enabled: false, autofill.profile_enabled: false, credentials_enable_service: false, download.default_directory: /home/runner/work/report-po..., plugins.always_open_pdf_externally: true, profile.default_content_setting_values.automatic_downloads: 1, profile.password_manager_enabled: false, profile.password_manager_leak_detection: false, safebrowsing.enabled: true}}, pageLoadStrategy: normal, unhandledPromptBehavior: accept}]}]\nselenide.url: https://demo.reportportal.io\nselenide.baseUrl: http://localhost:8080",
+      "time" : {
+        "start" : 1755530907681,
+        "stop" : 1755530907682,
+        "duration" : 1
       }
     } ]
   },
@@ -87,13 +86,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c76e46dd16eadf37",
+      "uid" : "2d738c2a0ffc7b32",
       "status" : "skipped",
-      "statusDetails" : "Could not start a new session. Response code 500. Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir \nHost info: host: 'pkrvmubgrv54qmi', ip: '10.1.0.88'\nBuild info: version: '4.34.0', revision: '707dcb4246*'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '17.0.16'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--proxy-bypass-list=<-loopb..., --disable-dev-shm-usage, --disable-search-engine-cho..., --unsafely-disable-devtools..., --window-size=1366,768, --no-sandbox, --window-size=1920,1080], binary: /usr/bin/google-chrome, excludeSwitches: [enable-automation, load-extension], extensions: [], prefs: {autofill.credit_card_enabled: false, autofill.profile_enabled: false, credentials_enable_service: false, download.default_directory: /home/runner/work/report-po..., plugins.always_open_pdf_externally: true, profile.default_content_setting_values.automatic_downloads: 1, profile.password_manager_enabled: false, profile.password_manager_leak_detection: false, safebrowsing.enabled: true}}, pageLoadStrategy: normal, unhandledPromptBehavior: accept}]}]\nselenide.url: https://demo.reportportal.io\nselenide.baseUrl: http://localhost:8080",
+      "statusDetails" : "Could not start a new session. Response code 500. Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir \nHost info: host: 'pkrvmubgrv54qmi', ip: '10.1.0.83'\nBuild info: version: '4.34.0', revision: '707dcb4246*'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '17.0.16'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--proxy-bypass-list=<-loopb..., --disable-dev-shm-usage, --disable-search-engine-cho..., --unsafely-disable-devtools..., --window-size=1366,768, --no-sandbox, --window-size=1920,1080], binary: /usr/bin/google-chrome, excludeSwitches: [enable-automation, load-extension], extensions: [], prefs: {autofill.credit_card_enabled: false, autofill.profile_enabled: false, credentials_enable_service: false, download.default_directory: /home/runner/work/report-po..., plugins.always_open_pdf_externally: true, profile.default_content_setting_values.automatic_downloads: 1, profile.password_manager_enabled: false, profile.password_manager_leak_detection: false, safebrowsing.enabled: true}}, pageLoadStrategy: normal, unhandledPromptBehavior: accept}]}]\nselenide.url: https://demo.reportportal.io\nselenide.baseUrl: http://localhost:8080",
       "time" : {
-        "start" : 1755529398875,
-        "stop" : 1755529398877,
-        "duration" : 2
+        "start" : 1755530907053,
+        "stop" : 1755530907054,
+        "duration" : 1
       }
     } ]
   },
@@ -107,52 +106,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "940a2300f4389d1c",
+      "uid" : "c596e7e1e6725870",
       "status" : "passed",
       "time" : {
-        "start" : 1755529389796,
-        "stop" : 1755529390309,
-        "duration" : 513
+        "start" : 1755530896736,
+        "stop" : 1755530897199,
+        "duration" : 463
       }
     } ]
   },
   "bbdccc03daec763e0b1096918e98f53c" : {
     "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "8fff0d3defbfbfb7",
-      "status" : "failed",
-      "statusDetails" : "\nexpected: 200\n but was: 403",
-      "time" : {
-        "start" : 1755529388713,
-        "stop" : 1755529389791,
-        "duration" : 1078
-      }
-    } ]
-  },
-  "dff417ac8193f9392db7737e9ab4be88" : {
-    "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 1,
-      "passed" : 0,
+      "skipped" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "33667d60c67a9bd2",
-      "status" : "skipped",
-      "statusDetails" : "Could not start a new session. Response code 500. Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir \nHost info: host: 'pkrvmubgrv54qmi', ip: '10.1.0.88'\nBuild info: version: '4.34.0', revision: '707dcb4246*'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '17.0.16'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--proxy-bypass-list=<-loopb..., --disable-dev-shm-usage, --disable-search-engine-cho..., --unsafely-disable-devtools..., --window-size=1366,768, --no-sandbox, --window-size=1920,1080], binary: /usr/bin/google-chrome, excludeSwitches: [enable-automation, load-extension], extensions: [], prefs: {autofill.credit_card_enabled: false, autofill.profile_enabled: false, credentials_enable_service: false, download.default_directory: /home/runner/work/report-po..., plugins.always_open_pdf_externally: true, profile.default_content_setting_values.automatic_downloads: 1, profile.password_manager_enabled: false, profile.password_manager_leak_detection: false, safebrowsing.enabled: true}}, pageLoadStrategy: normal, unhandledPromptBehavior: accept}]}]\nselenide.url: https://demo.reportportal.io\nselenide.baseUrl: http://localhost:8080",
+      "uid" : "1a56dc17445e0c9",
+      "status" : "passed",
       "time" : {
-        "start" : 1755529399514,
-        "stop" : 1755529399514,
-        "duration" : 0
+        "start" : 1755530895742,
+        "stop" : 1755530896733,
+        "duration" : 991
       }
     } ]
   },
@@ -166,13 +144,33 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "db3a5b85c238fbc7",
+      "uid" : "ad115a208e4c7886",
       "status" : "skipped",
-      "statusDetails" : "Could not start a new session. Response code 500. Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir \nHost info: host: 'pkrvmubgrv54qmi', ip: '10.1.0.88'\nBuild info: version: '4.34.0', revision: '707dcb4246*'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '17.0.16'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--proxy-bypass-list=<-loopb..., --disable-dev-shm-usage, --disable-search-engine-cho..., --unsafely-disable-devtools..., --window-size=1366,768, --no-sandbox, --window-size=1920,1080], binary: /usr/bin/google-chrome, excludeSwitches: [enable-automation, load-extension], extensions: [], prefs: {autofill.credit_card_enabled: false, autofill.profile_enabled: false, credentials_enable_service: false, download.default_directory: /home/runner/work/report-po..., plugins.always_open_pdf_externally: true, profile.default_content_setting_values.automatic_downloads: 1, profile.password_manager_enabled: false, profile.password_manager_leak_detection: false, safebrowsing.enabled: true}}, pageLoadStrategy: normal, unhandledPromptBehavior: accept}]}]\nselenide.url: https://demo.reportportal.io\nselenide.baseUrl: http://localhost:8080",
+      "statusDetails" : "Could not start a new session. Response code 500. Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir \nHost info: host: 'pkrvmubgrv54qmi', ip: '10.1.0.83'\nBuild info: version: '4.34.0', revision: '707dcb4246*'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '17.0.16'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--proxy-bypass-list=<-loopb..., --disable-dev-shm-usage, --disable-search-engine-cho..., --unsafely-disable-devtools..., --window-size=1366,768, --no-sandbox, --window-size=1920,1080], binary: /usr/bin/google-chrome, excludeSwitches: [enable-automation, load-extension], extensions: [], prefs: {autofill.credit_card_enabled: false, autofill.profile_enabled: false, credentials_enable_service: false, download.default_directory: /home/runner/work/report-po..., plugins.always_open_pdf_externally: true, profile.default_content_setting_values.automatic_downloads: 1, profile.password_manager_enabled: false, profile.password_manager_leak_detection: false, safebrowsing.enabled: true}}, pageLoadStrategy: normal, unhandledPromptBehavior: accept}]}]\nselenide.url: https://demo.reportportal.io\nselenide.baseUrl: http://localhost:8080",
       "time" : {
-        "start" : 1755529399304,
-        "stop" : 1755529399305,
-        "duration" : 1
+        "start" : 1755530907477,
+        "stop" : 1755530907477,
+        "duration" : 0
+      }
+    } ]
+  },
+  "dff417ac8193f9392db7737e9ab4be88" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "abef503d8c349d1a",
+      "status" : "skipped",
+      "statusDetails" : "Could not start a new session. Response code 500. Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir \nHost info: host: 'pkrvmubgrv54qmi', ip: '10.1.0.83'\nBuild info: version: '4.34.0', revision: '707dcb4246*'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '17.0.16'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--proxy-bypass-list=<-loopb..., --disable-dev-shm-usage, --disable-search-engine-cho..., --unsafely-disable-devtools..., --window-size=1366,768, --no-sandbox, --window-size=1920,1080], binary: /usr/bin/google-chrome, excludeSwitches: [enable-automation, load-extension], extensions: [], prefs: {autofill.credit_card_enabled: false, autofill.profile_enabled: false, credentials_enable_service: false, download.default_directory: /home/runner/work/report-po..., plugins.always_open_pdf_externally: true, profile.default_content_setting_values.automatic_downloads: 1, profile.password_manager_enabled: false, profile.password_manager_leak_detection: false, safebrowsing.enabled: true}}, pageLoadStrategy: normal, unhandledPromptBehavior: accept}]}]\nselenide.url: https://demo.reportportal.io\nselenide.baseUrl: http://localhost:8080",
+      "time" : {
+        "start" : 1755530907686,
+        "stop" : 1755530907686,
+        "duration" : 0
       }
     } ]
   },
@@ -186,13 +184,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "1be75204f183bb1d",
+      "uid" : "c4a6ad4f13060e94",
       "status" : "skipped",
-      "statusDetails" : "Could not start a new session. Response code 500. Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir \nHost info: host: 'pkrvmubgrv54qmi', ip: '10.1.0.88'\nBuild info: version: '4.34.0', revision: '707dcb4246*'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '17.0.16'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--proxy-bypass-list=<-loopb..., --disable-dev-shm-usage, --disable-search-engine-cho..., --unsafely-disable-devtools..., --window-size=1366,768, --no-sandbox, --window-size=1920,1080], binary: /usr/bin/google-chrome, excludeSwitches: [enable-automation, load-extension], extensions: [], prefs: {autofill.credit_card_enabled: false, autofill.profile_enabled: false, credentials_enable_service: false, download.default_directory: /home/runner/work/report-po..., plugins.always_open_pdf_externally: true, profile.default_content_setting_values.automatic_downloads: 1, profile.password_manager_enabled: false, profile.password_manager_leak_detection: false, safebrowsing.enabled: true}}, pageLoadStrategy: normal, unhandledPromptBehavior: accept}]}]\nselenide.url: https://demo.reportportal.io\nselenide.baseUrl: http://localhost:8080",
+      "statusDetails" : "Could not start a new session. Response code 500. Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir \nHost info: host: 'pkrvmubgrv54qmi', ip: '10.1.0.83'\nBuild info: version: '4.34.0', revision: '707dcb4246*'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '17.0.16'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--proxy-bypass-list=<-loopb..., --disable-dev-shm-usage, --disable-search-engine-cho..., --unsafely-disable-devtools..., --window-size=1366,768, --no-sandbox, --window-size=1920,1080], binary: /usr/bin/google-chrome, excludeSwitches: [enable-automation, load-extension], extensions: [], prefs: {autofill.credit_card_enabled: false, autofill.profile_enabled: false, credentials_enable_service: false, download.default_directory: /home/runner/work/report-po..., plugins.always_open_pdf_externally: true, profile.default_content_setting_values.automatic_downloads: 1, profile.password_manager_enabled: false, profile.password_manager_leak_detection: false, safebrowsing.enabled: true}}, pageLoadStrategy: normal, unhandledPromptBehavior: accept}]}]\nselenide.url: https://demo.reportportal.io\nselenide.baseUrl: http://localhost:8080",
       "time" : {
-        "start" : 1755529399096,
-        "stop" : 1755529399097,
-        "duration" : 1
+        "start" : 1755530907268,
+        "stop" : 1755530907268,
+        "duration" : 0
       }
     } ]
   }

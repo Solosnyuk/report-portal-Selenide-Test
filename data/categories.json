@@ -2,58 +2,24 @@
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
   "children" : [ {
-    "name" : "Product defects",
-    "children" : [ {
-      "name" : "\nexpected: 200\n but was: 403",
-      "children" : [ {
-        "name" : "API Test",
-        "uid" : "8fff0d3defbfbfb7",
-        "parentUid" : "f482786a8bf8af8fb1788c9cf247086d",
-        "status" : "failed",
-        "time" : {
-          "start" : 1755529388713,
-          "stop" : 1755529389791,
-          "duration" : 1078
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "API Test",
-        "uid" : "567fbafe2203581e",
-        "parentUid" : "f482786a8bf8af8fb1788c9cf247086d",
-        "status" : "failed",
-        "time" : {
-          "start" : 1755529390312,
-          "stop" : 1755529391360,
-          "duration" : 1048
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "f482786a8bf8af8fb1788c9cf247086d"
-    } ],
-    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
-  }, {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "Could not start a new session. Response code 500. Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir \nHost info: host: 'pkrvmubgrv54qmi', ip: '10.1.0.88'\nBuild info: version: '4.34.0', revision: '707dcb4246*'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '17.0.16'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--proxy-bypass-list=<-loopb..., --disable-dev-shm-usage, --disable-search-engine-cho..., --unsafely-disable-devtools..., --window-size=1366,768, --no-sandbox, --window-size=1920,1080], binary: /usr/bin/google-chrome, excludeSwitches: [enable-automation, load-extension], extensions: [], prefs: {autofill.credit_card_enabled: false, autofill.profile_enabled: false, credentials_enable_service: false, download.default_directory: /home/runner/work/report-po..., plugins.always_open_pdf_externally: true, profile.default_content_setting_values.automatic_downloads: 1, profile.password_manager_enabled: false, profile.password_manager_leak_detection: false, safebrowsing.enabled: true}}, pageLoadStrategy: normal, unhandledPromptBehavior: accept}]}]\nselenide.url: https://demo.reportportal.io\nselenide.baseUrl: http://localhost:8080",
+      "name" : "Could not start a new session. Response code 500. Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir \nHost info: host: 'pkrvmubgrv54qmi', ip: '10.1.0.83'\nBuild info: version: '4.34.0', revision: '707dcb4246*'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '17.0.16'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--proxy-bypass-list=<-loopb..., --disable-dev-shm-usage, --disable-search-engine-cho..., --unsafely-disable-devtools..., --window-size=1366,768, --no-sandbox, --window-size=1920,1080], binary: /usr/bin/google-chrome, excludeSwitches: [enable-automation, load-extension], extensions: [], prefs: {autofill.credit_card_enabled: false, autofill.profile_enabled: false, credentials_enable_service: false, download.default_directory: /home/runner/work/report-po..., plugins.always_open_pdf_externally: true, profile.default_content_setting_values.automatic_downloads: 1, profile.password_manager_enabled: false, profile.password_manager_leak_detection: false, safebrowsing.enabled: true}}, pageLoadStrategy: normal, unhandledPromptBehavior: accept}]}]\nselenide.url: https://demo.reportportal.io\nselenide.baseUrl: http://localhost:8080",
       "children" : [ {
         "name" : "setUp",
-        "uid" : "ab8bef5c0701f581",
-        "parentUid" : "21c1caf31138a89338d8e86f1382e349",
+        "uid" : "f73b6d1833e366a5",
+        "parentUid" : "347c3f3682b5fe4d8539d0d3fadb752e",
         "status" : "broken",
         "time" : {
-          "start" : 1755529399508,
-          "stop" : 1755529399509,
+          "start" : 1755530907681,
+          "stop" : 1755530907682,
           "duration" : 1
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "21c1caf31138a89338d8e86f1382e349"
+      "uid" : "347c3f3682b5fe4d8539d0d3fadb752e"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]
