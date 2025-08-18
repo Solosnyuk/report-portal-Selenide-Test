@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "5a7a1dc8f8799424",
+      "uid" : "8696a1074f7d8a36",
       "status" : "failed",
       "statusDetails" : "\nexpected: 200\n but was: 403",
       "time" : {
-        "start" : 1755527089520,
-        "stop" : 1755527090339,
-        "duration" : 819
+        "start" : 1755528352529,
+        "stop" : 1755528353214,
+        "duration" : 685
       }
     } ]
   },
@@ -29,12 +29,32 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "243a7d98560c500f",
+      "uid" : "6adc4afc4458f898",
       "status" : "passed",
       "time" : {
-        "start" : 1755527087808,
-        "stop" : 1755527088226,
-        "duration" : 418
+        "start" : 1755528351130,
+        "stop" : 1755528351481,
+        "duration" : 351
+      }
+    } ]
+  },
+  "87718ed435710d9cdca3d7bd9f34c7a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "61aabf6b3828465",
+      "status" : "broken",
+      "statusDetails" : "Could not start a new session. Response code 500. Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir \nHost info: host: 'pkrvmubgrv54qmi', ip: '10.1.0.127'\nBuild info: version: '4.34.0', revision: '707dcb4246*'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '17.0.16'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--proxy-bypass-list=<-loopb..., --disable-dev-shm-usage, --disable-search-engine-cho..., --unsafely-disable-devtools..., --window-size=1920,1080], binary: /usr/bin/google-chrome, excludeSwitches: [enable-automation, load-extension], extensions: [], prefs: {autofill.credit_card_enabled: false, autofill.profile_enabled: false, credentials_enable_service: false, download.default_directory: /home/runner/work/report-po..., plugins.always_open_pdf_externally: true, profile.default_content_setting_values.automatic_downloads: 1, profile.password_manager_enabled: false, profile.password_manager_leak_detection: false, safebrowsing.enabled: true}}, pageLoadStrategy: normal, unhandledPromptBehavior: accept}]}]\nselenide.url: https://demo.reportportal.io\nselenide.baseUrl: http://localhost:8080",
+      "time" : {
+        "start" : 1755528365659,
+        "stop" : 1755528365659,
+        "duration" : 0
       }
     } ]
   },
@@ -48,12 +68,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "4994b3e05c661f5",
+      "uid" : "d2304775538c80fb",
       "status" : "passed",
       "time" : {
-        "start" : 1755527085761,
-        "stop" : 1755527087751,
-        "duration" : 1990
+        "start" : 1755528349129,
+        "stop" : 1755528351082,
+        "duration" : 1953
       }
     } ]
   },
@@ -61,18 +81,19 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
+      "skipped" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "30d4c1c9c855bd1d",
-      "status" : "passed",
+      "uid" : "89c441fc1b7a39ce",
+      "status" : "skipped",
+      "statusDetails" : "Could not start a new session. Response code 500. Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir \nHost info: host: 'pkrvmubgrv54qmi', ip: '10.1.0.127'\nBuild info: version: '4.34.0', revision: '707dcb4246*'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '17.0.16'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--proxy-bypass-list=<-loopb..., --disable-dev-shm-usage, --disable-search-engine-cho..., --unsafely-disable-devtools..., --window-size=1920,1080], binary: /usr/bin/google-chrome, excludeSwitches: [enable-automation, load-extension], extensions: [], prefs: {autofill.credit_card_enabled: false, autofill.profile_enabled: false, credentials_enable_service: false, download.default_directory: /home/runner/work/report-po..., plugins.always_open_pdf_externally: true, profile.default_content_setting_values.automatic_downloads: 1, profile.password_manager_enabled: false, profile.password_manager_leak_detection: false, safebrowsing.enabled: true}}, pageLoadStrategy: normal, unhandledPromptBehavior: accept}]}]\nselenide.url: https://demo.reportportal.io\nselenide.baseUrl: http://localhost:8080",
       "time" : {
-        "start" : 1755527108275,
-        "stop" : 1755527113628,
-        "duration" : 5353
+        "start" : 1755528365020,
+        "stop" : 1755528365022,
+        "duration" : 2
       }
     } ]
   },
@@ -86,12 +107,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "5646196fc2f02d44",
+      "uid" : "c59170c7173749ec",
       "status" : "passed",
       "time" : {
-        "start" : 1755527089103,
-        "stop" : 1755527089516,
-        "duration" : 413
+        "start" : 1755528352203,
+        "stop" : 1755528352526,
+        "duration" : 323
       }
     } ]
   },
@@ -105,73 +126,73 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "93b91a803cb16ab0",
+      "uid" : "9837c359c03adb5a",
       "status" : "failed",
       "statusDetails" : "\nexpected: 200\n but was: 403",
       "time" : {
-        "start" : 1755527088231,
-        "stop" : 1755527089098,
-        "duration" : 867
-      }
-    } ]
-  },
-  "dff417ac8193f9392db7737e9ab4be88" : {
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "449a85c53a6996a4",
-      "status" : "failed",
-      "statusDetails" : "Element not found {.inputOutside__input--Ad7Xu}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755527127588.2.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755527127588.2.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".inputOutside__input--Ad7Xu\"}",
-      "time" : {
-        "start" : 1755527123516,
-        "stop" : 1755527127655,
-        "duration" : 4139
+        "start" : 1755528351485,
+        "stop" : 1755528352198,
+        "duration" : 713
       }
     } ]
   },
   "63ae0eff29784fa5e867ade3872bb144" : {
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
-      "skipped" : 0,
+      "skipped" : 1,
       "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "45a33a703bb2e488",
-      "status" : "failed",
-      "statusDetails" : "Element not found {.inputOutside__input--Ad7Xu}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755527123059.1.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755527123059.1.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".inputOutside__input--Ad7Xu\"}",
+      "uid" : "73726f8dbc609382",
+      "status" : "skipped",
+      "statusDetails" : "Could not start a new session. Response code 500. Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir \nHost info: host: 'pkrvmubgrv54qmi', ip: '10.1.0.127'\nBuild info: version: '4.34.0', revision: '707dcb4246*'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '17.0.16'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--proxy-bypass-list=<-loopb..., --disable-dev-shm-usage, --disable-search-engine-cho..., --unsafely-disable-devtools..., --window-size=1920,1080], binary: /usr/bin/google-chrome, excludeSwitches: [enable-automation, load-extension], extensions: [], prefs: {autofill.credit_card_enabled: false, autofill.profile_enabled: false, credentials_enable_service: false, download.default_directory: /home/runner/work/report-po..., plugins.always_open_pdf_externally: true, profile.default_content_setting_values.automatic_downloads: 1, profile.password_manager_enabled: false, profile.password_manager_leak_detection: false, safebrowsing.enabled: true}}, pageLoadStrategy: normal, unhandledPromptBehavior: accept}]}]\nselenide.url: https://demo.reportportal.io\nselenide.baseUrl: http://localhost:8080",
       "time" : {
-        "start" : 1755527118971,
-        "stop" : 1755527123125,
-        "duration" : 4154
+        "start" : 1755528365456,
+        "stop" : 1755528365456,
+        "duration" : 0
+      }
+    } ]
+  },
+  "dff417ac8193f9392db7737e9ab4be88" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bc134990e44fd9b5",
+      "status" : "skipped",
+      "statusDetails" : "Could not start a new session. Response code 500. Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir \nHost info: host: 'pkrvmubgrv54qmi', ip: '10.1.0.127'\nBuild info: version: '4.34.0', revision: '707dcb4246*'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '17.0.16'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--proxy-bypass-list=<-loopb..., --disable-dev-shm-usage, --disable-search-engine-cho..., --unsafely-disable-devtools..., --window-size=1920,1080], binary: /usr/bin/google-chrome, excludeSwitches: [enable-automation, load-extension], extensions: [], prefs: {autofill.credit_card_enabled: false, autofill.profile_enabled: false, credentials_enable_service: false, download.default_directory: /home/runner/work/report-po..., plugins.always_open_pdf_externally: true, profile.default_content_setting_values.automatic_downloads: 1, profile.password_manager_enabled: false, profile.password_manager_leak_detection: false, safebrowsing.enabled: true}}, pageLoadStrategy: normal, unhandledPromptBehavior: accept}]}]\nselenide.url: https://demo.reportportal.io\nselenide.baseUrl: http://localhost:8080",
+      "time" : {
+        "start" : 1755528365664,
+        "stop" : 1755528365664,
+        "duration" : 0
       }
     } ]
   },
   "af822e40fee29edec09b1d5a9e03dca8" : {
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
-      "skipped" : 0,
+      "skipped" : 1,
       "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "26721595bb18d867",
-      "status" : "failed",
-      "statusDetails" : "Element not found {.inputOutside__input--Ad7Xu}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755527118493.0.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755527118493.0.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".inputOutside__input--Ad7Xu\"}",
+      "uid" : "65f6c6f266fba784",
+      "status" : "skipped",
+      "statusDetails" : "Could not start a new session. Response code 500. Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir \nHost info: host: 'pkrvmubgrv54qmi', ip: '10.1.0.127'\nBuild info: version: '4.34.0', revision: '707dcb4246*'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '17.0.16'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--proxy-bypass-list=<-loopb..., --disable-dev-shm-usage, --disable-search-engine-cho..., --unsafely-disable-devtools..., --window-size=1920,1080], binary: /usr/bin/google-chrome, excludeSwitches: [enable-automation, load-extension], extensions: [], prefs: {autofill.credit_card_enabled: false, autofill.profile_enabled: false, credentials_enable_service: false, download.default_directory: /home/runner/work/report-po..., plugins.always_open_pdf_externally: true, profile.default_content_setting_values.automatic_downloads: 1, profile.password_manager_enabled: false, profile.password_manager_leak_detection: false, safebrowsing.enabled: true}}, pageLoadStrategy: normal, unhandledPromptBehavior: accept}]}]\nselenide.url: https://demo.reportportal.io\nselenide.baseUrl: http://localhost:8080",
       "time" : {
-        "start" : 1755527114392,
-        "stop" : 1755527118591,
-        "duration" : 4199
+        "start" : 1755528365245,
+        "stop" : 1755528365245,
+        "duration" : 0
       }
     } ]
   }
