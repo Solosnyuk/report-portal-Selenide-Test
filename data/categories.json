@@ -2,25 +2,59 @@
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
   "children" : [ {
-    "name" : "Test defects",
+    "name" : "Product defects",
     "children" : [ {
-      "name" : "Could not start a new session. Response code 500. Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir \nHost info: host: 'pkrvmubgrv54qmi', ip: '10.1.0.83'\nBuild info: version: '4.34.0', revision: '707dcb4246*'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '17.0.16'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--proxy-bypass-list=<-loopb..., --disable-dev-shm-usage, --disable-search-engine-cho..., --unsafely-disable-devtools..., --window-size=1366,768, --no-sandbox, --window-size=1920,1080], binary: /usr/bin/google-chrome, excludeSwitches: [enable-automation, load-extension], extensions: [], prefs: {autofill.credit_card_enabled: false, autofill.profile_enabled: false, credentials_enable_service: false, download.default_directory: /home/runner/work/report-po..., plugins.always_open_pdf_externally: true, profile.default_content_setting_values.automatic_downloads: 1, profile.password_manager_enabled: false, profile.password_manager_leak_detection: false, safebrowsing.enabled: true}}, pageLoadStrategy: normal, unhandledPromptBehavior: accept}]}]\nselenide.url: https://demo.reportportal.io\nselenide.baseUrl: http://localhost:8080",
+      "name" : "Element not found {By.xpath: //input[@class='inputOutside__input--Ad7Xu']}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755531823850.0.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755531823850.0.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@class='inputOutside__input--Ad7Xu']\"}",
       "children" : [ {
-        "name" : "setUp",
-        "uid" : "f73b6d1833e366a5",
-        "parentUid" : "347c3f3682b5fe4d8539d0d3fadb752e",
-        "status" : "broken",
+        "name" : "UI Test",
+        "uid" : "10b0a7825f46b866",
+        "parentUid" : "77f65c85e4a29b39624b737f82d94dab",
+        "status" : "failed",
         "time" : {
-          "start" : 1755530907681,
-          "stop" : 1755530907682,
-          "duration" : 1
+          "start" : 1755531819694,
+          "stop" : 1755531823988,
+          "duration" : 4294
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "347c3f3682b5fe4d8539d0d3fadb752e"
+      "uid" : "77f65c85e4a29b39624b737f82d94dab"
+    }, {
+      "name" : "Element not found {By.xpath: //input[@class='inputOutside__input--Ad7Xu']}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755531828468.1.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755531828468.1.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@class='inputOutside__input--Ad7Xu']\"}",
+      "children" : [ {
+        "name" : "UI Test",
+        "uid" : "abd1ff76ad28e568",
+        "parentUid" : "2b20252d36916829dadc2fe83e17dc08",
+        "status" : "failed",
+        "time" : {
+          "start" : 1755531824369,
+          "stop" : 1755531828573,
+          "duration" : 4204
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2b20252d36916829dadc2fe83e17dc08"
+    }, {
+      "name" : "Element not found {By.xpath: //input[@class='inputOutside__input--Ad7Xu']}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755531833048.2.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755531833048.2.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@class='inputOutside__input--Ad7Xu']\"}",
+      "children" : [ {
+        "name" : "UI Test",
+        "uid" : "ff45711887eba06b",
+        "parentUid" : "c451b30cc92f0464c8a260c24f2f9ae0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1755531828946,
+          "stop" : 1755531833134,
+          "duration" : 4188
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c451b30cc92f0464c8a260c24f2f9ae0"
     } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ]
 }
