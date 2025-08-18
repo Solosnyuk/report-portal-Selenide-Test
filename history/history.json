@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "3e635c6b9eb5c0f6",
+      "uid" : "38544d18c275fb02",
       "status" : "broken",
       "statusDetails" : "Unrecognized field \"error_description\" (class api.pojos.CreateLaunchResponse), not marked as ignorable (2 known properties: \"number\", \"id\"])\n at [Source: (String)\"{\n  \"error_description\" : \"Invalid access token\",\n  \"error\" : \"invalid_token\"\n}\"; line: 2, column: 26] (through reference chain: api.pojos.CreateLaunchResponse[\"error_description\"])",
       "time" : {
-        "start" : 1755547858902,
-        "stop" : 1755547859575,
-        "duration" : 673
+        "start" : 1755549925123,
+        "stop" : 1755549925727,
+        "duration" : 604
       }
     } ]
   },
@@ -29,13 +29,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "11c2385dc3eb72aa",
+      "uid" : "c48855957ffdff03",
       "status" : "failed",
       "statusDetails" : "\nexpected: 404\n but was: 401",
       "time" : {
-        "start" : 1755547857448,
-        "stop" : 1755547857826,
-        "duration" : 378
+        "start" : 1755549923827,
+        "stop" : 1755549924152,
+        "duration" : 325
       }
     } ]
   },
@@ -49,13 +49,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "bd351c3cf4dbdade",
+      "uid" : "53e58e6b4e094964",
       "status" : "failed",
       "statusDetails" : "\nexpected: 201\n but was: 401",
       "time" : {
-        "start" : 1755547855421,
-        "stop" : 1755547857388,
-        "duration" : 1967
+        "start" : 1755549921991,
+        "stop" : 1755549923774,
+        "duration" : 1783
       }
     } ]
   },
@@ -69,12 +69,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "a2305eed83317a29",
+      "uid" : "91ec3f906a9c642",
       "status" : "passed",
       "time" : {
-        "start" : 1755547879298,
-        "stop" : 1755547884608,
-        "duration" : 5310
+        "start" : 1755549943269,
+        "stop" : 1755549948656,
+        "duration" : 5387
       }
     } ]
   },
@@ -88,13 +88,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "a3782de63bcbc2c8",
+      "uid" : "1318024173a368fd",
       "status" : "failed",
       "statusDetails" : "\nexpected: 404\n but was: 401",
       "time" : {
-        "start" : 1755547858528,
-        "stop" : 1755547858898,
-        "duration" : 370
+        "start" : 1755549924796,
+        "stop" : 1755549925119,
+        "duration" : 323
       }
     } ]
   },
@@ -108,73 +108,70 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "82e947d0e79d5483",
+      "uid" : "93bbfa588312fe89",
       "status" : "broken",
       "statusDetails" : "Unrecognized field \"error_description\" (class api.pojos.CreateLaunchResponse), not marked as ignorable (2 known properties: \"number\", \"id\"])\n at [Source: (String)\"{\n  \"error_description\" : \"Invalid access token\",\n  \"error\" : \"invalid_token\"\n}\"; line: 2, column: 26] (through reference chain: api.pojos.CreateLaunchResponse[\"error_description\"])",
       "time" : {
-        "start" : 1755547857832,
-        "stop" : 1755547858524,
-        "duration" : 692
+        "start" : 1755549924158,
+        "stop" : 1755549924792,
+        "duration" : 634
       }
     } ]
   },
   "dff417ac8193f9392db7737e9ab4be88" : {
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "fc05efd7bb101b17",
-      "status" : "failed",
-      "statusDetails" : "Element not found {By.xpath: //input[@class='inputOutside__input--Ad7Xu']}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755547898729.2.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755547898729.2.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@class='inputOutside__input--Ad7Xu']\"}",
+      "uid" : "8103df4eec922efc",
+      "status" : "passed",
       "time" : {
-        "start" : 1755547894630,
-        "stop" : 1755547898829,
-        "duration" : 4199
+        "start" : 1755549976219,
+        "stop" : 1755549982343,
+        "duration" : 6124
       }
     } ]
   },
   "63ae0eff29784fa5e867ade3872bb144" : {
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "3fec2457f0de6f06",
-      "status" : "failed",
-      "statusDetails" : "Element not found {By.xpath: //input[@class='inputOutside__input--Ad7Xu']}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755547894131.1.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755547894131.1.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@class='inputOutside__input--Ad7Xu']\"}",
+      "uid" : "f4cb600faa82abcb",
+      "status" : "passed",
       "time" : {
-        "start" : 1755547890031,
-        "stop" : 1755547894233,
-        "duration" : 4202
+        "start" : 1755549961932,
+        "stop" : 1755549971975,
+        "duration" : 10043
       }
     } ]
   },
   "af822e40fee29edec09b1d5a9e03dca8" : {
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "2681d623dc690570",
-      "status" : "failed",
-      "statusDetails" : "Element not found {By.xpath: //input[@class='inputOutside__input--Ad7Xu']}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755547889499.0.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755547889499.0.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@class='inputOutside__input--Ad7Xu']\"}",
+      "uid" : "d666152c696f60ce",
+      "status" : "passed",
       "time" : {
-        "start" : 1755547885389,
-        "stop" : 1755547889638,
-        "duration" : 4249
+        "start" : 1755549952918,
+        "stop" : 1755549957798,
+        "duration" : 4880
       }
     } ]
   }
