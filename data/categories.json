@@ -1,5 +1,39 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "\nexpected: 200\n but was: 403",
+      "children" : [ {
+        "name" : "API Test",
+        "uid" : "4d035f3137c07449",
+        "parentUid" : "f482786a8bf8af8fb1788c9cf247086d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1755551401836,
+          "stop" : 1755551403221,
+          "duration" : 1385
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "API Test",
+        "uid" : "749870c277b746c3",
+        "parentUid" : "f482786a8bf8af8fb1788c9cf247086d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1755551403735,
+          "stop" : 1755551405066,
+          "duration" : 1331
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f482786a8bf8af8fb1788c9cf247086d"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
 }
