@@ -2,83 +2,105 @@ package ui.page;
 
 import com.codeborne.selenide.SelenideElement;
 
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$x;
+import static com.codeborne.selenide.Selenide.*;
 
 public class LaunchesPage {
-        static SelenideElement buttonLaunches =
-                $("a[href='#default_personal/launches']");
-        static SelenideElement buttonAddFIlter =
-                $x("//*[@class='launchFiltersToolbar__add-filter-button--Hgtlm']");
-        static SelenideElement textEnterName =
-                $("input[placeholder='Enter name']");
-        static SelenideElement buttonSaveFilter =
-                $x("//span[text()='Save']");
-        static SelenideElement textNameNewFilter =
-                $x("//input[@type='text' and @placeholder='Enter filter name']");
-        static SelenideElement buttonAddFilterSave =
-                $x("//button[text()='Add']");
-        static SelenideElement buttonUpdateFilterEdit =
-                $x("//button[text()='Update']");
-        static SelenideElement buttonCloneFilter =
-                $x("//button[.//span[text()='Clone']]");
-        static SelenideElement buttonDeleteFIlter =  $x(
-                "//div[contains(@class, 'filterItem__icon--zcepO')]");
-        static SelenideElement buttonEditFilter = $x("//button[@title='Edit']");
+         SelenideElement buttonLaunches =
+          $("a[href='#default_personal/launches']");
+         SelenideElement buttonAddFIlter =
+          $x("//*[@class='launchFiltersToolbar__add-filter-button--Hgtlm']");
+         SelenideElement textEnterName =
+          $("input[placeholder='Enter name']");
+         SelenideElement buttonSaveFilter =
+          $x("//span[text()='Save']");
+         SelenideElement textNameNewFilter =
+          $x("//input[@type='text' and @placeholder='Enter filter name']");
+         SelenideElement buttonAddFilterSave =
+          $x("//button[text()='Add']");
+         SelenideElement buttonUpdateFilterEdit =
+          $x("//button[text()='Update']");
+         SelenideElement buttonCloneFilter =
+          $x("//button[.//span[text()='Clone']]");
+         SelenideElement buttonDeleteFIlter =  $x(
+          "//div[contains(@class, 'filterItem__icon--zcepO')]");
+         SelenideElement buttonEditFilter = $x("//button[@title='Edit']");
 
-    public void clickOpenLaunchesPage() {
+    public LaunchesPage clickOpenLaunchesPage() {
         buttonLaunches.click();
+
+        return this;
     }
 
-    public static void clickAddFilter() {
+    public LaunchesPage clickAddFilter() {
         buttonAddFIlter.click();
+
+        return this;
     }
 
-    public void clickButtonSaveFilter() {
+    public LaunchesPage clickButtonSaveFilter() {
         buttonSaveFilter.click();
+
+        return this;
     }
 
-    public void clickButtonAddFilterSave() {
+    public LaunchesPage clickButtonAddFilterSave() {
         buttonAddFilterSave.click();
+
+        return this;
     }
 
-    public void clickCloneFilter() {
+    public LaunchesPage clickCloneFilter() {
         buttonCloneFilter.click();
+
+        return this;
     }
 
-    public void clickButtonDeleteFilter() {
+    public LaunchesPage clickButtonDeleteFilter() {
         buttonDeleteFIlter.click();
+
+        return this;
     }
 
-    public static void clickButtonEditFilter() {
+    public LaunchesPage clickButtonEditFilter() {
         buttonEditFilter.click();
+
+        return this;
     }
 
-    public static void sendContainsEnterName(String testValue) {
+    public LaunchesPage sendContainsEnterName(String testValue) {
         textEnterName.clear();
-        textEnterName.setValue(testValue)   ;
+        textEnterName.setValue(testValue);
+
+        return this;
     }
 
-    public static void sendNameNewFilter(String nameFilter) {
+    public LaunchesPage sendNameNewFilter(String nameFilter) {
         textNameNewFilter.clear();
         textNameNewFilter.setValue(nameFilter);
+
+        return this;
     }
 
-    public static void clickButtonUpdateFilterEdit() {
+    public LaunchesPage clickButtonUpdateFilterEdit() {
         buttonUpdateFilterEdit.click();
+
+        return this;
     }
 
-    public void addNewFilter(String nameFilter,String containsText) {
+    public LaunchesPage addNewFilter(String nameFilter,String containsText) {
         clickAddFilter();
         sendContainsEnterName(containsText);
         clickButtonSaveFilter();
         sendNameNewFilter(nameFilter);
         clickButtonAddFilterSave();
+        return this;
     }
 
-    public void editNameFilter(String newFilterName){
-        LaunchesPage.clickButtonEditFilter();
-        LaunchesPage.sendNameNewFilter(newFilterName);
-        LaunchesPage.clickButtonUpdateFilterEdit();
+    public LaunchesPage editNameFilter(String newFilterName){
+        clickButtonEditFilter();
+        sendNameNewFilter(newFilterName);
+        clickButtonUpdateFilterEdit();
+
+        return this;
     }
 }
