@@ -37,6 +37,9 @@ public class BaseUiTest {
 
     @AfterMethod
     public void tearDown() {
+        WebDriverRunner.getWebDriver().manage().deleteAllCookies();
+        executeJavaScript("window.localStorage.clear();");
+        executeJavaScript("window.sessionStorage.clear();");
         WebDriverRunner.closeWebDriver();
     }
 
