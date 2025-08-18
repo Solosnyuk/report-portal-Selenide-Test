@@ -17,14 +17,12 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 
 public class BaseUiTest {
+    protected final LaunchesPageLocators locators = new LaunchesPageLocators();
 
     @BeforeMethod(alwaysRun = true)
     public void setUp() {
-        Configuration.browser = "chrome";
         Configuration.headless = true;
         Selenide.open(RpConfig.getConfig().getEndpoint());
-        WebDriverRunner.getWebDriver();
-        Selenide.sleep(500);
     }
 
     @AfterMethod
@@ -32,11 +30,10 @@ public class BaseUiTest {
         WebDriverRunner.closeWebDriver();
     }
 
-    public static boolean verifyElementVisibleByXPath(String xpathTemplate, String filterName) {
+    public boolean verifyElementVisibleByXPath(String xpathTemplate, String filterName) {
         try {
-            String formattedXPath = String.format(LaunchesPageLocators.filterByNameAddXPathTemplate, filterName);
+            String formattedXPath = String.format(xpathTemplate, filterName);
             $(By.xpath(formattedXPath)).shouldBe(visible, Duration.ofSeconds(5));
-
             return true;
         } catch (Throwable e) {
             return false;

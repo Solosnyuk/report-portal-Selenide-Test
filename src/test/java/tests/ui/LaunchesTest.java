@@ -26,14 +26,13 @@ public class LaunchesTest extends BaseUiTest {
         String textFilter = generateName();
 
         logger.info("Добавление нового фильтра '{}'", filterName);
-        new LoginPage().login(RpConfig.getConfig().getLogin(),
-                RpConfig.getConfig().getPassword());
-        new LaunchesPage().clickOpenLaunchesPage();
-        new LaunchesPage().addNewFilter(filterName, textFilter);
+        new LoginPage()
+                .login(RpConfig.getConfig().getLogin(), RpConfig.getConfig().getPassword())
+                .clickOpenLaunchesPage()
+                .addNewFilter(filterName, textFilter);
 
         Assert.assertTrue(verifyElementVisibleByXPath(
-                LaunchesPageLocators.filterByNameAddXPathTemplate, filterName));
-
+                locators.filterByNameAddXPathTemplate, filterName));
     }
 
     @Story("Clone filter")
@@ -42,20 +41,19 @@ public class LaunchesTest extends BaseUiTest {
         logger.info("=== testCloneFilter START ===");
         String filterName = generateName();
         String textFilter = generateName();
+        String cloneName = "Copy " + filterName;
 
         logger.info("Клонирование фильтра '{}'", filterName);
-        new LoginPage().login(RpConfig.getConfig().getLogin(),
-                RpConfig.getConfig().getPassword());
-        new LaunchesPage().clickOpenLaunchesPage();
-        new LaunchesPage().addNewFilter(filterName, textFilter);
+        new LoginPage()
+                .login(RpConfig.getConfig().getLogin(), RpConfig.getConfig().getPassword())
+                .clickOpenLaunchesPage()
+                .addNewFilter(filterName, textFilter)
+                .clickCloneFilter()
+                .clickButtonSaveFilter()
+                .clickButtonAddFilterSave();
 
-        new LaunchesPage().clickCloneFilter();
-        new LaunchesPage().clickButtonSaveFilter();
-        new LaunchesPage().clickButtonAddFilterSave();
-
-        String cloneName = "Copy " + filterName;
         Assert.assertTrue(verifyElementVisibleByXPath(
-                LaunchesPageLocators.filterByNameAddXPathTemplate, cloneName));
+                locators.filterByNameAddXPathTemplate, cloneName));
     }
 
     @Story("Delete filter")
@@ -66,34 +64,33 @@ public class LaunchesTest extends BaseUiTest {
         String textFilter = generateName();
 
         logger.info("Удаление фильтра '{}'", filterName);
-        new LoginPage().login(RpConfig.getConfig().getLogin(),
-                RpConfig.getConfig().getPassword());
-        new LaunchesPage().clickOpenLaunchesPage();
-        new LaunchesPage().addNewFilter(filterName, textFilter);
-        new LaunchesPage().clickButtonDeleteFilter();
+        new LoginPage()
+                .login(RpConfig.getConfig().getLogin(), RpConfig.getConfig().getPassword())
+                .clickOpenLaunchesPage()
+                .addNewFilter(filterName, textFilter)
+                .clickButtonDeleteFilter();
 
         Assert.assertFalse(verifyElementVisibleByXPath(
-                LaunchesPageLocators.filterByNameAddXPathTemplate, filterName));
+                locators.filterByNameAddXPathTemplate, filterName));
     }
 
     @Story("Edit filter")
     @Test(groups = "UI", description = "UI Test")
     public void testEditFilter() {
         logger.info("=== testEditFilter START ===");
-
         String filterName = generateName();
         String textFilter = generateName();
         String newName = generateName();
 
         logger.info("Редактирование фильтра '{}' → '{}'", filterName, newName);
-        new LoginPage().login(RpConfig.getConfig().getLogin(),
-                RpConfig.getConfig().getPassword());
-        new LaunchesPage().clickOpenLaunchesPage();
-        new LaunchesPage().addNewFilter(filterName, textFilter);
-        new LaunchesPage().editNameFilter(newName);
+        new LoginPage()
+                .login(RpConfig.getConfig().getLogin(), RpConfig.getConfig().getPassword())
+                .clickOpenLaunchesPage()
+                .addNewFilter(filterName, textFilter)
+                .editNameFilter(newName);
 
         Assert.assertTrue(verifyElementVisibleByXPath(
-                LaunchesPageLocators.filterByNameAddXPathTemplate, newName));
+                locators.filterByNameAddXPathTemplate, newName));
     }
 
     @Step("{step}")

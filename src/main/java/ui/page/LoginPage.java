@@ -5,27 +5,29 @@ import com.codeborne.selenide.SelenideElement;
 import static com.codeborne.selenide.Selenide.*;
 
 public class LoginPage {
-    static SelenideElement usernameField = $(".inputOutside__input--Ad7Xu");
-    static SelenideElement passwordField = $("input[placeholder='Password']");
-    static SelenideElement loginButton = $x("//button[text()='Login' and @type='submit']");
+    SelenideElement usernameField = $(".inputOutside__input--Ad7Xu");
+    SelenideElement passwordField = $("input[placeholder='Password']");
+    SelenideElement loginButton = $x("//button[text()='Login' and @type='submit']");
 
-    public static void setLogin(String login) {
+    public void setLogin(String login) {
         usernameField.clear();
         usernameField.setValue(login);
     }
 
-    public static void setPassword(String password) {
+    public void setPassword(String password) {
         passwordField.clear();
         passwordField.setValue(password);
     }
 
-    public static void clickSetSignInButton() {
+    public void clickSetSignInButton() {
         loginButton.click();
     }
 
-    public void login(String login, String password) {
+    public LaunchesPage login(String login, String password) {
         setLogin(login);
         setPassword(password);
         clickSetSignInButton();
+
+        return new LaunchesPage();
     }
 }
