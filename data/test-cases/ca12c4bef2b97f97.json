@@ -1,12 +1,12 @@
 {
-  "uid" : "7a6bef224490694f",
+  "uid" : "ca12c4bef2b97f97",
   "name" : "UI Test",
   "fullName" : "tests.ui.LaunchesTest.testAddNewFilter",
   "historyId" : "dd39288a0c31cc8f4f9e9092a06440e3",
   "time" : {
-    "start" : 1755531812155,
-    "stop" : 1755531818985,
-    "duration" : 6830
+    "start" : 1755534415123,
+    "stop" : 1755534419899,
+    "duration" : 4776
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,9 +14,9 @@
   "beforeStages" : [ {
     "name" : "setUp",
     "time" : {
-      "start" : 1755531799968,
-      "stop" : 1755531812097,
-      "duration" : 12129
+      "start" : 1755534400704,
+      "stop" : 1755534415072,
+      "duration" : 14368
     },
     "description" : "",
     "status" : "passed",
@@ -52,7 +52,7 @@
     "value" : "pkrvmubgrv54qmi"
   }, {
     "name" : "thread",
-    "value" : "2307@pkrvmubgrv54qmi.main(1)"
+    "value" : "2303@pkrvmubgrv54qmi.main(1)"
   }, {
     "name" : "framework",
     "value" : "testng"
@@ -79,6 +79,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "7a6bef224490694f.json",
+  "source" : "ca12c4bef2b97f97.json",
   "parameterValues" : [ ]
 }

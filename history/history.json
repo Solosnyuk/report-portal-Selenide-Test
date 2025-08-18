@@ -2,57 +2,60 @@
   "f9b92bd3753f0ba0ecf563ad2ece5b0a" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b2b4c8ba15794bcf",
-      "status" : "passed",
+      "uid" : "5d107b6f7b29070",
+      "status" : "broken",
+      "statusDetails" : "Unrecognized field \"error_description\" (class api.pojos.CreateLaunchResponse), not marked as ignorable (2 known properties: \"number\", \"id\"])\n at [Source: (String)\"{\n  \"error_description\" : \"Invalid access token\",\n  \"error\" : \"invalid_token\"\n}\"; line: 2, column: 26] (through reference chain: api.pojos.CreateLaunchResponse[\"error_description\"])",
       "time" : {
-        "start" : 1755531793579,
-        "stop" : 1755531794534,
-        "duration" : 955
+        "start" : 1755534394729,
+        "stop" : 1755534395349,
+        "duration" : 620
       }
     } ]
   },
   "d3aa75855210a348a4152cce6082545a" : {
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6f864b0dbdf11f34",
-      "status" : "passed",
+      "uid" : "897be40b4aafa290",
+      "status" : "failed",
+      "statusDetails" : "\nexpected: 404\n but was: 401",
       "time" : {
-        "start" : 1755531791936,
-        "stop" : 1755531792272,
-        "duration" : 336
+        "start" : 1755534393442,
+        "stop" : 1755534393767,
+        "duration" : 325
       }
     } ]
   },
   "20a46ef4dd8153dcdc4ee53cab6bbafa" : {
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "7adbfc07737f0780",
-      "status" : "passed",
+      "uid" : "758419194ba98310",
+      "status" : "failed",
+      "statusDetails" : "\nexpected: 201\n but was: 401",
       "time" : {
-        "start" : 1755531790008,
-        "stop" : 1755531791881,
-        "duration" : 1873
+        "start" : 1755534391527,
+        "stop" : 1755534393389,
+        "duration" : 1862
       }
     } ]
   },
@@ -66,50 +69,52 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "7a6bef224490694f",
+      "uid" : "ca12c4bef2b97f97",
       "status" : "passed",
       "time" : {
-        "start" : 1755531812155,
-        "stop" : 1755531818985,
-        "duration" : 6830
+        "start" : 1755534415123,
+        "stop" : 1755534419899,
+        "duration" : 4776
       }
     } ]
   },
   "31a203901a64d617bd12ef178ad5d4df" : {
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "91d71d4356e95fc6",
-      "status" : "passed",
+      "uid" : "7c3633cd044e9491",
+      "status" : "failed",
+      "statusDetails" : "\nexpected: 404\n but was: 401",
       "time" : {
-        "start" : 1755531793263,
-        "stop" : 1755531793576,
-        "duration" : 313
+        "start" : 1755534394410,
+        "stop" : 1755534394725,
+        "duration" : 315
       }
     } ]
   },
   "bbdccc03daec763e0b1096918e98f53c" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c787456397ab19ec",
-      "status" : "passed",
+      "uid" : "c46cd928f63a1db",
+      "status" : "broken",
+      "statusDetails" : "Unrecognized field \"error_description\" (class api.pojos.CreateLaunchResponse), not marked as ignorable (2 known properties: \"number\", \"id\"])\n at [Source: (String)\"{\n  \"error_description\" : \"Invalid access token\",\n  \"error\" : \"invalid_token\"\n}\"; line: 2, column: 26] (through reference chain: api.pojos.CreateLaunchResponse[\"error_description\"])",
       "time" : {
-        "start" : 1755531792276,
-        "stop" : 1755531793260,
-        "duration" : 984
+        "start" : 1755534393773,
+        "stop" : 1755534394406,
+        "duration" : 633
       }
     } ]
   },
@@ -123,13 +128,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "abd1ff76ad28e568",
+      "uid" : "c99f6ace7da2b78e",
       "status" : "failed",
-      "statusDetails" : "Element not found {By.xpath: //input[@class='inputOutside__input--Ad7Xu']}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755531828468.1.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755531828468.1.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@class='inputOutside__input--Ad7Xu']\"}",
+      "statusDetails" : "Element not found {By.xpath: //input[@class='inputOutside__input--Ad7Xu']}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755534429384.1.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755534429384.1.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@class='inputOutside__input--Ad7Xu']\"}",
       "time" : {
-        "start" : 1755531824369,
-        "stop" : 1755531828573,
-        "duration" : 4204
+        "start" : 1755534425267,
+        "stop" : 1755534429470,
+        "duration" : 4203
       }
     } ]
   },
@@ -143,13 +148,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ff45711887eba06b",
+      "uid" : "cf1419aee6d6efff",
       "status" : "failed",
-      "statusDetails" : "Element not found {By.xpath: //input[@class='inputOutside__input--Ad7Xu']}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755531833048.2.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755531833048.2.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@class='inputOutside__input--Ad7Xu']\"}",
+      "statusDetails" : "Element not found {By.xpath: //input[@class='inputOutside__input--Ad7Xu']}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755534433902.2.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755534433902.2.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@class='inputOutside__input--Ad7Xu']\"}",
       "time" : {
-        "start" : 1755531828946,
-        "stop" : 1755531833134,
-        "duration" : 4188
+        "start" : 1755534429812,
+        "stop" : 1755534433986,
+        "duration" : 4174
       }
     } ]
   },
@@ -163,13 +168,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "10b0a7825f46b866",
+      "uid" : "6d8a1eed0577e67b",
       "status" : "failed",
-      "statusDetails" : "Element not found {By.xpath: //input[@class='inputOutside__input--Ad7Xu']}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755531823850.0.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755531823850.0.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@class='inputOutside__input--Ad7Xu']\"}",
+      "statusDetails" : "Element not found {By.xpath: //input[@class='inputOutside__input--Ad7Xu']}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755534424819.0.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755534424819.0.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@class='inputOutside__input--Ad7Xu']\"}",
       "time" : {
-        "start" : 1755531819694,
-        "stop" : 1755531823988,
-        "duration" : 4294
+        "start" : 1755534420673,
+        "stop" : 1755534424916,
+        "duration" : 4243
       }
     } ]
   }

@@ -4,57 +4,138 @@
   "children" : [ {
     "name" : "Product defects",
     "children" : [ {
-      "name" : "Element not found {By.xpath: //input[@class='inputOutside__input--Ad7Xu']}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755531823850.0.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755531823850.0.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@class='inputOutside__input--Ad7Xu']\"}",
+      "name" : "\nexpected: 201\n but was: 401",
       "children" : [ {
-        "name" : "UI Test",
-        "uid" : "10b0a7825f46b866",
-        "parentUid" : "77f65c85e4a29b39624b737f82d94dab",
+        "name" : "API Test",
+        "uid" : "758419194ba98310",
+        "parentUid" : "f787d4a7a2bc631a1b990fb7520ad314",
         "status" : "failed",
         "time" : {
-          "start" : 1755531819694,
-          "stop" : 1755531823988,
-          "duration" : 4294
+          "start" : 1755534391527,
+          "stop" : 1755534393389,
+          "duration" : 1862
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "77f65c85e4a29b39624b737f82d94dab"
+      "uid" : "f787d4a7a2bc631a1b990fb7520ad314"
     }, {
-      "name" : "Element not found {By.xpath: //input[@class='inputOutside__input--Ad7Xu']}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755531828468.1.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755531828468.1.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@class='inputOutside__input--Ad7Xu']\"}",
+      "name" : "\nexpected: 404\n but was: 401",
       "children" : [ {
-        "name" : "UI Test",
-        "uid" : "abd1ff76ad28e568",
-        "parentUid" : "2b20252d36916829dadc2fe83e17dc08",
+        "name" : "API Test",
+        "uid" : "897be40b4aafa290",
+        "parentUid" : "9a2866eaa2173959a0f5316c76babd41",
         "status" : "failed",
         "time" : {
-          "start" : 1755531824369,
-          "stop" : 1755531828573,
-          "duration" : 4204
+          "start" : 1755534393442,
+          "stop" : 1755534393767,
+          "duration" : 325
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "API Test",
+        "uid" : "7c3633cd044e9491",
+        "parentUid" : "9a2866eaa2173959a0f5316c76babd41",
+        "status" : "failed",
+        "time" : {
+          "start" : 1755534394410,
+          "stop" : 1755534394725,
+          "duration" : 315
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "2b20252d36916829dadc2fe83e17dc08"
+      "uid" : "9a2866eaa2173959a0f5316c76babd41"
     }, {
-      "name" : "Element not found {By.xpath: //input[@class='inputOutside__input--Ad7Xu']}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755531833048.2.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755531833048.2.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@class='inputOutside__input--Ad7Xu']\"}",
+      "name" : "Element not found {By.xpath: //input[@class='inputOutside__input--Ad7Xu']}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755534424819.0.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755534424819.0.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@class='inputOutside__input--Ad7Xu']\"}",
       "children" : [ {
         "name" : "UI Test",
-        "uid" : "ff45711887eba06b",
-        "parentUid" : "c451b30cc92f0464c8a260c24f2f9ae0",
+        "uid" : "6d8a1eed0577e67b",
+        "parentUid" : "35181670662e3e5c3f1b6bb6f5567e7a",
         "status" : "failed",
         "time" : {
-          "start" : 1755531828946,
-          "stop" : 1755531833134,
-          "duration" : 4188
+          "start" : 1755534420673,
+          "stop" : 1755534424916,
+          "duration" : 4243
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "c451b30cc92f0464c8a260c24f2f9ae0"
+      "uid" : "35181670662e3e5c3f1b6bb6f5567e7a"
+    }, {
+      "name" : "Element not found {By.xpath: //input[@class='inputOutside__input--Ad7Xu']}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755534429384.1.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755534429384.1.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@class='inputOutside__input--Ad7Xu']\"}",
+      "children" : [ {
+        "name" : "UI Test",
+        "uid" : "c99f6ace7da2b78e",
+        "parentUid" : "e4d818ed1427fdca17830c3f541ff490",
+        "status" : "failed",
+        "time" : {
+          "start" : 1755534425267,
+          "stop" : 1755534429470,
+          "duration" : 4203
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e4d818ed1427fdca17830c3f541ff490"
+    }, {
+      "name" : "Element not found {By.xpath: //input[@class='inputOutside__input--Ad7Xu']}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755534433902.2.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755534433902.2.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@class='inputOutside__input--Ad7Xu']\"}",
+      "children" : [ {
+        "name" : "UI Test",
+        "uid" : "cf1419aee6d6efff",
+        "parentUid" : "4e40e47167cf72b9b730f505a1098b64",
+        "status" : "failed",
+        "time" : {
+          "start" : 1755534429812,
+          "stop" : 1755534433986,
+          "duration" : 4174
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4e40e47167cf72b9b730f505a1098b64"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Unrecognized field \"error_description\" (class api.pojos.CreateLaunchResponse), not marked as ignorable (2 known properties: \"number\", \"id\"])\n at [Source: (String)\"{\n  \"error_description\" : \"Invalid access token\",\n  \"error\" : \"invalid_token\"\n}\"; line: 2, column: 26] (through reference chain: api.pojos.CreateLaunchResponse[\"error_description\"])",
+      "children" : [ {
+        "name" : "API Test",
+        "uid" : "c46cd928f63a1db",
+        "parentUid" : "947fc643ce963daac4fcc2c4d2433fb0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1755534393773,
+          "stop" : 1755534394406,
+          "duration" : 633
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "API Test",
+        "uid" : "5d107b6f7b29070",
+        "parentUid" : "947fc643ce963daac4fcc2c4d2433fb0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1755534394729,
+          "stop" : 1755534395349,
+          "duration" : 620
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "947fc643ce963daac4fcc2c4d2433fb0"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]
 }
