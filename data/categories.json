@@ -7,54 +7,84 @@
       "name" : "\nexpected: 200\n but was: 403",
       "children" : [ {
         "name" : "API Test",
-        "uid" : "9837c359c03adb5a",
+        "uid" : "f9fdd1fd6b355a55",
         "parentUid" : "f482786a8bf8af8fb1788c9cf247086d",
         "status" : "failed",
         "time" : {
-          "start" : 1755528351485,
-          "stop" : 1755528352198,
-          "duration" : 713
+          "start" : 1755528813223,
+          "stop" : 1755528814298,
+          "duration" : 1075
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "API Test",
-        "uid" : "8696a1074f7d8a36",
+        "uid" : "9059614627f946f8",
         "parentUid" : "f482786a8bf8af8fb1788c9cf247086d",
         "status" : "failed",
         "time" : {
-          "start" : 1755528352529,
-          "stop" : 1755528353214,
-          "duration" : 685
+          "start" : 1755528814810,
+          "stop" : 1755528815843,
+          "duration" : 1033
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
       "uid" : "f482786a8bf8af8fb1788c9cf247086d"
-    } ],
-    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
-  }, {
-    "name" : "Test defects",
-    "children" : [ {
-      "name" : "Could not start a new session. Response code 500. Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir \nHost info: host: 'pkrvmubgrv54qmi', ip: '10.1.0.127'\nBuild info: version: '4.34.0', revision: '707dcb4246*'\nSystem info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-1018-azure', java.version: '17.0.16'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--proxy-bypass-list=<-loopb..., --disable-dev-shm-usage, --disable-search-engine-cho..., --unsafely-disable-devtools..., --window-size=1920,1080], binary: /usr/bin/google-chrome, excludeSwitches: [enable-automation, load-extension], extensions: [], prefs: {autofill.credit_card_enabled: false, autofill.profile_enabled: false, credentials_enable_service: false, download.default_directory: /home/runner/work/report-po..., plugins.always_open_pdf_externally: true, profile.default_content_setting_values.automatic_downloads: 1, profile.password_manager_enabled: false, profile.password_manager_leak_detection: false, safebrowsing.enabled: true}}, pageLoadStrategy: normal, unhandledPromptBehavior: accept}]}]\nselenide.url: https://demo.reportportal.io\nselenide.baseUrl: http://localhost:8080",
+    }, {
+      "name" : "Element not found {By.xpath: //input[@class='inputOutside__input--Ad7Xu']}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755528847125.0.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755528847125.0.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@class='inputOutside__input--Ad7Xu']\"}",
       "children" : [ {
-        "name" : "setUp",
-        "uid" : "61aabf6b3828465",
-        "parentUid" : "c94c52144aa5d4421ebd9b35db2cb962",
-        "status" : "broken",
+        "name" : "UI Test",
+        "uid" : "30597f96537df496",
+        "parentUid" : "3524b5be6967a9199b51632b1c01e4b8",
+        "status" : "failed",
         "time" : {
-          "start" : 1755528365659,
-          "stop" : 1755528365659,
-          "duration" : 0
+          "start" : 1755528843040,
+          "stop" : 1755528847221,
+          "duration" : 4181
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "c94c52144aa5d4421ebd9b35db2cb962"
+      "uid" : "3524b5be6967a9199b51632b1c01e4b8"
+    }, {
+      "name" : "Element not found {By.xpath: //input[@class='inputOutside__input--Ad7Xu']}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755528851758.1.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755528851758.1.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@class='inputOutside__input--Ad7Xu']\"}",
+      "children" : [ {
+        "name" : "UI Test",
+        "uid" : "75eb9aaf3fc96d65",
+        "parentUid" : "998c7899477da6516c66981b27f93744",
+        "status" : "failed",
+        "time" : {
+          "start" : 1755528847681,
+          "stop" : 1755528851818,
+          "duration" : 4137
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "998c7899477da6516c66981b27f93744"
+    }, {
+      "name" : "Element not found {By.xpath: //input[@class='inputOutside__input--Ad7Xu']}\nExpected: editable\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755528856355.2.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755528856355.2.html\nTimeout: 4 s.\nCaused by: NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//input[@class='inputOutside__input--Ad7Xu']\"}",
+      "children" : [ {
+        "name" : "UI Test",
+        "uid" : "3b2364c058e7a681",
+        "parentUid" : "fae0f79e3b96c7631bb630010c830475",
+        "status" : "failed",
+        "time" : {
+          "start" : 1755528852285,
+          "stop" : 1755528856416,
+          "duration" : 4131
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fae0f79e3b96c7631bb630010c830475"
     } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ]
 }
