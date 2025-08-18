@@ -32,6 +32,7 @@ public class CrudTest extends BaseApiTest {
         PostLaunch post = new PostLaunch();
         Response postResponse = post.createLaunch();
 
+        Thread.sleep(300);
         ObjectMapper mapper = new ObjectMapper();
         CreateLaunchResponse launch = mapper.readValue(postResponse.asString(), CreateLaunchResponse.class);
         String launchNumber = String.valueOf(launch.getNumber());
@@ -53,6 +54,7 @@ public class CrudTest extends BaseApiTest {
         PostLaunch post = new PostLaunch();
         Response postResponse = post.createLaunch();
 
+        Thread.sleep(300);
         ObjectMapper mapper = new ObjectMapper();
         CreateLaunchResponse launch = mapper.readValue(postResponse.asString(), CreateLaunchResponse.class);
         String launchNumber = String.valueOf(launch.getNumber());
