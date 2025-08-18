@@ -5,7 +5,7 @@ import com.codeborne.selenide.SelenideElement;
 import static com.codeborne.selenide.Selenide.*;
 
 public class LoginPage {
-    SelenideElement usernameField = $(".inputOutside__input--Ad7Xu");
+    SelenideElement usernameField = $x("//input[@class='inputOutside__input--Ad7Xu']");
     SelenideElement passwordField = $("input[placeholder='Password']");
     SelenideElement loginButton = $x("//button[text()='Login' and @type='submit']");
 
