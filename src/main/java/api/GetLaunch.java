@@ -10,8 +10,7 @@ public class GetLaunch {
         String url = RpConfig.getConfig().getEndpoint() + "/api/v1/"
                 + RpConfig.getConfig().getProjectName() + "/launch/" + launchNumber;
 
-        return RestAssured.given()
-                .contentType(ContentType.JSON)
+       return RestAssured.given()
                 .accept(ContentType.JSON)
                 .header("Authorization", "Bearer " + RpConfig.getConfig().getApiKey())
                 .when()

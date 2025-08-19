@@ -24,10 +24,14 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Run API tests
+      - name: Replace secrets in rp.properties
         run: |
-          mvn clean test -Dgroups=API || true  
+          sed -i "s/\${RP_LOGIN}/${{ secrets.RP_LOGIN }}/g" src/main/resources/rp.properties
+          sed -i "s/\${RP_PASSWORD}/${{ secrets.RP_PASSWORD }}/g" src/main/resources/rp.properties    
 
+      - name: Run API tests
+        run: mvn clean test -Dgroups=API || true
+       
       - name: Upload API Allure results
         if: always() 
         uses: actions/upload-artifact@v4

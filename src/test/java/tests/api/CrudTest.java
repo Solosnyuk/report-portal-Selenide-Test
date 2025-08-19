@@ -36,6 +36,7 @@ public class CrudTest extends BaseApiTest {
         PostLaunch post = new PostLaunch();
         Response postResponse = post.createLaunch();
 
+
         Uthils.waitForStatusCode(() -> postResponse.getStatusCode(), 201);
 
         ObjectMapper mapper = new ObjectMapper();
