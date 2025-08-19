@@ -9,10 +9,7 @@ import org.testng.annotations.Test;
 import api.pojos.CreateLaunchResponse;
 import api.pojos.PutLaunchRequest;
 
-import java.util.concurrent.TimeUnit;
-
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.awaitility.Awaitility.await;
 
 @Epic("API Tests")
 public class CrudTest extends BaseApiTest {
@@ -25,7 +22,9 @@ public class CrudTest extends BaseApiTest {
         PostLaunch post = new PostLaunch();
         Response response = post.createLaunch();
 
-        assertThat(response.getStatusCode()).isEqualTo(201);
+        assertThat(response.getStatusCode())
+                .as("Response Body: %s", response.getBody().asPrettyString())
+                .isEqualTo(201);
     }
 
     @Story("Update Launch")
@@ -35,7 +34,6 @@ public class CrudTest extends BaseApiTest {
 
         PostLaunch post = new PostLaunch();
         Response postResponse = post.createLaunch();
-
 
         Uthils.waitForStatusCode(() -> postResponse.getStatusCode(), 201);
 
@@ -49,7 +47,9 @@ public class CrudTest extends BaseApiTest {
         PutLaunch put = new PutLaunch();
         Response putResponse = put.updateLaunch(launchNumber, updateBody);
 
-        assertThat(putResponse.getStatusCode()).isEqualTo(200);
+        assertThat(putResponse.getStatusCode())
+                .as("Response Body: %s", putResponse.getBody().asPrettyString())
+                .isEqualTo(200);
     }
 
     @Story("Get Launch")
@@ -69,7 +69,9 @@ public class CrudTest extends BaseApiTest {
         GetLaunch get = new GetLaunch();
         Response getResponse = get.getLaunch(launchNumber);
 
-        assertThat(getResponse.getStatusCode()).isEqualTo(200);
+        assertThat(getResponse.getStatusCode())
+                .as("Response Body: %s", getResponse.getBody().asPrettyString())
+                .isEqualTo(200);
     }
 
     @Story("Get Non-Existing Launch")
@@ -81,7 +83,9 @@ public class CrudTest extends BaseApiTest {
         GetLaunch get = new GetLaunch();
         Response response = get.getLaunch(nonexistentLaunchNumber);
 
-        assertThat(response.getStatusCode()).isEqualTo(404);
+        assertThat(response.getStatusCode())
+                .as("Response Body: %s", response.getBody().asPrettyString())
+                .isEqualTo(404);
     }
 
     @Story("Delete Non-Existing Launch")
@@ -93,6 +97,8 @@ public class CrudTest extends BaseApiTest {
         DeleteLaunch delete = new DeleteLaunch();
         Response response = delete.deleteLaunch(nonexistentLaunchNumber);
 
-        assertThat(response.getStatusCode()).isEqualTo(404);
+        assertThat(response.getStatusCode())
+                .as("Response Body: %s", response.getBody().asPrettyString())
+                .isEqualTo(404);
     }
 }
