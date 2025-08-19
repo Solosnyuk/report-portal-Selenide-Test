@@ -25,8 +25,11 @@ jobs:
           distribution: 'temurin'
 
       - name: Run API tests
-        run: |
-          mvn clean test -Dgroups=API || true  
+        run: mvn clean test -Dgroups=API || true
+        env:
+          RP_LOGIN: ${{ secrets.RP_LOGIN }}
+          RP_PASSWORD: ${{ secrets.RP_PASSWORD }}
+ 
 
       - name: Upload API Allure results
         if: always() 
