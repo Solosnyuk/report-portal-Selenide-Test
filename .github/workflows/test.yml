@@ -81,15 +81,15 @@ jobs:
           mkdir -p target/allure-results/history
           cp -r target/allure-results/history/. target/allure-results/history/ || true
 
-      - name: Generate Allure report
-        run: mvn allure:report
-
       - name: Upload Allure history
         uses: actions/upload-artifact@v4
         with:
           name: allure-history
           path: target/allure-report/history
-          retention-days: 90
+          retention-days: 90    
+
+      - name: Generate Allure report
+        run: mvn allure:report
 
       - name: Deploy to GitHub Pages
         if: ${{ github.event.inputs.deploy == 'true' }}
