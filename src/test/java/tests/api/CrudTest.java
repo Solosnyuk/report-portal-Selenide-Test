@@ -8,7 +8,11 @@ import io.restassured.response.Response;
 import org.testng.annotations.Test;
 import api.pojos.CreateLaunchResponse;
 import api.pojos.PutLaunchRequest;
+
+import java.util.concurrent.TimeUnit;
+
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.awaitility.Awaitility.await;
 
 @Epic("API Tests")
 public class CrudTest extends BaseApiTest {
@@ -32,6 +36,8 @@ public class CrudTest extends BaseApiTest {
         PostLaunch post = new PostLaunch();
         Response postResponse = post.createLaunch();
 
+        Uthils.waitForStatusCode(() -> postResponse.getStatusCode(), 201);
+
         ObjectMapper mapper = new ObjectMapper();
         CreateLaunchResponse launch = mapper.readValue(postResponse.asString(), CreateLaunchResponse.class);
         String launchNumber = String.valueOf(launch.getNumber());
@@ -52,6 +58,8 @@ public class CrudTest extends BaseApiTest {
 
         PostLaunch post = new PostLaunch();
         Response postResponse = post.createLaunch();
+
+        Uthils.waitForStatusCode(() -> postResponse.getStatusCode(), 201);
 
         ObjectMapper mapper = new ObjectMapper();
         CreateLaunchResponse launch = mapper.readValue(postResponse.asString(), CreateLaunchResponse.class);
