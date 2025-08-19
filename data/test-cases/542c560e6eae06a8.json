@@ -1,0 +1,100 @@
+{
+  "uid" : "542c560e6eae06a8",
+  "name" : "UI Test",
+  "fullName" : "tests.ui.LaunchesTest.testDeleteFilter",
+  "historyId" : "63ae0eff29784fa5e867ade3872bb144",
+  "time" : {
+    "start" : 1755615509805,
+    "stop" : 1755615523270,
+    "duration" : 13465
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1755615505772,
+      "stop" : 1755615509801,
+      "duration" : 4029
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1755615523271,
+      "stop" : 1755615523356,
+      "duration" : 85
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.ui.LaunchesTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.ui.LaunchesTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testDeleteFilter"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.ui.LaunchesTest"
+  }, {
+    "name" : "host",
+    "value" : "pkrvmubgrv54qmi"
+  }, {
+    "name" : "thread",
+    "value" : "2315@pkrvmubgrv54qmi.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Delete filter"
+  }, {
+    "name" : "epic",
+    "value" : "UI Tests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "542c560e6eae06a8.json",
+  "parameterValues" : [ ]
+}
