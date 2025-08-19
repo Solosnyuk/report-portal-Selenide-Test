@@ -4,36 +4,104 @@
   "children" : [ {
     "name" : "Product defects",
     "children" : [ {
-      "name" : "[Response Body: {\n    \"errorCode\": 4003,\n    \"message\": \"You do not have enough permissions.\"\n}] \nexpected: 200\n but was: 403",
+      "name" : "[Response Body: {\n    \"error_description\": \"Invalid access token\",\n    \"error\": \"invalid_token\"\n}] \nexpected: 201\n but was: 401",
       "children" : [ {
         "name" : "API Test",
-        "uid" : "b0311daf1d1a00a7",
-        "parentUid" : "19c4df8b44e04c65e3bba394f75479ef",
+        "uid" : "66922bc9a4436d62",
+        "parentUid" : "aa2a68fba5673d9e401ba03fbdf9383b",
         "status" : "failed",
         "time" : {
-          "start" : 1755616525762,
-          "stop" : 1755616527317,
-          "duration" : 1555
+          "start" : 1755631032120,
+          "stop" : 1755631033999,
+          "duration" : 1879
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "aa2a68fba5673d9e401ba03fbdf9383b"
+    }, {
+      "name" : "[Response Body: {\n    \"error_description\": \"Invalid access token\",\n    \"error\": \"invalid_token\"\n}] \nexpected: 404\n but was: 401",
+      "children" : [ {
+        "name" : "API Test",
+        "uid" : "cb390f1e334b0fb5",
+        "parentUid" : "90c605b2d4d08b84ff473a545c89fa78",
+        "status" : "failed",
+        "time" : {
+          "start" : 1755631034046,
+          "stop" : 1755631034505,
+          "duration" : 459
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "API Test",
-        "uid" : "8dd09b61379ccc80",
-        "parentUid" : "19c4df8b44e04c65e3bba394f75479ef",
+        "uid" : "ba30af36dfef7192",
+        "parentUid" : "90c605b2d4d08b84ff473a545c89fa78",
         "status" : "failed",
         "time" : {
-          "start" : 1755616527830,
-          "stop" : 1755616529384,
-          "duration" : 1554
+          "start" : 1755631044988,
+          "stop" : 1755631045432,
+          "duration" : 444
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "19c4df8b44e04c65e3bba394f75479ef"
+      "uid" : "90c605b2d4d08b84ff473a545c89fa78"
+    }, {
+      "name" : "Invalid element state [By.xpath: //div[contains(@class, 'filterItem__icon--zcepO')]]: element click intercepted: Element <div class=\"filterItem__icon--zcepO\">...</div> is not clickable at point (1371, 115). Other element would receive the click: <div style=\"position: absolute; inset: 0px; overflow: scroll; margin-right: 0px; margin-bottom: 0px;\">...</div>\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755631101285.0.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755631101285.0.html\nTimeout: 4 s.\nCaused by: ElementClickInterceptedException: element click intercepted: Element <div class=\"filterItem__icon--zcepO\">...</div> is not clickable at point (1371, 115). Other element would receive the click: <div style=\"position: absolute; inset: 0px; overflow: scroll; margin-right: 0px; margin-bottom: 0px;\">...</div>",
+      "children" : [ {
+        "name" : "UI Test",
+        "uid" : "531c190a93902053",
+        "parentUid" : "0db7301395441eebd631db4afa78ec15",
+        "status" : "failed",
+        "time" : {
+          "start" : 1755631092618,
+          "stop" : 1755631101420,
+          "duration" : 8802
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0db7301395441eebd631db4afa78ec15"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Condition with Lambda expression in tests.api.Uthils was not fulfilled within 10 seconds.",
+      "children" : [ {
+        "name" : "API Test",
+        "uid" : "4a44ea04912e2cae",
+        "parentUid" : "49e2c7ddacfeaefd8081e09aae919130",
+        "status" : "broken",
+        "time" : {
+          "start" : 1755631034509,
+          "stop" : 1755631044983,
+          "duration" : 10474
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "API Test",
+        "uid" : "350ebbdc9b20adb2",
+        "parentUid" : "49e2c7ddacfeaefd8081e09aae919130",
+        "status" : "broken",
+        "time" : {
+          "start" : 1755631045435,
+          "stop" : 1755631055889,
+          "duration" : 10454
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "49e2c7ddacfeaefd8081e09aae919130"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]
 }
