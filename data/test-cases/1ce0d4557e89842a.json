@@ -1,12 +1,12 @@
 {
-  "uid" : "eef7e63fa36a5179",
+  "uid" : "1ce0d4557e89842a",
   "name" : "UI Test",
-  "fullName" : "tests.ui.LaunchesTest.testDeleteFilter",
-  "historyId" : "63ae0eff29784fa5e867ade3872bb144",
+  "fullName" : "tests.ui.LaunchesTest.testEditFilter",
+  "historyId" : "dff417ac8193f9392db7737e9ab4be88",
   "time" : {
-    "start" : 1755605836425,
-    "stop" : 1755605847015,
-    "duration" : 10590
+    "start" : 1755606415475,
+    "stop" : 1755606424305,
+    "duration" : 8830
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,9 +14,9 @@
   "beforeStages" : [ {
     "name" : "setUp",
     "time" : {
-      "start" : 1755605831609,
-      "stop" : 1755605836422,
-      "duration" : 4813
+      "start" : 1755606411447,
+      "stop" : 1755606415472,
+      "duration" : 4025
     },
     "description" : "",
     "status" : "passed",
@@ -31,9 +31,9 @@
   "afterStages" : [ {
     "name" : "tearDown",
     "time" : {
-      "start" : 1755605847017,
-      "stop" : 1755605847096,
-      "duration" : 79
+      "start" : 1755606424307,
+      "stop" : 1755606424387,
+      "duration" : 80
     },
     "description" : "",
     "status" : "passed",
@@ -53,7 +53,7 @@
     "value" : "tests.ui.LaunchesTest"
   }, {
     "name" : "testMethod",
-    "value" : "testDeleteFilter"
+    "value" : "testEditFilter"
   }, {
     "name" : "parentSuite",
     "value" : "Surefire suite"
@@ -68,7 +68,7 @@
     "value" : "pkrvmubgrv54qmi"
   }, {
     "name" : "thread",
-    "value" : "2314@pkrvmubgrv54qmi.main(1)"
+    "value" : "2351@pkrvmubgrv54qmi.main(1)"
   }, {
     "name" : "framework",
     "value" : "testng"
@@ -77,7 +77,7 @@
     "value" : "java"
   }, {
     "name" : "story",
-    "value" : "Delete filter"
+    "value" : "Edit filter"
   }, {
     "name" : "epic",
     "value" : "UI Tests"
@@ -95,6 +95,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "eef7e63fa36a5179.json",
+  "source" : "1ce0d4557e89842a.json",
   "parameterValues" : [ ]
 }
