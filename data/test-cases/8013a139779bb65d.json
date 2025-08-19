@@ -1,12 +1,12 @@
 {
-  "uid" : "be69a37ad825b45",
+  "uid" : "8013a139779bb65d",
   "name" : "API Test",
-  "fullName" : "tests.api.CrudTest.getNonExistingLaunchTest",
-  "historyId" : "31a203901a64d617bd12ef178ad5d4df",
+  "fullName" : "tests.api.CrudTest.createLaunchTest",
+  "historyId" : "20a46ef4dd8153dcdc4ee53cab6bbafa",
   "time" : {
-    "start" : 1755584449650,
-    "stop" : 1755584449968,
-    "duration" : 318
+    "start" : 1755599530209,
+    "stop" : 1755599532007,
+    "duration" : 1798
   },
   "status" : "passed",
   "flaky" : false,
@@ -21,7 +21,7 @@
     "value" : "tests.api.CrudTest"
   }, {
     "name" : "testMethod",
-    "value" : "getNonExistingLaunchTest"
+    "value" : "createLaunchTest"
   }, {
     "name" : "parentSuite",
     "value" : "Surefire suite"
@@ -36,7 +36,7 @@
     "value" : "pkrvmubgrv54qmi"
   }, {
     "name" : "thread",
-    "value" : "2175@pkrvmubgrv54qmi.main(1)"
+    "value" : "2176@pkrvmubgrv54qmi.main(1)"
   }, {
     "name" : "framework",
     "value" : "testng"
@@ -45,7 +45,7 @@
     "value" : "java"
   }, {
     "name" : "story",
-    "value" : "Get Non-Existing Launch"
+    "value" : "Create Launch"
   }, {
     "name" : "epic",
     "value" : "API Tests"
@@ -63,6 +63,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "be69a37ad825b45.json",
+  "source" : "8013a139779bb65d.json",
   "parameterValues" : [ ]
 }
