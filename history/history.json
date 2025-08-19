@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "350ebbdc9b20adb2",
+      "uid" : "195d49fd3e25ffbd",
       "status" : "broken",
       "statusDetails" : "Condition with Lambda expression in tests.api.Uthils was not fulfilled within 10 seconds.",
       "time" : {
-        "start" : 1755631045435,
-        "stop" : 1755631055889,
-        "duration" : 10454
+        "start" : 1755631037808,
+        "stop" : 1755631048311,
+        "duration" : 10503
       }
     } ]
   },
@@ -29,13 +29,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "cb390f1e334b0fb5",
+      "uid" : "c0daa15da7fe5a9",
       "status" : "failed",
       "statusDetails" : "[Response Body: {\n    \"error_description\": \"Invalid access token\",\n    \"error\": \"invalid_token\"\n}] \nexpected: 404\n but was: 401",
       "time" : {
-        "start" : 1755631034046,
-        "stop" : 1755631034505,
-        "duration" : 459
+        "start" : 1755631026231,
+        "stop" : 1755631026764,
+        "duration" : 533
       }
     } ]
   },
@@ -49,13 +49,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "66922bc9a4436d62",
+      "uid" : "b4ff86115baa938",
       "status" : "failed",
       "statusDetails" : "[Response Body: {\n    \"error_description\": \"Invalid access token\",\n    \"error\": \"invalid_token\"\n}] \nexpected: 201\n but was: 401",
       "time" : {
-        "start" : 1755631032120,
-        "stop" : 1755631033999,
-        "duration" : 1879
+        "start" : 1755631023997,
+        "stop" : 1755631026177,
+        "duration" : 2180
       }
     } ]
   },
@@ -69,12 +69,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "70eaa0f07c61aa2b",
+      "uid" : "33085e2f25f22831",
       "status" : "passed",
       "time" : {
-        "start" : 1755631074051,
-        "stop" : 1755631078423,
-        "duration" : 4372
+        "start" : 1755631076487,
+        "stop" : 1755631082002,
+        "duration" : 5515
       }
     } ]
   },
@@ -88,13 +88,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ba30af36dfef7192",
+      "uid" : "3a9acaa7ead9348e",
       "status" : "failed",
       "statusDetails" : "[Response Body: {\n    \"error_description\": \"Invalid access token\",\n    \"error\": \"invalid_token\"\n}] \nexpected: 404\n but was: 401",
       "time" : {
-        "start" : 1755631044988,
-        "stop" : 1755631045432,
-        "duration" : 444
+        "start" : 1755631037317,
+        "stop" : 1755631037805,
+        "duration" : 488
       }
     } ]
   },
@@ -108,33 +108,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "4a44ea04912e2cae",
+      "uid" : "dd0c1080141229b7",
       "status" : "broken",
       "statusDetails" : "Condition with Lambda expression in tests.api.Uthils was not fulfilled within 10 seconds.",
       "time" : {
-        "start" : 1755631034509,
-        "stop" : 1755631044983,
-        "duration" : 10474
-      }
-    } ]
-  },
-  "63ae0eff29784fa5e867ade3872bb144" : {
-    "statistic" : {
-      "failed" : 1,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "531c190a93902053",
-      "status" : "failed",
-      "statusDetails" : "Invalid element state [By.xpath: //div[contains(@class, 'filterItem__icon--zcepO')]]: element click intercepted: Element <div class=\"filterItem__icon--zcepO\">...</div> is not clickable at point (1371, 115). Other element would receive the click: <div style=\"position: absolute; inset: 0px; overflow: scroll; margin-right: 0px; margin-bottom: 0px;\">...</div>\nScreenshot: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755631101285.0.png\nPage source: file:/home/runner/work/report-portal-Selenide-Test/report-portal-Selenide-Test/build/reports/tests/1755631101285.0.html\nTimeout: 4 s.\nCaused by: ElementClickInterceptedException: element click intercepted: Element <div class=\"filterItem__icon--zcepO\">...</div> is not clickable at point (1371, 115). Other element would receive the click: <div style=\"position: absolute; inset: 0px; overflow: scroll; margin-right: 0px; margin-bottom: 0px;\">...</div>",
-      "time" : {
-        "start" : 1755631092618,
-        "stop" : 1755631101420,
-        "duration" : 8802
+        "start" : 1755631026770,
+        "stop" : 1755631037313,
+        "duration" : 10543
       }
     } ]
   },
@@ -148,12 +128,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "16ddcee2741dc744",
+      "uid" : "dc1b3225eb38c417",
       "status" : "passed",
       "time" : {
-        "start" : 1755631106132,
-        "stop" : 1755631111103,
-        "duration" : 4971
+        "start" : 1755631111473,
+        "stop" : 1755631116537,
+        "duration" : 5064
+      }
+    } ]
+  },
+  "63ae0eff29784fa5e867ade3872bb144" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a5acfea4a7ad532e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1755631097255,
+        "stop" : 1755631106624,
+        "duration" : 9369
       }
     } ]
   },
@@ -167,12 +166,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "4456609497dbe718",
+      "uid" : "daca55113cb89e25",
       "status" : "passed",
       "time" : {
-        "start" : 1755631083263,
-        "stop" : 1755631087931,
-        "duration" : 4668
+        "start" : 1755631087328,
+        "stop" : 1755631092094,
+        "duration" : 4766
       }
     } ]
   }
