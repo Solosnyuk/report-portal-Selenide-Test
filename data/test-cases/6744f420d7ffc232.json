@@ -1,0 +1,100 @@
+{
+  "uid" : "6744f420d7ffc232",
+  "name" : "UI Test",
+  "fullName" : "tests.ui.LaunchesTest.testDeleteFilter",
+  "historyId" : "63ae0eff29784fa5e867ade3872bb144",
+  "time" : {
+    "start" : 1755637129883,
+    "stop" : 1755637138994,
+    "duration" : 9111
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1755637125831,
+      "stop" : 1755637129880,
+      "duration" : 4049
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1755637138996,
+      "stop" : 1755637139073,
+      "duration" : 77
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.ui.LaunchesTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.ui.LaunchesTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testDeleteFilter"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.ui.LaunchesTest"
+  }, {
+    "name" : "host",
+    "value" : "pkrvmubgrv54qmi"
+  }, {
+    "name" : "thread",
+    "value" : "2325@pkrvmubgrv54qmi.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Delete filter"
+  }, {
+    "name" : "epic",
+    "value" : "UI Tests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6744f420d7ffc232.json",
+  "parameterValues" : [ ]
+}
