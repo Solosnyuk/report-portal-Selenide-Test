@@ -1,5 +1,90 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "[Response Body: {\n    \"error_description\": \"Invalid access token\",\n    \"error\": \"invalid_token\"\n}] \nexpected: 201\n but was: 401",
+      "children" : [ {
+        "name" : "API Test",
+        "uid" : "825c67b6d73393e",
+        "parentUid" : "aa2a68fba5673d9e401ba03fbdf9383b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1755605772384,
+          "stop" : 1755605774238,
+          "duration" : 1854
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "aa2a68fba5673d9e401ba03fbdf9383b"
+    }, {
+      "name" : "[Response Body: {\n    \"error_description\": \"Invalid access token\",\n    \"error\": \"invalid_token\"\n}] \nexpected: 404\n but was: 401",
+      "children" : [ {
+        "name" : "API Test",
+        "uid" : "58e3bb0b6f11696",
+        "parentUid" : "90c605b2d4d08b84ff473a545c89fa78",
+        "status" : "failed",
+        "time" : {
+          "start" : 1755605774286,
+          "stop" : 1755605774815,
+          "duration" : 529
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "API Test",
+        "uid" : "7797e22a476242ab",
+        "parentUid" : "90c605b2d4d08b84ff473a545c89fa78",
+        "status" : "failed",
+        "time" : {
+          "start" : 1755605785355,
+          "stop" : 1755605785858,
+          "duration" : 503
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "90c605b2d4d08b84ff473a545c89fa78"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Condition with Lambda expression in tests.api.Uthils was not fulfilled within 10 seconds.",
+      "children" : [ {
+        "name" : "API Test",
+        "uid" : "2812268a3ba54fad",
+        "parentUid" : "49e2c7ddacfeaefd8081e09aae919130",
+        "status" : "broken",
+        "time" : {
+          "start" : 1755605774821,
+          "stop" : 1755605785351,
+          "duration" : 10530
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "API Test",
+        "uid" : "96e4530b8070b90a",
+        "parentUid" : "49e2c7ddacfeaefd8081e09aae919130",
+        "status" : "broken",
+        "time" : {
+          "start" : 1755605785862,
+          "stop" : 1755605796385,
+          "duration" : 10523
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "49e2c7ddacfeaefd8081e09aae919130"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
 }

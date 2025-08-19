@@ -2,57 +2,60 @@
   "f9b92bd3753f0ba0ecf563ad2ece5b0a" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "93b016a5b304537a",
-      "status" : "passed",
+      "uid" : "96e4530b8070b90a",
+      "status" : "broken",
+      "statusDetails" : "Condition with Lambda expression in tests.api.Uthils was not fulfilled within 10 seconds.",
       "time" : {
-        "start" : 1755605383940,
-        "stop" : 1755605385099,
-        "duration" : 1159
+        "start" : 1755605785862,
+        "stop" : 1755605796385,
+        "duration" : 10523
       }
     } ]
   },
   "d3aa75855210a348a4152cce6082545a" : {
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "1551e23096f5c8b4",
-      "status" : "passed",
+      "uid" : "58e3bb0b6f11696",
+      "status" : "failed",
+      "statusDetails" : "[Response Body: {\n    \"error_description\": \"Invalid access token\",\n    \"error\": \"invalid_token\"\n}] \nexpected: 404\n but was: 401",
       "time" : {
-        "start" : 1755605382081,
-        "stop" : 1755605382417,
-        "duration" : 336
+        "start" : 1755605774286,
+        "stop" : 1755605774815,
+        "duration" : 529
       }
     } ]
   },
   "20a46ef4dd8153dcdc4ee53cab6bbafa" : {
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d9e9f0c28199f81c",
-      "status" : "passed",
+      "uid" : "825c67b6d73393e",
+      "status" : "failed",
+      "statusDetails" : "[Response Body: {\n    \"error_description\": \"Invalid access token\",\n    \"error\": \"invalid_token\"\n}] \nexpected: 201\n but was: 401",
       "time" : {
-        "start" : 1755605380210,
-        "stop" : 1755605382019,
-        "duration" : 1809
+        "start" : 1755605772384,
+        "stop" : 1755605774238,
+        "duration" : 1854
       }
     } ]
   },
@@ -66,69 +69,52 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "4da9893d0ac1d65d",
+      "uid" : "5243ed1b224034ff",
       "status" : "passed",
       "time" : {
-        "start" : 1755605404440,
-        "stop" : 1755605409552,
-        "duration" : 5112
+        "start" : 1755605813862,
+        "stop" : 1755605819176,
+        "duration" : 5314
       }
     } ]
   },
   "31a203901a64d617bd12ef178ad5d4df" : {
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "fcd51f4c6c7589ca",
-      "status" : "passed",
+      "uid" : "7797e22a476242ab",
+      "status" : "failed",
+      "statusDetails" : "[Response Body: {\n    \"error_description\": \"Invalid access token\",\n    \"error\": \"invalid_token\"\n}] \nexpected: 404\n but was: 401",
       "time" : {
-        "start" : 1755605383618,
-        "stop" : 1755605383937,
-        "duration" : 319
+        "start" : 1755605785355,
+        "stop" : 1755605785858,
+        "duration" : 503
       }
     } ]
   },
   "bbdccc03daec763e0b1096918e98f53c" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "153d43b3441faab0",
-      "status" : "passed",
+      "uid" : "2812268a3ba54fad",
+      "status" : "broken",
+      "statusDetails" : "Condition with Lambda expression in tests.api.Uthils was not fulfilled within 10 seconds.",
       "time" : {
-        "start" : 1755605382421,
-        "stop" : 1755605383615,
-        "duration" : 1194
-      }
-    } ]
-  },
-  "dff417ac8193f9392db7737e9ab4be88" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "c8379d6dfcb7944e",
-      "status" : "passed",
-      "time" : {
-        "start" : 1755605446742,
-        "stop" : 1755605455407,
-        "duration" : 8665
+        "start" : 1755605774821,
+        "stop" : 1755605785351,
+        "duration" : 10530
       }
     } ]
   },
@@ -142,12 +128,31 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6368d1967ec38bef",
+      "uid" : "eef7e63fa36a5179",
       "status" : "passed",
       "time" : {
-        "start" : 1755605427792,
-        "stop" : 1755605441253,
-        "duration" : 13461
+        "start" : 1755605836425,
+        "stop" : 1755605847015,
+        "duration" : 10590
+      }
+    } ]
+  },
+  "dff417ac8193f9392db7737e9ab4be88" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d0c13ff645983993",
+      "status" : "passed",
+      "time" : {
+        "start" : 1755605851971,
+        "stop" : 1755605858028,
+        "duration" : 6057
       }
     } ]
   },
@@ -161,12 +166,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "89d0e6d32a7a704c",
+      "uid" : "38666987cc318cd0",
       "status" : "passed",
       "time" : {
-        "start" : 1755605415081,
-        "stop" : 1755605423158,
-        "duration" : 8077
+        "start" : 1755605823515,
+        "stop" : 1755605831525,
+        "duration" : 8010
       }
     } ]
   }
