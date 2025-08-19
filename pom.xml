@@ -94,7 +94,16 @@
                 <configuration>
                     <resultsDirectory>${project.build.directory}/allure-results</resultsDirectory>
                     <reportDirectory>${project.build.directory}/allure-report</reportDirectory>
+                    <historyPath>${project.build.directory}/allure-report/history</historyPath> <!-- КРИТИЧЕСКИ ВАЖНО -->
                 </configuration>
+                <executions>
+                    <execution>
+                        <phase>post-integration-test</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
