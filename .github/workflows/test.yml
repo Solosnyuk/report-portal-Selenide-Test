@@ -78,6 +78,12 @@ jobs:
           mkdir -p target/allure-results/history
           cp -r target/allure-results/history/. target/allure-results/history/ || true
 
+      - name: Restore Allure history
+        run: |
+          mkdir -p target/allure-results/history
+          cp -r target/allure-report/history/. target/allure-results/history/ || true
+
+
       - name: Generate Allure report
         run: mvn allure:report
 
