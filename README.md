@@ -1,8 +1,8 @@
-#### В проекте реализованы 4 UI автотеста и 6 API автотеста (4 позитивных и 2 негативных) для раздела Launches на сайте ReportPortal Demo.
+#### В проекте реализованы 4 UI автотеста и 6 API автотеста (4 позитивных и 2 негативных) для раздела Launches на сайте ReportPortal Demo. С подключением CI/CD и секретов
 
 ***
 ### Технологии:
-Maven, RestAssured, Selenide, TestNG, Jackson (ObjectMapper), AssertJ
+Maven, RestAssured, Selenide, TestNG, Jackson (ObjectMapper), AssertJ,  Awaitility
 ***
 ## Описание методов классов:
 #### Пакет api.pojos:
