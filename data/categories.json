@@ -1,5 +1,39 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "[Response Body: {\n    \"errorCode\": 4003,\n    \"message\": \"You do not have enough permissions.\"\n}] \nexpected: 200\n but was: 403",
+      "children" : [ {
+        "name" : "API Test",
+        "uid" : "b0311daf1d1a00a7",
+        "parentUid" : "19c4df8b44e04c65e3bba394f75479ef",
+        "status" : "failed",
+        "time" : {
+          "start" : 1755616525762,
+          "stop" : 1755616527317,
+          "duration" : 1555
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "API Test",
+        "uid" : "8dd09b61379ccc80",
+        "parentUid" : "19c4df8b44e04c65e3bba394f75479ef",
+        "status" : "failed",
+        "time" : {
+          "start" : 1755616527830,
+          "stop" : 1755616529384,
+          "duration" : 1554
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "19c4df8b44e04c65e3bba394f75479ef"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
 }
