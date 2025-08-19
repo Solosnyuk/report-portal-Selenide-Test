@@ -1,12 +1,12 @@
 {
-  "uid" : "72108388ce1d58c7",
+  "uid" : "1c84bd331f8411c2",
   "name" : "UI Test",
   "fullName" : "tests.ui.LaunchesTest.testEditFilter",
   "historyId" : "dff417ac8193f9392db7737e9ab4be88",
   "time" : {
-    "start" : 1755599598724,
-    "stop" : 1755599607744,
-    "duration" : 9020
+    "start" : 1755602903109,
+    "stop" : 1755602908338,
+    "duration" : 5229
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,9 +14,9 @@
   "beforeStages" : [ {
     "name" : "setUp",
     "time" : {
-      "start" : 1755599594666,
-      "stop" : 1755599598721,
-      "duration" : 4055
+      "start" : 1755602898983,
+      "stop" : 1755602903107,
+      "duration" : 4124
     },
     "description" : "",
     "status" : "passed",
@@ -31,9 +31,9 @@
   "afterStages" : [ {
     "name" : "tearDown",
     "time" : {
-      "start" : 1755599607745,
-      "stop" : 1755599607822,
-      "duration" : 77
+      "start" : 1755602908340,
+      "stop" : 1755602908412,
+      "duration" : 72
     },
     "description" : "",
     "status" : "passed",
@@ -68,7 +68,7 @@
     "value" : "pkrvmubgrv54qmi"
   }, {
     "name" : "thread",
-    "value" : "2309@pkrvmubgrv54qmi.main(1)"
+    "value" : "2458@pkrvmubgrv54qmi.main(1)"
   }, {
     "name" : "framework",
     "value" : "testng"
@@ -95,6 +95,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "72108388ce1d58c7.json",
+  "source" : "1c84bd331f8411c2.json",
   "parameterValues" : [ ]
 }
