@@ -24,7 +24,7 @@ public class CrudTest extends BaseApiTest {
 
         assertThat(response.getStatusCode())
                 .as("Response Body: %s", response.getBody().asPrettyString())
-                .isEqualTo(231);
+                .isEqualTo(201);
     }
 
     @Story("Update Launch")
