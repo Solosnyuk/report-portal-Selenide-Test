@@ -11,8 +11,9 @@ on:
         required: true
         default: 'true'
 
+
 jobs:
-  test-api-ui:
+  test-api:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -26,31 +27,68 @@ jobs:
       - name: Replace secrets in rp.properties
         run: |
           sed -i "s/\${RP_LOGIN}/${{ secrets.RP_LOGIN }}/g" src/main/resources/rp.properties
-          sed -i "s/\${RP_PASSWORD}/${{ secrets.RP_PASSWORD }}/g" src/main/resources/rp.properties
-
-      - name: Download previous Allure history from GitHub Pages
-        run: |
-          mkdir -p target/allure-results/history
-          curl -s -o target/allure-results/history/history.json https://Solosnyuk.github.io/report-portal-Selenide-Test/history/history.json || true
-          curl -s -o target/allure-results/history/categories-trend.json https://Solosnyuk.github.io/report-portal-Selenide-Test/history/categories-trend.json || true
-          curl -s -o target/allure-results/history/duration-trend.json https://Solosnyuk.github.io/report-portal-Selenide-Test/history/duration-trend.json || true
-          curl -s -o target/allure-results/history/retry-trend.json https://Solosnyuk.github.io/report-portal-Selenide-Test/history/retry-trend.json || true
-          curl -s -o target/allure-results/history/timeline.json https://Solosnyuk.github.io/report-portal-Selenide-Test/history/timeline.json || true
-
+          sed -i "s/\${RP_PASSWORD}/${{ secrets.RP_PASSWORD }}/g" src/main/resources/rp.properties    
+      - name: Download previous Allure history
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-history
+          path: target/allure-report/history
+        continue-on-error: true
+        
       - name: Run API tests
-        run: mvn test -Dgroups=API || true
+        run: mvn clean test -Dgroups=API || true
+       
+      - name: Upload API Allure results
+        if: always() 
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-api
+          path: target/allure-results
 
       - name: Run UI tests
-        run: mvn test -Dgroups=UI || true
+        run: |
+          mvn clean test -Dgroups=UI || true  
+      - name: Upload UI Allure results
+        if: always()  
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-ui
+          path: target/allure-results
 
+      - name: Download API results
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-api
+          path: target/allure-results/api
+
+      - name: Download UI results
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-ui
+          path: target/allure-results/ui
+          
+      - name: Flatten Allure results
+        run: |
+          mkdir -p target/allure-results
+          cp -r target/allure-results/api/. target/allure-results/
+          cp -r target/allure-results/ui/. target/allure-results/
+          
       - name: Generate Allure report
+        working-directory: ${{ github.workspace }}
         run: mvn allure:report
 
-      - name: Upload Allure history to GitHub Pages
+      - name: Upload Allure history
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-history
+          path: target/allure-report/history
+          retention-days: 90
+          
+      - name: Deploy to GitHub Pages
         if: ${{ github.event.inputs.deploy == 'true' }}
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ${{ github.workspace }}/target/allure-report
-          keep_files: true
           force_orphan: false
+          keep_files: true
