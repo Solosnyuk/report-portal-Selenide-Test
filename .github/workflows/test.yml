@@ -28,14 +28,8 @@ jobs:
       - name: Replace secrets in rp.properties
         run: |
           sed -i "s/\${RP_LOGIN}/${{ secrets.RP_LOGIN }}/g" src/main/resources/rp.properties
-          sed -i "s/\${RP_PASSWORD}/${{ secrets.RP_PASSWORD }}/g" src/main/resources/rp.properties    
-      - name: Download previous Allure history
-        uses: actions/download-artifact@v4
-        with:
-          name: allure-history
-          path: target/allure-report/history 
-        continue-on-error: true
-
+          sed -i "s/\${RP_PASSWORD}/${{ secrets.RP_PASSWORD }}/g" src/main/resources/rp.properties
+          
       - name: Run API tests
         run: mvn clean test -Dgroups=API || true
 
@@ -73,14 +67,7 @@ jobs:
           mkdir -p target/allure-results
           cp -r target/allure-results/api/. target/allure-results/
           cp -r target/allure-results/ui/. target/allure-results/
-          cp -r target/allure-report/history/. target/allure-results/history/ 2>/dev/null || true
-      - name: Restore Allure history
-        run: |
-          mkdir -p target/allure-results/history
-          cp -r target/allure-results/history/. target/allure-results/history/ || true
-      - name: Generate Allure report
-        run: mvn allure:report
-      
+        
       - name: Upload Allure history
         uses: actions/upload-artifact@v4
         with:
