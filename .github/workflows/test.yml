@@ -11,13 +11,12 @@ on:
         required: true
         default: 'true'
 
+
 jobs:
-  test-api-ui:
+  test-api:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Set up JDK
         uses: actions/setup-java@v3
@@ -28,23 +27,29 @@ jobs:
       - name: Replace secrets in rp.properties
         run: |
           sed -i "s/\${RP_LOGIN}/${{ secrets.RP_LOGIN }}/g" src/main/resources/rp.properties
-          sed -i "s/\${RP_PASSWORD}/${{ secrets.RP_PASSWORD }}/g" src/main/resources/rp.properties
-          
+          sed -i "s/\${RP_PASSWORD}/${{ secrets.RP_PASSWORD }}/g" src/main/resources/rp.properties    
+      - name: Download previous Allure history
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-history
+          path: target/allure-report/history
+        continue-on-error: true
+        
       - name: Run API tests
         run: mvn clean test -Dgroups=API || true
-
+       
       - name: Upload API Allure results
-        if: always()
+        if: always() 
         uses: actions/upload-artifact@v4
         with:
           name: allure-api
           path: target/allure-results
 
       - name: Run UI tests
-        run: mvn clean test -Dgroups=UI || true
-
+        run: |
+          mvn clean test -Dgroups=UI || true  
       - name: Upload UI Allure results
-        if: always()
+        if: always()  
         uses: actions/upload-artifact@v4
         with:
           name: allure-ui
@@ -61,20 +66,24 @@ jobs:
         with:
           name: allure-ui
           path: target/allure-results/ui
-
+          
       - name: Flatten Allure results
         run: |
           mkdir -p target/allure-results
           cp -r target/allure-results/api/. target/allure-results/
           cp -r target/allure-results/ui/. target/allure-results/
-        
+          
+      - name: Generate Allure report
+        working-directory: ${{ github.workspace }}
+        run: mvn allure:report
+
       - name: Upload Allure history
         uses: actions/upload-artifact@v4
         with:
           name: allure-history
           path: target/allure-report/history
-          retention-days: 90    
-
+          retention-days: 90
+          
       - name: Deploy to GitHub Pages
         if: ${{ github.event.inputs.deploy == 'true' }}
         uses: peaceiris/actions-gh-pages@v3
