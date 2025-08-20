@@ -1,0 +1,119 @@
+{
+  "uid" : "44533028a9d38058",
+  "name" : "UI Test",
+  "fullName" : "tests.ui.LaunchesTest.testEditFilter",
+  "historyId" : "dff417ac8193f9392db7737e9ab4be88",
+  "time" : {
+    "start" : 1755678793979,
+    "stop" : 1755678799176,
+    "duration" : 5197
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1755678789427,
+      "stop" : 1755678793977,
+      "duration" : 4550
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1755678799177,
+      "stop" : 1755678799251,
+      "duration" : 74
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.ui.LaunchesTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.ui.LaunchesTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testEditFilter"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.ui.LaunchesTest"
+  }, {
+    "name" : "host",
+    "value" : "pkrvmubgrv54qmi"
+  }, {
+    "name" : "thread",
+    "value" : "2364@pkrvmubgrv54qmi.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Edit filter"
+  }, {
+    "name" : "epic",
+    "value" : "UI Tests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "efdce97c11473d0d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1755677407693,
+          "stop" : 1755677412906,
+          "duration" : 5213
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "44533028a9d38058.json",
+  "parameterValues" : [ ]
+}
