@@ -7,13 +7,13 @@
       "name" : "Create Launch",
       "children" : [ {
         "name" : "API Test",
-        "uid" : "9ab116ed97d9c3f3",
+        "uid" : "7f66262e89c89551",
         "parentUid" : "c7505b9af0d931a2ed5c86235bcfeb79",
         "status" : "failed",
         "time" : {
-          "start" : 1755678713653,
-          "stop" : 1755678715616,
-          "duration" : 1963
+          "start" : 1755679073039,
+          "stop" : 1755679075010,
+          "duration" : 1971
         },
         "flaky" : false,
         "newFailed" : false,
@@ -24,13 +24,13 @@
       "name" : "Delete Non-Existing Launch",
       "children" : [ {
         "name" : "API Test",
-        "uid" : "349ecb85993233be",
+        "uid" : "400289d0aafd7a83",
         "parentUid" : "f4a952cddfc56596be0898aec52916b9",
         "status" : "failed",
         "time" : {
-          "start" : 1755678715666,
-          "stop" : 1755678716181,
-          "duration" : 515
+          "start" : 1755679075060,
+          "stop" : 1755679075384,
+          "duration" : 324
         },
         "flaky" : false,
         "newFailed" : false,
@@ -41,13 +41,13 @@
       "name" : "Get Launch",
       "children" : [ {
         "name" : "API Test",
-        "uid" : "b60101f4b3b8e0d9",
+        "uid" : "eff7f301acef402d",
         "parentUid" : "37ad78f1b428d773e3ba935d84373224",
         "status" : "broken",
         "time" : {
-          "start" : 1755678716187,
-          "stop" : 1755678726713,
-          "duration" : 10526
+          "start" : 1755679075389,
+          "stop" : 1755679085741,
+          "duration" : 10352
         },
         "flaky" : false,
         "newFailed" : false,
@@ -58,13 +58,13 @@
       "name" : "Get Non-Existing Launch",
       "children" : [ {
         "name" : "API Test",
-        "uid" : "73d42a44442e6d56",
+        "uid" : "1bb6d03b18bf3997",
         "parentUid" : "6daaee114614c15b1e15114317df21a2",
         "status" : "failed",
         "time" : {
-          "start" : 1755678726718,
-          "stop" : 1755678727230,
-          "duration" : 512
+          "start" : 1755679085745,
+          "stop" : 1755679086070,
+          "duration" : 325
         },
         "flaky" : false,
         "newFailed" : false,
@@ -75,13 +75,13 @@
       "name" : "Update Launch",
       "children" : [ {
         "name" : "API Test",
-        "uid" : "6f9ca97b7cac93d8",
+        "uid" : "f84f08d6779b6f37",
         "parentUid" : "a7a8b080c5635dee4a44bd8ead1c5af6",
         "status" : "broken",
         "time" : {
-          "start" : 1755678727234,
-          "stop" : 1755678737745,
-          "duration" : 10511
+          "start" : 1755679086074,
+          "stop" : 1755679096392,
+          "duration" : 10318
         },
         "flaky" : false,
         "newFailed" : false,
@@ -96,16 +96,16 @@
       "name" : "Add new filter",
       "children" : [ {
         "name" : "UI Test",
-        "uid" : "92047d0434b7252d",
+        "uid" : "aacd583fc7656872",
         "parentUid" : "e723a583702414bbe2a84b2afad1d6de",
-        "status" : "failed",
+        "status" : "passed",
         "time" : {
-          "start" : 1755678755190,
-          "stop" : 1755678764470,
-          "duration" : 9280
+          "start" : 1755679114068,
+          "stop" : 1755679119110,
+          "duration" : 5042
         },
         "flaky" : false,
-        "newFailed" : true,
+        "newFailed" : false,
         "parameters" : [ ]
       } ],
       "uid" : "e723a583702414bbe2a84b2afad1d6de"
@@ -113,13 +113,13 @@
       "name" : "Clone filter",
       "children" : [ {
         "name" : "UI Test",
-        "uid" : "b7041cfc5d10ddb1",
+        "uid" : "34b09ffe1945ac53",
         "parentUid" : "8baf1cffe9be5cf382c78b445a34d7dd",
         "status" : "passed",
         "time" : {
-          "start" : 1755678769290,
-          "stop" : 1755678774735,
-          "duration" : 5445
+          "start" : 1755679123199,
+          "stop" : 1755679128283,
+          "duration" : 5084
         },
         "flaky" : false,
         "newFailed" : false,
@@ -130,13 +130,13 @@
       "name" : "Delete filter",
       "children" : [ {
         "name" : "UI Test",
-        "uid" : "70a8b034c9da75a",
+        "uid" : "87f0e5ac00cdd938",
         "parentUid" : "8093a72844374699a5ecb63beac08bc6",
         "status" : "passed",
         "time" : {
-          "start" : 1755678779564,
-          "stop" : 1755678789347,
-          "duration" : 9783
+          "start" : 1755679132412,
+          "stop" : 1755679142403,
+          "duration" : 9991
         },
         "flaky" : false,
         "newFailed" : false,
@@ -147,13 +147,13 @@
       "name" : "Edit filter",
       "children" : [ {
         "name" : "UI Test",
-        "uid" : "44533028a9d38058",
+        "uid" : "4bc3b2b3d40f0e35",
         "parentUid" : "6dfdedde728de42ff00098d5a8668989",
         "status" : "passed",
         "time" : {
-          "start" : 1755678793979,
-          "stop" : 1755678799176,
-          "duration" : 5197
+          "start" : 1755679146519,
+          "stop" : 1755679152141,
+          "duration" : 5622
         },
         "flaky" : false,
         "newFailed" : false,
