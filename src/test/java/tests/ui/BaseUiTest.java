@@ -3,6 +3,7 @@ package tests.ui;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.WebDriverRunner;
+import io.qameta.allure.Allure;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
